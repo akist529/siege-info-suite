@@ -1,0 +1,10 @@
+.NavMenu {
+  width: 50vw;
+  display: flex;
+  gap: 10px;
+}
+.NavMenu .NavMenuButton {
+  width: 50vw;
+}
+
+/*# sourceMappingURL=NavMenuMobile.css.map */

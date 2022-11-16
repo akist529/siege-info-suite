@@ -1,0 +1,14 @@
+.NavMenu {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 5vw;
+  list-style-type: none;
+  white-space: nowrap;
+}
+.NavMenu li {
+  font-size: 2rem;
+  width: auto;
+}
+
+/*# sourceMappingURL=NavMenuDesktop.css.map */
