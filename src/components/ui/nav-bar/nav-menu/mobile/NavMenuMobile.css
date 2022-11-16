@@ -1,10 +1,5 @@
 .NavMenu {
-  width: 50vw;
   display: flex;
-  gap: 10px;
-}
-.NavMenu .NavMenuButton {
-  width: 50vw;
-}
+  gap: 10px; }
 
 /*# sourceMappingURL=NavMenuMobile.css.map */

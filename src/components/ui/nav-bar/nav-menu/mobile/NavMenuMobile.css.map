@@ -1,1 +1,7 @@
-{"version":3,"sourceRoot":"","sources":["NavMenuMobile.scss"],"names":[],"mappings":"AAAA;EACI;EACA;EACA;;AAEA;EACI","file":"NavMenuMobile.css"}
+{
+"version": 3,
+"mappings": "AAAA,QAAS;EACL,OAAO,EAAE,IAAI;EACb,GAAG,EAAE,IAAI",
+"sources": ["NavMenuMobile.scss"],
+"names": [],
+"file": "NavMenuMobile.css"
+}

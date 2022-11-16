@@ -1,4 +1,4 @@
-import NavMenuButton from '../../../../buttons/nav-menu-button/NavMenuButton'
+import MobileNavMenuButton from '../../../../buttons/nav-menu-button/mobile/MobileNavMenuButton'
 import './NavMenuMobile.css'
 
 export default function NavMenuMobile(props) {
@@ -18,9 +18,9 @@ export default function NavMenuMobile(props) {
 
     return (
         <div className="NavMenu">
-            { (windowWidth > 480) && <NavMenuButton image="user" navFunction={showUserMenu} /> }
-            { (windowWidth > 380) && <NavMenuButton image="settings" navFunction={showSettingsMenu} /> }
-            <NavMenuButton image="menu" navFunction={showAllMenu} />
+            { (windowWidth > 480) && <MobileNavMenuButton image="user" navFunction={showUserMenu} /> }
+            { (windowWidth > 380) && <MobileNavMenuButton image="settings" navFunction={showSettingsMenu} /> }
+            <MobileNavMenuButton image="menu" navFunction={showAllMenu} />
         </div>
     )
 }

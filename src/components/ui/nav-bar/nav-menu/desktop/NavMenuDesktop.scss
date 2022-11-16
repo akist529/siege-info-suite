@@ -1,13 +1,12 @@
 .NavMenu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     align-items: center;
-    gap: 5vw;
     list-style-type: none;
     white-space: nowrap;
+    width: 90vw;
 
     li {
         font-size: 2rem;
-        width: auto;
     }
 }
