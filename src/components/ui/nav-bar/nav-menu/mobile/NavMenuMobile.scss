@@ -1,0 +1,10 @@
+.NavMenuMobile {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    .NavButton {
+        display: flex;
+        flex-direction: column;
+    }
+}

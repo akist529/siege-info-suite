@@ -1,0 +1,16 @@
+.Dropdown {
+    background: rgb(93, 93, 185);
+    position: absolute;
+    top: 100%;
+
+    li {
+        list-style-type: none;
+        font-size: 2rem;
+        padding: 5px 20px;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+    }
+}

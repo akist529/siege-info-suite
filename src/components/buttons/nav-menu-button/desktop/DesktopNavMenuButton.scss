@@ -1,0 +1,26 @@
+.NavLink {
+    text-decoration: none;
+
+    button {
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        border: none;
+        background: none;
+        padding: 10px;
+
+        h2 {
+            color: white;
+        }
+
+        &:hover {
+            transition: 0.5s;
+            background: white;
+            cursor: pointer;
+            
+            h2 {
+                color: black;
+            }
+        }
+    }
+}

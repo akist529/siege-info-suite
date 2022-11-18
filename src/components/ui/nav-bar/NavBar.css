@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-family: 'Teko';
+  text-transform: uppercase; }
+  .NavBar .AppTitle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px; }
+    .NavBar .AppTitle h1 {
+      font-size: 12vw;
+      line-height: 75%; }
+    .NavBar .AppTitle #r6s-logo {
+      width: 10vw;
+      filter: invert(1); }
+
+@media only screen and (min-width: 768px) {
+  .NavBar {
+    flex-direction: column; }
+    .NavBar .AppTitle {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .NavBar .AppTitle h1 {
+        font-size: 8vw;
+        width: auto; }
+      .NavBar .AppTitle #r6s-logo {
+        width: 40vw; } }
+
+/*# sourceMappingURL=NavBar.css.map */

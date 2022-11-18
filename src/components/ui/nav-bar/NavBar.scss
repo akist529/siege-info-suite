@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+
+.NavBar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    position: fixed;
+    width: 100vw;
+    gap: 10px;
+    padding: 10px 20px;
+
+    background-color: black;
+    color: white;
+    font-family: 'Teko';
+    text-transform: uppercase;
+
+    .AppTitle {
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        gap: 10px;
+
+        h1 {
+            font-size: 12vw;
+            line-height: 75%;
+        }
+
+        #r6s-logo {
+            width: 5vw;
+            filter: invert(1);
+        }
+    }
+
+    .AppControls {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            height: 30px;
+        }
+    }
+
+    .SearchBarFocused {
+        width: 100%;
+        border-radius: 15px;
+    }
+}
+
+@media only screen and (min-width: 912px) {
+    .NavBar {
+        display: flex;
+        flex-direction: column;
+
+        .AppTitle {
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+
+            h1 {
+                font-size: 3vw;
+                width: auto;
+            }
+
+            #r6s-logo {
+                width: 20vw;
+            }
+        }
+
+        .SearchBar {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .SearchBarFocused {
+            width: 25vw;
+        }
+
+        .NavLoginButton {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+        }
+    }
+}
