@@ -4,6 +4,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+
+    position: fixed;
+    width: 100vw;
     gap: 10px;
     padding: 10px 20px;
 
@@ -14,7 +17,7 @@
 
     .AppTitle {
         display: flex;
-        align-items: center;
+        align-items: flex-end;
         justify-content: center;
         gap: 10px;
 
@@ -24,14 +27,31 @@
         }
 
         #r6s-logo {
-            width: 10vw;
+            width: 5vw;
             filter: invert(1);
         }
     }
+
+    .AppControls {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        img {
+            height: 30px;
+        }
+    }
+
+    .SearchBarFocused {
+        width: 100%;
+        border-radius: 15px;
+    }
 }
 
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 912px) {
     .NavBar {
+        display: flex;
         flex-direction: column;
 
         .AppTitle {
@@ -40,13 +60,29 @@
             align-items: center;
 
             h1 {
-                font-size: 8vw;
+                font-size: 3vw;
                 width: auto;
             }
 
             #r6s-logo {
-                width: 40vw;
+                width: 20vw;
             }
+        }
+
+        .SearchBar {
+            position: absolute;
+            top: 10px;
+            left: 20px;
+        }
+
+        .SearchBarFocused {
+            width: 25vw;
+        }
+
+        .NavLoginButton {
+            position: absolute;
+            top: 10px;
+            right: 20px;
         }
     }
 }

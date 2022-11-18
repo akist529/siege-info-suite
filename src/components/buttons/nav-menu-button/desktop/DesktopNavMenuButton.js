@@ -1,11 +1,12 @@
-import './DesktopNavMenuButton.css'
-
 export default function DesktopNavMenuButton(props) {
     const { linkName, linkPage } = props
 
     return (
-        <button>
-            <a href={linkPage}>{linkName}</a>
-        </button>
+        <a href={linkPage} className="NavLink">
+            <button>
+                <h2>{linkName}</h2>
+                <img alt="Expand More" src="images/ui/expand_more.png" />
+            </button>
+        </a>
     )
 }

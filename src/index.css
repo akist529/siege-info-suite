@@ -1,13 +1,173 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
+.NavLink {
+  text-decoration: none;
+}
+.NavLink button {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  border: none;
+  background: none;
+  padding: 10px;
+}
+.NavLink button h2 {
+  color: white;
+}
+.NavLink button:hover {
+  transition: 0.5s;
+  background: white;
+  cursor: pointer;
+}
+.NavLink button:hover h2 {
+  color: black;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.NavMenuButton {
+  border: none;
+  border-radius: 5px;
+  background-color: rgb(215, 215, 215);
+  width: 100px;
+  height: 80px;
+  display: inline-block;
 }
+
+.NavLoginButton {
+  background: none;
+  border: none;
+  filter: invert(1);
+}
+
+.SearchBar {
+  background-image: url("../public/images/ui/search.png");
+  background-repeat: no-repeat;
+  background-size: 20px;
+  background-position: 5px;
+  height: 30px;
+  text-indent: 30px;
+  width: 30px;
+  transition: width 0.5s, border 0s, border-radius 0s;
+  border: none;
+  border-radius: 15px;
+}
+
+.NavBar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: fixed;
+  width: 100vw;
+  gap: 10px;
+  padding: 10px 20px;
+  background-color: black;
+  color: white;
+  font-family: "Teko";
+  text-transform: uppercase;
+}
+.NavBar .AppTitle {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+}
+.NavBar .AppTitle h1 {
+  font-size: 12vw;
+  line-height: 75%;
+}
+.NavBar .AppTitle #r6s-logo {
+  width: 5vw;
+  filter: invert(1);
+}
+.NavBar .AppControls {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+.NavBar .AppControls img {
+  height: 30px;
+}
+.NavBar .SearchBarFocused {
+  width: 100%;
+  border-radius: 15px;
+}
+
+@media only screen and (min-width: 912px) {
+  .NavBar {
+    display: flex;
+    flex-direction: column;
+  }
+  .NavBar .AppTitle {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .NavBar .AppTitle h1 {
+    font-size: 3vw;
+    width: auto;
+  }
+  .NavBar .AppTitle #r6s-logo {
+    width: 20vw;
+  }
+  .NavBar .SearchBar {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+  }
+  .NavBar .SearchBarFocused {
+    width: 25vw;
+  }
+  .NavBar .NavLoginButton {
+    position: absolute;
+    top: 10px;
+    right: 20px;
+  }
+}
+.NavMenuDesktop {
+  display: flex;
+  justify-content: space-between;
+  width: 90vw;
+}
+.NavMenuDesktop ul {
+  display: grid;
+  justify-items: center;
+  list-style-type: none;
+  white-space: nowrap;
+}
+.NavMenuDesktop .NavGameInfo {
+  grid-template-columns: repeat(6, 1fr);
+}
+.NavMenuDesktop .NavAppInfo {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+@media only screen and (max-width: 1225px) {
+  .NavMenuDesktop .NavAppInfo {
+    grid-template-columns: 1fr;
+  }
+}
+.NavMenuMobile {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.NavMenuMobile .NavButton {
+  display: flex;
+  flex-direction: column;
+}
+
+.Dropdown {
+  background: rgb(93, 93, 185);
+  position: absolute;
+  top: 100%;
+}
+.Dropdown li {
+  list-style-type: none;
+  font-size: 2rem;
+  padding: 5px 20px;
+}
+.Dropdown li a {
+  text-decoration: none;
+  color: white;
+}
+
+/*# sourceMappingURL=index.css.map */

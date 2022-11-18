@@ -1,5 +1,3 @@
-import './MobileNavMenuButton.css'
-
 export default function MobileNavMenuButton(props) {
     const { image, navFunction } = props
 

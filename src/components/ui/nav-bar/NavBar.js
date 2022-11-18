@@ -2,7 +2,8 @@ import { useEffect, useState } from 'react'
 
 import NavMenuMobile from './nav-menu/mobile/NavMenuMobile'
 import NavMenuDesktop from './nav-menu/desktop/NavMenuDesktop'
-import './NavBar.css'
+import NavLoginButton from '../../buttons/nav-login-button/NavLoginButton'
+import SearchBar from '../../inputs/searchbar/SearchBar'
 
 export default function NavBar() {
   const [R6LogoSize, setR6LogoSize] = useState('small')
@@ -15,7 +16,7 @@ export default function NavBar() {
   }, [])
 
   useEffect(() => {
-    setR6LogoSize((windowWidth < 768) ? 'small' : 'large')
+    setR6LogoSize((windowWidth < 912) ? 'small' : 'large')
   }, [windowWidth])
 
   return (
@@ -24,7 +25,11 @@ export default function NavBar() {
         <img id="r6s-logo" alt="Rainbow Six: Siege" src={`images/ui/siege-logo-${R6LogoSize}.png`}/>
         <h1>Info Suite</h1>
       </div>
-      { windowWidth < 768 ? <NavMenuMobile windowWidth={windowWidth} /> : <NavMenuDesktop /> }
+      { windowWidth < 912 ? <NavMenuMobile windowWidth={windowWidth} /> : <NavMenuDesktop windowWidth={windowWidth} /> }
+      <div className="AppControls">
+        <NavLoginButton />
+        <SearchBar />
+      </div>
     </nav>
   )
 }

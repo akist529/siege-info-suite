@@ -1,26 +1,35 @@
+import { useState } from 'react'
 import MobileNavMenuButton from '../../../../buttons/nav-menu-button/mobile/MobileNavMenuButton'
-import './NavMenuMobile.css'
+import Dropdown from '../../dropdown/Dropdown'
 
 export default function NavMenuMobile(props) {
     const { windowWidth } = props
-
-    function showUserMenu() {
-        console.log("User Menu shown")
-    }
+    const [showAllMenuState, setShowAllMenuState] = useState(false)
+    const allMenuItems = ['Operators', 'Maps', 'Weapons', 'Quizzes', 'Strat Builder', 'My Stats']
 
     function showSettingsMenu() {
         console.log("Settings Menu shown")
     }
 
     function showAllMenu() {
-        console.log("All Menu shown")
+        setShowAllMenuState(prevState => !prevState)
     }
 
     return (
-        <div className="NavMenu">
-            { (windowWidth > 480) && <MobileNavMenuButton image="user" navFunction={showUserMenu} /> }
-            { (windowWidth > 380) && <MobileNavMenuButton image="settings" navFunction={showSettingsMenu} /> }
-            <MobileNavMenuButton image="menu" navFunction={showAllMenu} />
+        <div className="NavMenuMobile">
+            <div className="NavButton">
+                <MobileNavMenuButton 
+                    image="menu" 
+                    navFunction={showAllMenu} />
+                { showAllMenuState && <Dropdown links={allMenuItems} /> }
+            </div>
+            { (windowWidth > 380) && 
+                <div className="NavButton">
+                    <MobileNavMenuButton 
+                        image="settings" 
+                        navFunction={showSettingsMenu} />
+                </div>
+            }
         </div>
     )
 }

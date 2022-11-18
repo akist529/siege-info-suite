@@ -1,12 +1,28 @@
-.NavMenu {
+.NavMenuDesktop {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    list-style-type: none;
-    white-space: nowrap;
+    justify-content: space-between;
     width: 90vw;
 
-    li {
-        font-size: 2rem;
+    ul {
+        display: grid;
+        justify-items: center;
+        list-style-type: none;
+        white-space: nowrap;
+    }
+
+    .NavGameInfo {
+        grid-template-columns: repeat(6, 1fr);
+    }
+
+    .NavAppInfo {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media only screen and (max-width: 1225px) {
+    .NavMenuDesktop {
+        .NavAppInfo {
+            grid-template-columns: 1fr;
+        }
     }
 }
