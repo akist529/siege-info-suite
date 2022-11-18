@@ -1,0 +1,17 @@
+.Operators {
+    padding-top: calc(15vh + 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .operators-list {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 300px);
+        grid-template-columns: repeat(6, 200px);
+        gap: 30px;
+        padding-top: 80px;
+        justify-items: center;
+        align-items: center;
+    }
+}

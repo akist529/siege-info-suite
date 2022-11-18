@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css?family=Teko&display=swap');
+
+.OperatorCard {
+    background-color: rgb(160, 160, 248);
+    border: 3px solid black;
+    font-family: "Teko";
+    font-size: 2rem;
+
+    width: 200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 1fr;
+
+    transition: 0.5s;
+
+    .operator-details {
+        grid-row: 1 / 2;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        padding: 5px 10px;
+
+        background-color: rgb(48, 48, 70);
+        border-bottom: 3px solid black;
+        color: white;
+
+        #faction {
+            height: 20px;
+        }
+    }
+
+    #portrait {
+        grid-row: 2 / 3;
+
+        width: 200%;
+        position: relative;
+        right: 50%;
+    }
+
+    #badge {
+        position: absolute;
+        bottom: 10px;
+        left: 10px;
+        height: 60px;
+    }
+}
+
+.focused {
+    width: 115%;
+    height: 115%;
+    transition: 0.5s;
+}
