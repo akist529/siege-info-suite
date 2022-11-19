@@ -1,0 +1,43 @@
+.MapCard {
+    background-color: rgb(160, 160, 248);
+    border: 3px solid black;
+    font-size: 2rem;
+
+    width: 350px;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 40px;
+    
+    transform: scale(100%);
+    transition: 0.5s;
+
+    #map-preview {
+        grid-row: 1 / 2;
+
+        position: relative;
+        width: 100%;
+        height: 100%;
+    }
+
+    #map-name {
+        grid-row: 2 / 3;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+
+        background-color: rgb(48, 48, 70);
+        border-top: 3px solid black;
+        color: white;
+    }
+}
+
+.focused {
+    transform: scale(115%);
+    transition: 0.5s;
+}

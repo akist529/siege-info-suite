@@ -1,0 +1,21 @@
+.Maps {
+    padding-top: calc(15vh + 80px);
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .maps-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, 350px);
+        grid-template-rows: repeat(auto-fit, 1fr);
+        gap: 30px;
+        padding-top: 80px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+}

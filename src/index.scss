@@ -7,8 +7,14 @@
 @import './components/ui/nav-bar/nav-menu/mobile/NavMenuMobile';
 @import './components/ui/nav-bar/dropdown/Dropdown';
 @import './components/ui/operators/operator-card/OperatorCard';
+@import './components/ui/maps/map-card/MapCard';
 @import './components/ui/page-title/PageTitle';
 
 @import './pages/operators/Operators';
+@import './pages/maps/Maps';
+@import './pages/weapons/Weapons';
+@import './pages/quizzes/Quizzes';
+@import './pages/strat-builder/StratBuilder';
+@import './pages/my-stats/MyStats';
 
 @import './App';

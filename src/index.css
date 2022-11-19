@@ -1,5 +1,4 @@
 @import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
 .NavLink {
   text-decoration: none;
 }
@@ -176,7 +175,6 @@
 .OperatorCard {
   background-color: rgb(160, 160, 248);
   border: 3px solid black;
-  font-family: "Teko";
   font-size: 2rem;
   width: 200px;
   height: 300px;
@@ -185,6 +183,7 @@
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 30px 1fr;
+  transform: scale(100%);
   transition: 0.5s;
 }
 .OperatorCard .operator-details {
@@ -215,8 +214,43 @@
 }
 
 .focused {
-  width: 115%;
-  height: 115%;
+  transform: scale(115);
+  transition: 0.5s;
+}
+
+.MapCard {
+  background-color: rgb(160, 160, 248);
+  border: 3px solid black;
+  font-size: 2rem;
+  width: 350px;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 1fr 40px;
+  transform: scale(100%);
+  transition: 0.5s;
+}
+.MapCard #map-preview {
+  grid-row: 1/2;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.MapCard #map-name {
+  grid-row: 2/3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(48, 48, 70);
+  border-top: 3px solid black;
+  color: white;
+}
+
+.focused {
+  transform: scale(115%);
   transition: 0.5s;
 }
 
@@ -226,6 +260,8 @@
 
 .Operators {
   padding-top: calc(15vh + 80px);
+  padding-left: 20px;
+  padding-right: 20px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -233,11 +269,66 @@
 }
 .Operators .operators-list {
   display: grid;
-  grid-template-rows: repeat(auto-fill, 300px);
-  grid-template-columns: repeat(6, 200px);
+  grid-template-rows: repeat(auto-fill, 1fr);
+  grid-template-columns: repeat(auto-fill, 200px);
   gap: 30px;
   padding-top: 80px;
+  justify-content: center;
   justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Maps {
+  padding-top: calc(15vh + 80px);
+  padding-left: 30px;
+  padding-right: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.Maps .maps-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 350px);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  gap: 30px;
+  padding-top: 80px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+  width: 100%;
+}
+
+.Weapons {
+  padding-top: calc(15vh + 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Quizzes {
+  padding-top: calc(15vh + 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.StratBuilder {
+  padding-top: calc(15vh + 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.MyStats {
+  padding-top: calc(15vh + 80px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   align-items: center;
 }
 

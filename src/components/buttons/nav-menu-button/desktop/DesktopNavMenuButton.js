@@ -1,12 +1,19 @@
+import { Link } from 'react-router-dom'
+
 export default function DesktopNavMenuButton(props) {
-    const { linkName, linkPage } = props
+    const { linkName } = props
+    let linkPage = linkName
+
+    if (/\s/.test(linkName)) {
+        linkPage = linkName.split(" ").join("")
+    }
 
     return (
-        <a href={linkPage} className="NavLink">
+        <Link to={linkPage} className="NavLink">
             <button>
                 <h2>{linkName}</h2>
                 <img alt="Expand More" src="images/ui/expand_more.png" />
             </button>
-        </a>
+        </Link>
     )
 }

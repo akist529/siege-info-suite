@@ -16,7 +16,7 @@ export default function OperatorCard(props) {
                 <img id="faction" alt={`${team}`} src={ `images/ui/${team}.webp` } />
             </div>
             <img id="portrait" alt={`${name}`} src={`images/ops/portraits/${name}.webp`} />
-            <img id="badge" alt={`${name}`} src={`images/ops/icons/${name}.png`} />
+            <img id="badge" alt={`${name}`} src={`images/ops/icons/${name}.webp`} />
         </div>
     )
 }
