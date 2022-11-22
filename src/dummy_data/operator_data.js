@@ -52,6 +52,7 @@ export const operatorList = [
     {
         name: 'Capitao',
         team: 'Attack',
+        ability: 'Tactical Crossbow',
     },
     {
         name: 'Castle',
