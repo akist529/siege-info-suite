@@ -2,6 +2,7 @@ import { Routes, Route, Outlet } from 'react-router-dom'
 import './App.css'
 import NavBar from './components/ui/nav-bar/NavBar'
 import Operators from './pages/operators/Operators'
+import Operator from './pages/operators/operator/Operator'
 import Maps from './pages/maps/Maps'
 import Weapons from './pages/weapons/Weapons'
 import Quizzes from './pages/quizzes/Quizzes'
@@ -21,6 +22,7 @@ export default function App() {
         <Route path="stratbuilder" element={<StratBuilder />} />
         <Route path="mystats" element={<MyStats />} />
         <Route path="*" element={<NoPage />} />
+        <Route path="operators/:name" element={<Operator />} />
       </Routes>
       <Outlet />
     </div>

@@ -1,41 +1,34 @@
 @import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
 .NavLink {
-  text-decoration: none;
-}
-.NavLink button {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border: none;
-  background: none;
-  padding: 10px;
-}
-.NavLink button h2 {
-  color: white;
-}
-.NavLink button:hover {
-  transition: 0.5s;
-  background: white;
-  cursor: pointer;
-}
-.NavLink button:hover h2 {
-  color: black;
-}
+  text-decoration: none; }
+  .NavLink button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 10px; }
+    .NavLink button h2 {
+      color: white; }
+    .NavLink button:hover {
+      transition: 0.5s;
+      background: white;
+      cursor: pointer; }
+      .NavLink button:hover h2 {
+        color: black; }
 
 .NavMenuButton {
   border: none;
   border-radius: 5px;
-  background-color: rgb(215, 215, 215);
+  background-color: #d7d7d7;
   width: 100px;
   height: 80px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .NavLoginButton {
   background: none;
   border: none;
-  filter: invert(1);
-}
+  filter: invert(1); }
 
 .SearchBar {
   background-image: url("../public/images/ui/search.png");
@@ -47,8 +40,7 @@
   width: 30px;
   transition: width 0.5s, border 0s, border-radius 0s;
   border: none;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .NavBar {
   display: flex;
@@ -62,118 +54,92 @@
   padding: 10px 20px;
   background-color: black;
   color: white;
-  font-family: "Teko";
-  text-transform: uppercase;
-}
-.NavBar .AppTitle {
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  gap: 10px;
-}
-.NavBar .AppTitle h1 {
-  font-size: 12vw;
-  line-height: 75%;
-}
-.NavBar .AppTitle #r6s-logo {
-  width: 5vw;
-  filter: invert(1);
-}
-.NavBar .AppControls {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-}
-.NavBar .AppControls img {
-  height: 30px;
-}
-.NavBar .SearchBarFocused {
-  width: 100%;
-  border-radius: 15px;
-}
+  font-family: 'Teko';
+  text-transform: uppercase; }
+  .NavBar .AppTitle {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    gap: 10px; }
+    .NavBar .AppTitle h1 {
+      font-size: 12vw;
+      line-height: 75%; }
+    .NavBar .AppTitle #r6s-logo {
+      width: 5vw;
+      filter: invert(1); }
+  .NavBar .AppControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center; }
+    .NavBar .AppControls img {
+      height: 30px; }
+  .NavBar .SearchBarFocused {
+    width: 100%;
+    border-radius: 15px; }
 
 @media only screen and (min-width: 912px) {
   .NavBar {
     display: flex;
-    flex-direction: column;
-  }
-  .NavBar .AppTitle {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-  }
-  .NavBar .AppTitle h1 {
-    font-size: 3vw;
-    width: auto;
-  }
-  .NavBar .AppTitle #r6s-logo {
-    width: 20vw;
-  }
-  .NavBar .SearchBar {
-    position: absolute;
-    top: 10px;
-    left: 20px;
-  }
-  .NavBar .SearchBarFocused {
-    width: 25vw;
-  }
-  .NavBar .NavLoginButton {
-    position: absolute;
-    top: 10px;
-    right: 20px;
-  }
-}
+    flex-direction: column; }
+    .NavBar .AppTitle {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center; }
+      .NavBar .AppTitle h1 {
+        font-size: 3vw;
+        width: auto; }
+      .NavBar .AppTitle #r6s-logo {
+        width: 20vw; }
+    .NavBar .SearchBar {
+      position: absolute;
+      top: 10px;
+      left: 20px; }
+    .NavBar .SearchBarFocused {
+      width: 25vw; }
+    .NavBar .NavLoginButton {
+      position: absolute;
+      top: 10px;
+      right: 20px; } }
 .NavMenuDesktop {
   display: flex;
   justify-content: space-between;
-  width: 90vw;
-}
-.NavMenuDesktop ul {
-  display: grid;
-  justify-items: center;
-  list-style-type: none;
-  white-space: nowrap;
-}
-.NavMenuDesktop .NavGameInfo {
-  grid-template-columns: repeat(6, 1fr);
-}
-.NavMenuDesktop .NavAppInfo {
-  grid-template-columns: repeat(2, 1fr);
-}
+  width: 90vw; }
+  .NavMenuDesktop ul {
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    white-space: nowrap; }
+  .NavMenuDesktop .NavGameInfo {
+    grid-template-columns: repeat(6, 1fr); }
+  .NavMenuDesktop .NavAppInfo {
+    grid-template-columns: repeat(2, 1fr); }
 
 @media only screen and (max-width: 1225px) {
   .NavMenuDesktop .NavAppInfo {
-    grid-template-columns: 1fr;
-  }
-}
+    grid-template-columns: 1fr; } }
 .NavMenuMobile {
   display: flex;
   justify-content: center;
-  gap: 10px;
-}
-.NavMenuMobile .NavButton {
-  display: flex;
-  flex-direction: column;
-}
+  gap: 10px; }
+  .NavMenuMobile .NavButton {
+    display: flex;
+    flex-direction: column; }
 
 .Dropdown {
-  background: rgb(93, 93, 185);
+  background: #5d5db9;
   position: absolute;
-  top: 100%;
-}
-.Dropdown li {
-  list-style-type: none;
-  font-size: 2rem;
-  padding: 5px 20px;
-}
-.Dropdown li a {
-  text-decoration: none;
-  color: white;
-}
+  top: 100%; }
+  .Dropdown li {
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 5px 20px; }
+    .Dropdown li a {
+      text-decoration: none;
+      color: white; }
 
 .OperatorCard {
-  background-color: rgb(160, 160, 248);
+  background-color: #a0a0f8;
   border: 3px solid black;
   font-size: 2rem;
   cursor: pointer;
@@ -185,47 +151,40 @@
   grid-template-columns: 100%;
   grid-template-rows: 30px 1fr;
   transform: scale(100%);
-  transition: 0.5s;
-}
-.OperatorCard .operator-details {
-  grid-row: 1/2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 5px 10px;
-  background-color: rgb(48, 48, 70);
-  border-bottom: 3px solid black;
-  color: white;
-}
-.OperatorCard .operator-details #name {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
-.OperatorCard .operator-details #faction {
-  height: 20px;
-}
-.OperatorCard #portrait {
-  grid-row: 2/3;
-  width: 200%;
-  position: relative;
-  right: 50%;
-}
-.OperatorCard #badge {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  height: 60px;
-}
+  transition: 0.5s; }
+  .OperatorCard .operator-details {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #303046;
+    border-bottom: 3px solid black;
+    color: white; }
+    .OperatorCard .operator-details #name {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none; }
+    .OperatorCard .operator-details #faction {
+      height: 20px; }
+  .OperatorCard #portrait {
+    grid-row: 2 / 3;
+    width: 200%;
+    position: relative;
+    right: 50%; }
+  .OperatorCard #badge {
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+    height: 60px; }
 
 .focused {
   transform: scale(115);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .MapCard {
-  background-color: rgb(160, 160, 248);
+  background-color: #a0a0f8;
   border: 3px solid black;
   font-size: 2rem;
   cursor: pointer;
@@ -237,36 +196,31 @@
   grid-template-columns: 100%;
   grid-template-rows: 1fr 40px;
   transform: scale(100%);
-  transition: 0.5s;
-}
-.MapCard #map-preview {
-  grid-row: 1/2;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.MapCard #map-name {
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(48, 48, 70);
-  border-top: 3px solid black;
-  color: white;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
+  transition: 0.5s; }
+  .MapCard #map-preview {
+    grid-row: 1 / 2;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .MapCard #map-name {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #303046;
+    border-top: 3px solid black;
+    color: white;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
 
 .focused {
   transform: scale(115%);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .PageTitle {
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .Operators {
   padding-top: calc(15vh + 80px);
@@ -275,19 +229,43 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Operators .operators-list {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 30px;
-  padding-top: 80px;
+  align-items: center; }
+  .Operators .operators-list {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 200px);
+    gap: 30px;
+    padding-top: 80px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
+
+.Operator {
+  padding-top: calc(15vh + 80px);
+  display: flex;
+  flex-direction: column;
   justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Operator .operator-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5vh;
+    width: 100%; }
+    .Operator .operator-profile #operator-portrait-full {
+      height: 600px; }
+    .Operator .operator-profile .operator-stats {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fill, 1fr);
+      list-style-type: none; }
+      .Operator .operator-profile .operator-stats li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: calc(100% + 5vw);
+        font-size: 2rem; }
 
 .Maps {
   padding-top: calc(15vh + 80px);
@@ -296,57 +274,50 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Maps .maps-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
-  grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 30px;
-  padding-top: 80px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Maps .maps-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 30px;
+    padding-top: 80px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
 .Weapons {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .Quizzes {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .StratBuilder {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .MyStats {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Teko";
-}
+  font-family: 'Teko'; }
 
 /*# sourceMappingURL=index.css.map */

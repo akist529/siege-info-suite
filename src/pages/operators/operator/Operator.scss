@@ -1,0 +1,36 @@
+.Operator {
+    padding-top: calc(15vh + 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .operator-profile {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        padding-top: 5vh;
+        width: 100%;
+
+        #operator-portrait-full {
+            height: 600px;
+        }
+
+        .operator-stats {
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: repeat(auto-fill, 1fr);
+
+            list-style-type: none;
+
+            li {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                width: calc(100% + 5vw);
+
+                font-size: 2rem;
+            }
+        }
+    }
+}
