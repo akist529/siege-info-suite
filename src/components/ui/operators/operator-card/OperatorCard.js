@@ -12,7 +12,7 @@ export default function OperatorCard(props) {
     return (
         <div className="OperatorCard" onMouseOver={focusCard} onMouseLeave={unFocusCard}>
             <div className="operator-details">
-                <p id="name">{name}</p>
+                <span id="name">{name}</span>
                 <img id="faction" alt={`${team}`} src={ `images/ui/${team}.webp` } />
             </div>
             <img id="portrait" alt={`${name}`} src={`images/ops/portraits/${name}.webp`} />

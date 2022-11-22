@@ -12,7 +12,7 @@ export default function MapCard(props) {
     return (
         <div className="MapCard" onMouseOver={focusCard} onMouseLeave={unFocusCard}>
             <img id="map-preview" alt={name} src={`images/maps/${name.split(" ").join("-")}/${name.split(" ").join("-")}.webp`} />
-            <p id="map-name">{name}</p>
+            <span id="map-name">{name}</span>
         </div>
     )
 }

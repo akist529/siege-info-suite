@@ -2,6 +2,7 @@
     background-color: rgb(160, 160, 248);
     border: 3px solid black;
     font-size: 2rem;
+    cursor: pointer;
 
     width: 350px;
     height: 100%;
@@ -34,6 +35,10 @@
         background-color: rgb(48, 48, 70);
         border-top: 3px solid black;
         color: white;
+
+        user-select: none;
+        -moz-user-select: none;
+        -webkit-user-select: none;
     }
 }
 

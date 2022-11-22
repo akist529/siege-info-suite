@@ -176,6 +176,7 @@
   background-color: rgb(160, 160, 248);
   border: 3px solid black;
   font-size: 2rem;
+  cursor: pointer;
   width: 200px;
   height: 300px;
   position: relative;
@@ -196,6 +197,11 @@
   background-color: rgb(48, 48, 70);
   border-bottom: 3px solid black;
   color: white;
+}
+.OperatorCard .operator-details #name {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 .OperatorCard .operator-details #faction {
   height: 20px;
@@ -222,6 +228,7 @@
   background-color: rgb(160, 160, 248);
   border: 3px solid black;
   font-size: 2rem;
+  cursor: pointer;
   width: 350px;
   height: 100%;
   position: relative;
@@ -247,6 +254,9 @@
   background-color: rgb(48, 48, 70);
   border-top: 3px solid black;
   color: white;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
 }
 
 .focused {

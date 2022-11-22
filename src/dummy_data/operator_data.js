@@ -2,42 +2,52 @@ export const operatorList = [
     {
         name: 'Ace',
         team: 'Attack',
+        ability: 'S.E.L.M.A. Aqua Breacher',
     }, 
     {
         name: 'Alibi',
         team: 'Defend',
+        ability: 'Prisma',
     },
     {
         name: 'Amaru',
         team: 'Attack',
+        ability: 'Garra Hook',
     },
     {
         name: 'Aruni',
         team: 'Defend',
+        ability: 'Surya Laser Gate',
     }, 
     {
         name: 'Ash',
         team: 'Attack',
+        ability: 'Breaching Round',
     },
     {
         name: 'Azami',
         team: 'Defend',
+        ability: 'Kiba Barrier',
     },
     {
         name: 'Bandit',
         team: 'Defend',
+        ability: 'Shock Wire',
     }, 
     {
         name: 'Blackbeard',
         team: 'Attack',
+        ability: 'Rifle-Shield',
     },
     {
         name: 'Blitz',
         team: 'Attack',
+        ability: 'Flash Shield',
     },
     {
         name: 'Buck',
         team: 'Attack',
+        ability: 'Skeleton Key',
     },
     {
         name: 'Capitao',
