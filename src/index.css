@@ -219,8 +219,25 @@
   transform: scale(115%);
   transition: 0.5s; }
 
+.ItemCard {
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  width: 250px; }
+  .ItemCard img {
+    width: 100%; }
+
 .PageTitle {
-  font-size: 2rem; }
+  font-size: 4rem;
+  text-transform: uppercase; }
+
+.PageSubtitle {
+  font-size: 2rem;
+  text-transform: uppercase; }
 
 .Operators {
   padding-top: calc(15vh + 80px);
@@ -247,25 +264,58 @@
   flex-direction: column;
   justify-content: center;
   align-items: center; }
+  .Operator .operator-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px 50px;
+    border-radius: 10px; }
+    .Operator .operator-title img {
+      height: 70px; }
   .Operator .operator-profile {
     display: flex;
     justify-content: space-around;
     align-items: flex-start;
     padding-top: 5vh;
     width: 100%; }
-    .Operator .operator-profile #operator-portrait-full {
-      height: 600px; }
-    .Operator .operator-profile .operator-stats {
-      display: grid;
-      grid-template-columns: 1fr;
-      grid-template-rows: repeat(auto-fill, 1fr);
-      list-style-type: none; }
-      .Operator .operator-profile .operator-stats li {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        width: calc(100% + 5vw);
-        font-size: 2rem; }
+    .Operator .operator-profile .operator-portrait {
+      display: flex;
+      flex-direction: column; }
+      .Operator .operator-profile .operator-portrait #operator-portrait-full {
+        height: 600px; }
+      .Operator .operator-profile .operator-portrait #operator-shadow {
+        width: 120%;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        filter: blur(20px);
+        position: relative;
+        bottom: 30px; }
+    .Operator .operator-profile .operator-info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; }
+      .Operator .operator-profile .operator-info .operator-stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        background-color: rgba(0, 0, 0, 0.2);
+        list-style-type: none; }
+        .Operator .operator-profile .operator-info .operator-stats li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: calc(100% + 5vw);
+          font-size: 2rem; }
+      .Operator .operator-profile .operator-info .operator-loadout .operator-primary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+  .Operator .operator-art {
+    height: 40vw;
+    width: 100%;
+    object-fit: cover; }
 
 .Maps {
   padding-top: calc(15vh + 80px);

@@ -5,6 +5,21 @@
     justify-content: center;
     align-items: center;
 
+    .operator-title {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+
+        background-color: rgba(0, 0, 0, 0.2);
+        padding: 0px 50px;
+        border-radius: 10px;
+
+        img {
+            height: 70px;
+        }
+    }
+
     .operator-profile {
         display: flex;
         justify-content: space-around;
@@ -12,25 +27,60 @@
         padding-top: 5vh;
         width: 100%;
 
-        #operator-portrait-full {
-            height: 600px;
-        }
+        .operator-portrait {
+            display: flex;
+            flex-direction: column;
 
-        .operator-stats {
-            display: grid;
-            grid-template-columns: 1fr;
-            grid-template-rows: repeat(auto-fill, 1fr);
+            #operator-portrait-full {
+                height: 600px;
+            }
 
-            list-style-type: none;
-
-            li {
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-                width: calc(100% + 5vw);
-
-                font-size: 2rem;
+            #operator-shadow {
+                width: 120%;
+                height: 50px;
+                background-color: black;
+                border-radius: 50%;
+                filter: blur(20px);
+                position: relative;
+                bottom: 30px;
             }
         }
+
+        .operator-info {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+
+            .operator-stats {
+                display: grid;
+                grid-template-columns: 1fr;
+                grid-template-rows: repeat(auto-fill, 1fr);
+    
+                background-color: rgba(0, 0, 0, 0.2);
+                list-style-type: none;
+    
+                li {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    width: calc(100% + 5vw);
+    
+                    font-size: 2rem;
+                }
+            }
+
+            .operator-loadout {
+                .operator-primary {
+                    display: grid;
+                    grid-template-columns: repeat(2, 1fr);
+                }
+            }
+        }
+    }
+
+    .operator-art {
+        height: 40vw;
+        width: 100%;
+        object-fit: cover;
     }
 }

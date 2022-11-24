@@ -1,6 +1,7 @@
 export const weaponList = [
     {
         name: "6P41",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["Fuze", "Finka"],
@@ -30,6 +31,7 @@ export const weaponList = [
     },
     {
         name: "9mm-C1",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic"],
         users: ["Frost"],
@@ -61,6 +63,7 @@ export const weaponList = [
     },
     {
         name: "9x19VSN",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Kapkan", "Tachanka", "Azami"],
@@ -91,6 +94,7 @@ export const weaponList = [
     },
     {
         name: ".44 Mag Semi-Auto",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Nomad", "Kaid"],
@@ -117,6 +121,7 @@ export const weaponList = [
     },
     {
         name: "5.7 USG",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Ash", "Thermite", "Castle", "Pulse", "N0kk", "Zero"],
@@ -144,6 +149,7 @@ export const weaponList = [
     },
     {
         name: "416-C Carbine",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Jager", "Recruit"],
@@ -174,6 +180,7 @@ export const weaponList = [
     },
     {
         name: "417",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Semi-Automatic"],
         users: ["Twitch", "Lion", "Sens"],
@@ -203,6 +210,7 @@ export const weaponList = [
     },
     {
         name: "552 Commando",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["IQ", "Grim"],
@@ -233,6 +241,7 @@ export const weaponList = [
     },
     {
         name: "556xi",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Thermite", "Osa"],
@@ -263,6 +272,7 @@ export const weaponList = [
     },
     {
         name: "1911 TACOPS",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Maverick", "Thorn"],
@@ -290,6 +300,7 @@ export const weaponList = [
     },
     {
         name: "ACS12",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Automatic"],
         users: ["Maestro", "Alibi", "Azami"],
@@ -318,6 +329,7 @@ export const weaponList = [
     },
     {
         name: "AK-12",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Fuze", "Ace"],
@@ -348,6 +360,7 @@ export const weaponList = [
     },
     {
         name: "ALDA 5.56",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["Maestro"],
@@ -377,6 +390,7 @@ export const weaponList = [
     },
     {
         name: "AR-15.50",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Semi-Automatic"],
         users: ["Maverick"],
@@ -407,6 +421,7 @@ export const weaponList = [
     },
     {
         name: "ARX200",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Nomad", "Iana"],
@@ -436,6 +451,7 @@ export const weaponList = [
     },
     {
         name: "AUG A3",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Kaid"],
@@ -466,6 +482,7 @@ export const weaponList = [
     },
     {
         name: "AUG A2",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic"],
         users: ["IQ", "Wamai"],
@@ -494,6 +511,7 @@ export const weaponList = [
     },
     {
         name: "Bailiff 410",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Double-Action"],
         users: ["Maestro", "Alibi", "Oryx", "Doc"],
@@ -520,40 +538,14 @@ export const weaponList = [
     },
     {
         name: "Ballistic Shield",
+        class: "Primary",
         type: "Ballistic Shield",
         users: ["Fuze"],
         mobility: 30,
     },
     {
         name: "Bearing 9",
-        type: "Machine Pistol",
-        modes: ["Automatic", "Semi-Automatic"],
-        users: ["Hibana", "Echo", "Thunderbird", "Glaz", "Tachanka"],
-        ranges: [18, 28],
-        damage: {
-            standard: [33, 22],
-            suppressed: [28, 19],
-        },
-        rof: 1100,
-        mobility: 50,
-        mag: 26,
-        max: 101,
-        reload: {
-            empty: 2.7,
-            tactical: 1.9,
-        },
-        ads: {
-            normal: 275,
-        },
-        ammo: "9x19mm Parabellum",
-        attachments: {
-            sight: ["Red Dot Sight", "Holographic Sight", "Reflex Sight"],
-            barrel: ["Suppressor", "Flash Hider", "Compensator"],
-            underBarrel: ["Laser"],
-        },
-    },
-    {
-        name: "Bearing 9",
+        class: "Secondary",
         type: "Machine Pistol",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Hibana", "Echo", "Thunderbird", "Glaz", "Tachanka"],
@@ -582,6 +574,7 @@ export const weaponList = [
     },
     {
         name: "BOSG.12.2",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Break-Action"],
         users: ["Dokkaebi", "Vigil"],
@@ -610,6 +603,7 @@ export const weaponList = [
     },
     {
         name: "C7E",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Jackal"],
@@ -640,6 +634,7 @@ export const weaponList = [
     },
     {
         name: "C8-SFW",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Buck"],
@@ -683,6 +678,7 @@ export const weaponList = [
     },
     {
         name: "C75 Auto",
+        class: "Secondary",
         type: "Machine Pistol",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Recruit", "Dokkaebi", "Vigil", "Kali", "Thorn"],
@@ -709,6 +705,7 @@ export const weaponList = [
     },
     {
         name: "CAMRS",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Semi-Automatic"],
         users: ["Buck"],
@@ -750,11 +747,13 @@ export const weaponList = [
     },
     {
         name: "Crowd Control Electro Shield",
+        class: "Primary",
         type: "Ballistic Shield",
         users: ["Clash"],
     },
     {
         name: "CSRX 300",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Bolt-Action"],
         users: ["Kali"],
@@ -777,6 +776,7 @@ export const weaponList = [
     },
     {
         name: "D-50",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Blackbeard", "Valkyrie", "N0kk", "Azami"],
@@ -803,6 +803,7 @@ export const weaponList = [
     },
     {
         name: "DP-27",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["Tachanka"],
@@ -828,6 +829,7 @@ export const weaponList = [
     },
     {
         name: "F2",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Twitch"],
@@ -857,6 +859,7 @@ export const weaponList = [
     },
     {
         name: "F90",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Gridlock"],
@@ -886,6 +889,7 @@ export const weaponList = [
     },
     {
         name: "SC3000K",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Zero"],
@@ -915,6 +919,7 @@ export const weaponList = [
     },
     {
         name: "FMG-9",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Smoke", "N0kk"],
@@ -942,6 +947,7 @@ export const weaponList = [
     },
     {
         name: "FO-12",
+        class: "Shotgun",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Ela"],
@@ -973,6 +979,7 @@ export const weaponList = [
     },
     {
         name: "G8A1",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["IQ", "Amaru"],
@@ -1002,36 +1009,7 @@ export const weaponList = [
     },
     {
         name: "G36C",
-        type: "Assault Rifle",
-        modes: ["Automatic", "Semi-Automatic"],
-        users: ["Ash", "Iana"],
-        ranges: [25, 35],
-        damage: {
-            standard: [38, 26],
-            suppressed: [32, 22],
-        },
-        rof: 780,
-        mobility: 50,
-        mag: 31,
-        max: 241,
-        reload: {
-            empty: 3.3,
-            tactical: 2.4,
-        },
-        ads: {
-            normal: 400,
-            angled: 272,
-        },
-        ammo: "5.56x45mm NATO",
-        attachments: {
-            sight: ["Red Dot Sight", "Holographic Sight", "Reflex Sight", "Scope 1.5x"],
-            barrel: ["Suppressor", "Flash Hider", "Compensator", "Muzzle Brake"],
-            grip: ["Vertical Grip", "Angled Grip"],
-            underBarrel: ["Laser"],
-        },
-    },
-    {
-        name: "G36C",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Ash", "Iana"],
@@ -1062,6 +1040,7 @@ export const weaponList = [
     },
     {
         name: "GONNE-6",
+        class: "Secondary",
         type: "Hand Cannon",
         users: ["Glaz", "Buck", "Capitao", "Lion", "Dokkaebi", "Finka", "Gridlock", "Amaru", "Zero", "Sens"],
         damage: {
@@ -1073,6 +1052,7 @@ export const weaponList = [
     },
     {
         name: "GSh-18",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Fuze", "Kapkan", "Tachanka", "Finka", "Flores"],
@@ -1100,6 +1080,7 @@ export const weaponList = [
     },
     {
         name: "ITA12L",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Jackal", "Mira"],
@@ -1122,6 +1103,7 @@ export const weaponList = [
     },
     {
         name: "ITA12S",
+        class: "Secondary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Jackal", "Mira", "Frost", "Amaru"],
@@ -1144,6 +1126,7 @@ export const weaponList = [
     },
     {
         name: "K1A",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Vigil"],
@@ -1174,6 +1157,7 @@ export const weaponList = [
     },
     {
         name: "Keratos .357",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Double-Action"],
         users: ["Maestro, Alibi, Wamai"],
@@ -1200,6 +1184,7 @@ export const weaponList = [
     },
     {
         name: "L85A2",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Recruit", "Sledge", "Thatcher"],
@@ -1229,6 +1214,7 @@ export const weaponList = [
     },
     {
         name: "LFP586",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Double-Action"],
         users: ["Twitch", "Montagne", "Lion", "Doc", "Rook", "Kaid"],
@@ -1254,6 +1240,7 @@ export const weaponList = [
     },
     {
         name: "LMG-E",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["Zofia"],
@@ -1283,6 +1270,7 @@ export const weaponList = [
     },
     {
         name: "Luison",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Caveira"],
@@ -1309,6 +1297,7 @@ export const weaponList = [
     },
     {
         name: "M4",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Maverick"],
@@ -1339,6 +1328,7 @@ export const weaponList = [
     },
     {
         name: "M12",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Caveira"],
@@ -1368,6 +1358,7 @@ export const weaponList = [
     },
     {
         name: "M45 MEUSOC",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Ash", "Thermite", "Pulse"],
@@ -1395,6 +1386,7 @@ export const weaponList = [
     },
     {
         name: "M249",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["Recruit", "Capitao"],
@@ -1422,6 +1414,7 @@ export const weaponList = [
     },
     {
         name: "M249 SAW",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic"],
         users: ["Gridlock"],
@@ -1450,6 +1443,7 @@ export const weaponList = [
     },
     {
         name: "M590A1",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Sledge", "Thatcher", "Smoke", "Mute", "Warden"],
@@ -1472,6 +1466,7 @@ export const weaponList = [
     },
     {
         name: "M762",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Zofia"],
@@ -1502,6 +1497,7 @@ export const weaponList = [
     },
     {
         name: "M870",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Recruit", "Jager", "Bandit", "Thorn"],
@@ -1524,6 +1520,7 @@ export const weaponList = [
     },
     {
         name: "M1014",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Thermite", "Castle", "Pulse", "Ace"],
@@ -1546,6 +1543,7 @@ export const weaponList = [
     },
     {
         name: "Mk19mm",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Buck", "Frost", "Iana"],
@@ -1573,6 +1571,7 @@ export const weaponList = [
     },
     {
         name: "Mk 14 EBR",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Semi-Automatic"],
         users: ["Recruit", "Dokkaebi", "Aruni"],
@@ -1603,6 +1602,7 @@ export const weaponList = [
     },
     {
         name: "Mk17 CQB",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Blackbeard"],
@@ -1636,6 +1636,7 @@ export const weaponList = [
     },
     {
         name: "MP5",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Doc", "Rook", "Melusi"],
@@ -1665,6 +1666,7 @@ export const weaponList = [
     },
     {
         name: "MP5K",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Recruit", "Mute", "Wamai"],
@@ -1693,6 +1695,7 @@ export const weaponList = [
     },
     {
         name: "MP5SD",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Echo"],
@@ -1721,6 +1724,7 @@ export const weaponList = [
     },
     {
         name: "MP7",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Bandit", "Zero"],
@@ -1749,6 +1753,7 @@ export const weaponList = [
     },
     {
         name: "MPX",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Valkyrie", "Warden"],
@@ -1779,6 +1784,7 @@ export const weaponList = [
     },
     {
         name: "Mx4 Storm",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Alibi"],
@@ -1810,6 +1816,7 @@ export const weaponList = [
     },
     {
         name: "OTs-03",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Semi-Automatic"],
         users: ["Glaz"],
@@ -1837,6 +1844,7 @@ export const weaponList = [
     },
     {
         name: "P90",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Doc", "Rook"],
@@ -1866,6 +1874,7 @@ export const weaponList = [
     },
     {
         name: "P9",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Recruit", "Twitch", "Montagne", "Doc", "Rook", "Lion", "Ace"],
@@ -1894,6 +1903,7 @@ export const weaponList = [
     },
     {
         name: "P-10C",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Clash", "Warden"],
@@ -1922,6 +1932,7 @@ export const weaponList = [
     },
     {
         name: "P10 RONI",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Mozzie", "Aruni"],
@@ -1952,6 +1963,7 @@ export const weaponList = [
     },
     {
         name: "P12",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Recruit", "Blitz", "IQ", "Jager", "Bandit", "Wamai"],
@@ -1980,6 +1992,7 @@ export const weaponList = [
     },
     {
         name: "P226 Mk 25",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Sledge", "Thatcher", "Smoke", "Mute", "Kali"],
@@ -2007,6 +2020,7 @@ export const weaponList = [
     },
     {
         name: "P229",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Hibana", "Echo", "Goyo", "Grim"],
@@ -2034,6 +2048,7 @@ export const weaponList = [
     },
     {
         name: "PARA-308",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Capitao"],
@@ -2065,6 +2080,7 @@ export const weaponList = [
     },
     {
         name: "PDW9",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Jackal", "Osa"],
@@ -2095,6 +2111,7 @@ export const weaponList = [
     },
     {
         name: "PMM",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Glaz", "Fuze", "Finka", "Kapkan", "Tachanka", "Osa"],
@@ -2123,6 +2140,7 @@ export const weaponList = [
     },
     {
         name: "POF-9",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Sens"],
@@ -2149,6 +2167,7 @@ export const weaponList = [
     },
     {
         name: "PRB92",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Capitao", "Nomad", "Aruni"],
@@ -2176,6 +2195,7 @@ export const weaponList = [
     },
     {
         name: "Q-929",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Ying", "Lesion", "Thunderbird"],
@@ -2203,6 +2223,7 @@ export const weaponList = [
     },
     {
         name: "R4-C",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Ash"],
@@ -2233,6 +2254,7 @@ export const weaponList = [
     },
     {
         name: "RG15",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Zofia", "Ela", "Melusi"],
@@ -2261,6 +2283,7 @@ export const weaponList = [
     },
     {
         name: "SASG-12",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Finka", "Kapkan"],
@@ -2291,6 +2314,7 @@ export const weaponList = [
     },
     {
         name: "Scorpion EVO 3 A1",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Ela"],
@@ -2321,6 +2345,7 @@ export const weaponList = [
     },
     {
         name: "SDP 9mm",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Gridlock", "Mozzie", "Sens"],
@@ -2348,6 +2373,7 @@ export const weaponList = [
     },
     {
         name: "SG-CQB",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Twitch", "Lion", "Doc", "Rook", "Grim"],
@@ -2371,6 +2397,7 @@ export const weaponList = [
     },
     {
         name: "SIX12",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Double-Action"],
         users: ["Ying"],
@@ -2396,6 +2423,7 @@ export const weaponList = [
     },
     {
         name: "SIX12 SD",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Double-Action"],
         users: ["Lesion", "N0kk"],
@@ -2421,6 +2449,7 @@ export const weaponList = [
     },
     {
         name: "SMG-11",
+        class: "Secondary",
         type: "Machine Pistol",
         modes: ["Automatic"],
         users: ["Recruit", "Smoke", "Mute", "Amaru"],
@@ -2451,6 +2480,7 @@ export const weaponList = [
     },
     {
         name: "SMG-12",
+        class: "Secondary",
         type: "Machine Pistol",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Dokkaebi", "Vigil", "Warden"],
@@ -2479,6 +2509,7 @@ export const weaponList = [
     },
     {
         name: "SPAS-12",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Valkyrie", "Oryx"],
@@ -2501,6 +2532,7 @@ export const weaponList = [
     },
     {
         name: "SPAS-15",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Caveira", "Thunderbird"],
@@ -2527,6 +2559,7 @@ export const weaponList = [
     },
     {
         name: "Spear .308",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Finka", "Thunderbird"],
@@ -2556,6 +2589,7 @@ export const weaponList = [
     },
     {
         name: "SPSMG9",
+        class: "Secondary",
         type: "Machine Pistol",
         modes: ["Automatic"],
         users: ["Clash", "Kali"],
@@ -2584,6 +2618,7 @@ export const weaponList = [
     },
     {
         name: "SR-25",
+        class: "Primary",
         type: "Marksman Rifle",
         modes: ["Semi-Automatic"],
         users: ["Blackbeard", "Flores"],
@@ -2613,6 +2648,7 @@ export const weaponList = [
     },
     {
         name: "Super 90",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Frost", "Melusi"],
@@ -2635,6 +2671,7 @@ export const weaponList = [
     },
     {
         name: "SuperNova",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Hibana", "Echo", "Amaru"],
@@ -2658,6 +2695,7 @@ export const weaponList = [
     },
     {
         name: "Super Shorty",
+        class: "Secondary",
         type: "Shotgun",
         modes: ["Pump-Action"],
         users: ["Recruit", "Castle", "Clash", "Gridlock"],
@@ -2680,6 +2718,7 @@ export const weaponList = [
     },
     {
         name: "T-5 SMG",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Lesion", "Oryx"],
@@ -2708,12 +2747,14 @@ export const weaponList = [
     },
     {
         name: "G52-Tactical Light Shield",
+        class: "Primary",
         type: "Ballistic Shield",
         users: ["Blitz"],
         mobility: 30,
     },
     {
         name: "TCSG12",
+        class: "Primary",
         type: "Shotgun",
         modes: ["Semi-Automatic"],
         users: ["Kaid", "Goyo"],
@@ -2744,6 +2785,7 @@ export const weaponList = [
     },
     {
         name: "Type-89",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Hibana"],
@@ -2774,6 +2816,7 @@ export const weaponList = [
     },
     {
         name: "UMP45",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Castle", "Pulse"],
@@ -2804,6 +2847,7 @@ export const weaponList = [
     },
     {
         name: "USP40",
+        class: "Secondary",
         type: "Handgun",
         modes: ["Semi-Automatic"],
         users: ["Jackal", "Mira", "Oryx"],
@@ -2831,6 +2875,7 @@ export const weaponList = [
     },
     {
         name: "UZK50GI",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
         users: ["Thorn"],
@@ -2857,6 +2902,7 @@ export const weaponList = [
     },
     {
         name: "V308",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Lion"],
@@ -2887,6 +2933,7 @@ export const weaponList = [
     },
     {
         name: "Vector .45 ACP",
+        class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "2-Round Burst", "Semi-Automatic"],
         users: ["Mira", "Goyo"],
@@ -2917,6 +2964,7 @@ export const weaponList = [
     },
     {
         name: "AK-74M",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Nomad"],
@@ -2945,6 +2993,7 @@ export const weaponList = [
     },
     {
         name: "AR33",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "2-Round Burst", "Semi-Automatic"],
         users: ["Thatcher", "Flores"],
@@ -2975,6 +3024,7 @@ export const weaponList = [
     },
     {
         name: "Commando 9",
+        class: "Primary",
         type: "Assault Rifle",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Mozzie"],
@@ -3005,6 +3055,7 @@ export const weaponList = [
     },
     {
         name: "T-95 LSW",
+        class: "Primary",
         type: "Light Machine Gun",
         modes: ["Automatic", "3-Round Burst", "Semi-Automatic"],
         users: ["Ying"],
