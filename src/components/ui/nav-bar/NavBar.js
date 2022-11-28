@@ -8,6 +8,8 @@ import SearchBar from '../../inputs/searchbar/SearchBar'
 export default function NavBar() {
   const [R6LogoSize, setR6LogoSize] = useState('small')
   const [windowWidth, setWindowWidth] = useState(window.innerWidth)
+  const [showNavMenus, setShowNavMenus] = useState(true)
+  const [showAppTitle, setShowAppTitle] = useState(true)
 
   useEffect(() => {
     window.addEventListener("resize", () => {
@@ -22,13 +24,17 @@ export default function NavBar() {
   return (
     <nav className="NavBar">
       <div className="AppTitle">
-        <img id="r6s-logo" alt="Rainbow Six: Siege" src={`images/ui/siege-logo-${R6LogoSize}.png`}/>
-        <h1>Info Suite</h1>
+        <img id="r6s-logo" alt="Rainbow Six: Siege" src={`/images/ui/siege-logo-${R6LogoSize}.png`}/>
+        { showAppTitle && <h1>Info Suite</h1> }
       </div>
-      { windowWidth < 912 ? <NavMenuMobile windowWidth={windowWidth} /> : <NavMenuDesktop windowWidth={windowWidth} /> }
+      { (windowWidth < 912) ? (showNavMenus && <NavMenuMobile windowWidth={windowWidth} />) : <NavMenuDesktop windowWidth={windowWidth} /> }
       <div className="AppControls">
         <NavLoginButton />
-        <SearchBar />
+        <SearchBar 
+          setShowNavMenus={setShowNavMenus} 
+          setShowAppTitle={setShowAppTitle} 
+          windowWidth={windowWidth} 
+        />
       </div>
     </nav>
   )

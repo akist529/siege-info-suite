@@ -4,6 +4,7 @@ import NavBar from './components/ui/nav-bar/NavBar'
 import Operators from './pages/operators/Operators'
 import Operator from './pages/operators/operator/Operator'
 import Maps from './pages/maps/Maps'
+import Map from './pages/maps/map/Map'
 import Weapons from './pages/weapons/Weapons'
 import Quizzes from './pages/quizzes/Quizzes'
 import StratBuilder from './pages/strat-builder/StratBuilder'
@@ -23,6 +24,7 @@ export default function App() {
         <Route path="mystats" element={<MyStats />} />
         <Route path="*" element={<NoPage />} />
         <Route path="operators/:name" element={<Operator />} />
+        <Route path="maps/:name" element={<Map />} />
       </Routes>
       <Outlet />
     </div>

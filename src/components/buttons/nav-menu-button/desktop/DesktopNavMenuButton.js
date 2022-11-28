@@ -12,7 +12,7 @@ export default function DesktopNavMenuButton(props) {
         <Link to={linkPage} className="NavLink">
             <button>
                 <h2>{linkName}</h2>
-                <img alt="Expand More" src="images/ui/expand_more.png" />
+                <img alt="Expand More" src="/images/ui/expand_more.png" />
             </button>
         </Link>
     )

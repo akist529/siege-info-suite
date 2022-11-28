@@ -2,13 +2,13 @@
 
 .NavBar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
     position: fixed;
     z-index: 999;
 
     width: 100vw;
-    height: 15vh;
+    height: 25vh;
     gap: 10px;
     padding: 10px 20px;
 
@@ -19,17 +19,23 @@
 
     .AppTitle {
         display: flex;
-        align-items: flex-end;
-        justify-content: center;
+        align-items: center;
+        justify-content: flex-start;
         gap: 10px;
+        position: relative;
+        height: 80%;
 
         h1 {
-            font-size: 12vw;
+            position: relative;
+            font-size: 64px;
+            height: 100%;
+            width: 20%;
             line-height: 75%;
         }
 
         #r6s-logo {
-            width: 5vw;
+            position: relative;
+            height: 100%;
             filter: invert(1);
         }
     }
@@ -37,8 +43,10 @@
     .AppControls {
         display: flex;
         flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
+        justify-content: space-evenly;
+        align-items: flex-end;
+        position: relative;
+        height: 80%;
 
         img {
             height: 30px;
@@ -46,7 +54,8 @@
     }
 
     .SearchBarFocused {
-        width: 100%;
+        min-width: 300px;
+        width: 40vw;
         border-radius: 15px;
     }
 }
@@ -55,36 +64,36 @@
     .NavBar {
         display: flex;
         flex-direction: column;
+        padding: 10px 20px 0 20px;
 
         .AppTitle {
             flex-direction: row;
             justify-content: center;
             align-items: center;
+            height: 50%;
 
             h1 {
-                font-size: 3vw;
+                font-size: 40px;
+                line-height: 64px;
                 width: auto;
-            }
-
-            #r6s-logo {
-                width: 20vw;
             }
         }
 
         .SearchBar {
-            position: absolute;
+            position: fixed;
             top: 10px;
-            left: 20px;
+            left: 10px;
         }
 
         .SearchBarFocused {
+            min-width: 100px;
             width: 25vw;
         }
 
         .NavLoginButton {
-            position: absolute;
+            position: fixed;
             top: 10px;
-            right: 20px;
+            right: 10px;
         }
     }
 }

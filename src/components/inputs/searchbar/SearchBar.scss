@@ -5,8 +5,9 @@
     background-position: 5px;
     height: 30px;
     text-indent: 30px;
+    min-width: 30px;
     width: 30px;
-    transition: width 0.5s, border 0s, border-radius 0s;
+    transition: min-width 0.5s, width 0.5s, border 0s, border-radius 0s;
     border: none;
     border-radius: 15px;
 }

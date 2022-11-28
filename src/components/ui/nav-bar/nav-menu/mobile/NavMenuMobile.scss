@@ -1,7 +1,10 @@
 .NavMenuMobile {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
+    align-items: center;
     gap: 10px;
+    position: relative;
+    width: 100%;
 
     .NavButton {
         display: flex;
