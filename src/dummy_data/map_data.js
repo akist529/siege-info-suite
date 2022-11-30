@@ -6,205 +6,122 @@ export const mapList = [
             "1F": [
                 {
                     room: "ATMs",
-                    shape: "poly",
-                    coords: [
-                        [468, 171],
-                        [546, 171],
-                        [546, 186],
-                        [716, 186],
-                        [716, 171],
-                        [784, 171],
-                        [784, 245],
-                        [468, 245],
-                    ],
+                    position: {
+                        top: "150px",
+                        left: "438px",
+                    },
                 },
                 {
                     room: "Lobby",
-                    shape: "poly",
-                    coords: [
-                        [468, 251],
-                        [787, 251],
-                        [787, 370],
-                        [737, 370],
-                        [713, 377],
-                        [694, 389],
-                        [681, 408],
-                        [675, 431],
-                        [675, 508],
-                        [630, 508],
-                        [630, 538],
-                        [468, 538],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Loan Office",
-                    shape: "rect",
-                    coords: [
-                        [468, 546],
-                        [629, 629],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Office Hallway",
-                    shape: "poly",
-                    coords: [
-                        [635, 514],
-                        [675, 514],
-                        [675, 550],
-                        [863, 550],
-                        [863, 594],
-                        [823, 594],
-                        [823, 620],
-                        [748, 620],
-                        [748, 598],
-                        [636, 598],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Main Stairway",
-                    shape: "rect",
-                    coords: [
-                        [748, 620],
-                        [823, 686],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Elevators",
-                    shape: "rect",
-                    coords: [
-                        [640, 602],
-                        [742, 652],
-                    ]
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Tellers",
-                    shape: "poly",
-                    coords: [
-                        [786, 375],
-                        [786, 431],
-                        [736, 489],
-                        [736, 545],
-                        [681, 545],
-                        [681, 426],
-                        [688, 407],
-                        [701, 392],
-                        [717, 381],
-                        [738, 376],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Tellers' Office",
-                    shape: "poly",
-                    coords: [
-                        [792, 324],
-                        [875, 324],
-                        [875, 438],
-                        [864, 438],
-                        [864, 504],
-                        [806, 504],
-                        [806, 545],
-                        [741, 544],
-                        [741, 491],
-                        [792, 432],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Archives",
-                    shape: "poly",
-                    coords: [
-                        [882, 324],
-                        [1002, 324],
-                        [1002, 485],
-                        [869, 485],
-                        [869, 444],
-                        [882, 444],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Square",
-                    shape: "poly",
-                    coords: [
-                        [1008, 324],
-                        [1032, 324],
-                        [1032, 368],
-                        [1147, 368],
-                        [1147, 440],
-                        [1159, 440],
-                        [1159, 470],
-                        [1151, 470],
-                        [1151, 530],
-                        [1114, 530],
-                        [1114, 435],
-                        [1008, 484],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Square Stairs",
-                    shape: "rect",
-                    coords: [
-                        [1032, 324],
-                        [1119, 362],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Blue Stairs",
-                    shape: "rect",
-                    coords: [
-                        [1119, 325],
-                        [1147, 362],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Electrical Room",
-                    shape: "poly",
-                    coords: [
-                        [1165, 440],
-                        [1202, 440],
-                        [1202, 530],
-                        [1157, 530],
-                        [1157, 476],
-                        [1164, 476],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Staff Room",
-                    shape: "poly",
-                    coords: [
-                        [991, 490],
-                        [1108, 491],
-                        [1108, 536],
-                        [1157, 536],
-                        [1157, 654],
-                        [991, 654],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Open Area",
-                    shape: "poly",
-                    coords: [
-                        [870, 550],
-                        [985, 550],
-                        [985, 711],
-                        [830, 711],
-                        [830, 601],
-                        [870, 600],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Printer Room",
-                    shape: "rect",
-                    coords: [
-                        [991, 661],
-                        [1076, 711],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
                 {
                     room: "Admin Office",
-                    shape: "rect",
-                    coords: [
-                        [870, 491],
-                        [985, 545],
-                    ],
+                    position: {
+                        top: "10px",
+                        left: "10px",
+                    },
                 },
             ],
             "2F": [

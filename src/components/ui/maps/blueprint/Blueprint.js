@@ -1,25 +1,26 @@
 export default function Blueprint(props) {
     const { mapName, floor, floorData } = props
-
-    function handleClick(e) {
-        console.log(e.nativeEvent.offsetX, e.nativeEvent.offsetY);
-    }
+    const mapImage = require(`../../../../../public/images/maps/${mapName}/${mapName}-${floor}.webp`)
 
     return (
-        <div className="Blueprint">
-            <img 
-                alt={`${mapName} Blueprint - ${floor}`} 
-                src={`/images/maps/${mapName}/${mapName}-${floor}.webp`}
-                onClick={handleClick} 
-            />
+        <div 
+            className="Blueprint"
+            style={{ 
+                backgroundImage: `url(${mapImage})`,
+                backgroundSize: 'cover'
+            }}
+        >
             <div className="blueprint-buttons">
-                <svg width="100%" height="100%" viewBox="0 0 100 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
-                    <polygon 
-                        className="blueprint-shape"
-                        onMouseOver={e => e.currentTarget.classList.add("hoverable")} 
-                        onMouseLeave={e => e.currentTarget.classList.remove("hoverable")}
-                        points="463,165 549,165 549,183 712,183 712,165 790,165 790,250 463,250"/>
-                </svg>
+                { floorData.map(item => 
+                    <img 
+                        key={item.room} 
+                        alt={item.room} 
+                        src={`/images/maps/${mapName}/rooms/${floor}/${item.room.split(" ").join("-")}.webp`} 
+                        className="blueprint-room" 
+                        onMouseOver={e => e.currentTarget.classList.add("blueprint-hover")} 
+                        onMouseLeave={e => e.currentTarget.classList.remove("blueprint-hover")} 
+                        style={{ top: `${item.position.top}`, left: `${item.position.left}` }}
+                    />) }
             </div>
         </div>
     )
