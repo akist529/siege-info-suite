@@ -1,26 +1,28 @@
 .Blueprint {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
     position: relative;
     width: 80vw;
+    height: auto;
 
-    .blueprint-buttons {
-        position: absolute;
-        top: 0;
-        left: 0;
+    .blueprint-image {
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
         width: 100%;
-        height: 100%;
+        z-index: 997;
+    }
+
+    .blueprint-room {
+        grid-row: 1 / -1;
+        grid-column: 1 / -1;
+        position: relative;
+        opacity: 0%;
         z-index: 998;
+    }
 
-        .blueprint-room {
-            position: absolute;
-            width: auto;
-            opacity: 0%;
-        }
-
-        .blueprint-hover {
-            opacity: 100%;
-        }
+    .blueprint-hover {
+        opacity: 100%;
+        cursor: pointer;
     }
 }

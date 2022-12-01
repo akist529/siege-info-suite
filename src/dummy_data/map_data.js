@@ -7,121 +7,138 @@ export const mapList = [
                 {
                     room: "ATMs",
                     position: {
-                        top: "150px",
-                        left: "438px",
+                        top: "17.5%",
+                        left: "28.5%",
                     },
+                    width: "17vw",
                 },
                 {
                     room: "Lobby",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "27%",
+                        left: "28.5%",
                     },
+                    width: "17vw",
                 },
                 {
                     room: "Loan Office",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "59.5%",
+                        left: "28.5%",
                     },
+                    width: "9vw",
                 },
                 {
                     room: "Office Hallway",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "56.25%",
+                        left: "39.25%",
                     },
+                    width: "12.15vw",
                 },
                 {
                     room: "Main Stairway",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "67.75%",
+                        left: "46.5%",
                     },
+                    width: "4.3vw",
                 },
                 {
                     room: "Elevators",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "66.35%",
+                        left: "39.3%",
                     },
+                    width: "6vw",
                 },
                 {
                     room: "Tellers",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "41%",
+                        left: "42.15%",
                     },
+                    width: "6vw",
                 },
                 {
                     room: "Tellers' Office",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "34.75%",
+                        left: "45.90%",
                     },
+                    width: "7.35vw",
                 },
                 {
                     room: "Archives",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "34.75%",
+                        left: "54%",
                     },
+                    width: "7.25vw",
                 },
                 {
                     room: "Square",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "34.75%",
+                        left: "62.65%",
                     },
+                    width: "8.20vw",
                 },
                 {
                     room: "Square Stairs",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "34.75%",
+                        left: "64%",
                     },
+                    width: "5vw",
                 },
                 {
                     room: "Blue Stairs",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "34.65%",
+                        left: "69.35%",
                     },
+                    width: "2.5vw",
                 },
                 {
                     room: "Electrical Room",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "47.5%",
+                        left: "71.85%",
                     },
+                    width: "3.2vw",
                 },
                 {
                     room: "Staff Room",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "53.5%",
+                        left: "61.5%",
                     },
+                    width: "9.35vw",
                 },
                 {
                     room: "Open Area",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "60.35%",
+                        left: "51.5%",
                     },
+                    width: "8.5vw",
                 },
                 {
                     room: "Printer Room",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "72.75%",
+                        left: "61.5%",
                     },
+                    width: "5vw",
                 },
                 {
                     room: "Admin Office",
                     position: {
-                        top: "10px",
-                        left: "10px",
+                        top: "53.5%",
+                        left: "54%",
                     },
+                    width: "6.5vw",
                 },
             ],
             "2F": [

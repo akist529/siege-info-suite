@@ -4,6 +4,7 @@ import PageTitle from '../../../components/ui/page-title/PageTitle'
 import PageSubtitle from '../../../components/ui/page-subtitle/PageSubtitle'
 import { mapList } from '../../../dummy_data/map_data'
 import Blueprint from '../../../components/ui/maps/blueprint/Blueprint'
+import BlueprintLocation from '../../../components/ui/maps/blueprint/location/BlueprintLocation'
 
 export default function Map() {
     const { name } = useParams()
@@ -11,15 +12,18 @@ export default function Map() {
     const mapInfo = mapList.filter(map => map.name === capitalizedName)[0]
 
     const [floorSelected, setFloorSelected] = useState("1F")
+    const [currentRoom, setCurrentRoom] = useState()
 
     return (
         <div className="Map">
             <PageTitle title={capitalizedName} />
-            <Blueprint 
+            <Blueprint
                 mapName={capitalizedName} 
                 floor={floorSelected} 
                 floorData={mapInfo.layout[floorSelected]}
+                setCurrentRoom={setCurrentRoom}
             />
+            <BlueprintLocation currentRoom={currentRoom} />
         </div>
     )
 }

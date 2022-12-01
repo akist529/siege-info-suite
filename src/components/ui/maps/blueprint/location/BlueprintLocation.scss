@@ -1,0 +1,15 @@
+.BlueprintLocation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: black;
+    color: white;
+    width: 15vw;
+    height: 50px;
+    position: fixed;
+    top: 20vh;
+    left: auto;
+    right: auto;
+    z-index: 999;
+}

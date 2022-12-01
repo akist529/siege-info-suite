@@ -1,27 +1,35 @@
+import { useState } from 'react'
+
 export default function Blueprint(props) {
-    const { mapName, floor, floorData } = props
-    const mapImage = require(`../../../../../public/images/maps/${mapName}/${mapName}-${floor}.webp`)
+    const { mapName, floor, floorData, setCurrentRoom } = props
+
+    function handleMouseOver(e) {
+        e.currentTarget.classList.add("blueprint-hover")
+        setCurrentRoom(e.currentTarget.alt)
+    }
+
+    function handleMouseLeave(e) {
+        e.currentTarget.classList.remove("blueprint-hover")
+        setCurrentRoom("")
+    }
 
     return (
-        <div 
-            className="Blueprint"
-            style={{ 
-                backgroundImage: `url(${mapImage})`,
-                backgroundSize: 'cover'
-            }}
-        >
-            <div className="blueprint-buttons">
-                { floorData.map(item => 
-                    <img 
-                        key={item.room} 
-                        alt={item.room} 
-                        src={`/images/maps/${mapName}/rooms/${floor}/${item.room.split(" ").join("-")}.webp`} 
-                        className="blueprint-room" 
-                        onMouseOver={e => e.currentTarget.classList.add("blueprint-hover")} 
-                        onMouseLeave={e => e.currentTarget.classList.remove("blueprint-hover")} 
-                        style={{ top: `${item.position.top}`, left: `${item.position.left}` }}
-                    />) }
-            </div>
+        <div className="Blueprint">
+            <img 
+                className="blueprint-image"
+                alt={`Blueprint - ${mapName} - ${floor}`}
+                src={`/images/maps/${mapName}/${mapName}-${floor}.webp`}
+            />
+            { floorData.map(item => 
+                <img 
+                    key={item.room} 
+                    alt={item.room} 
+                    src={`/images/maps/${mapName}/rooms/${floor}/${item.room.split(" ").join("-").replace(/[']/g, "")}.webp`} 
+                    className="blueprint-room" 
+                    onMouseOver={handleMouseOver} 
+                    onMouseLeave={handleMouseLeave} 
+                    style={{ top: `${item.position.top}`, left: `${item.position.left}`, width: `${item.width}` }}
+                />) }
         </div>
     )
 }

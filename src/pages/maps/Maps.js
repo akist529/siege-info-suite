@@ -7,7 +7,7 @@ export default function Maps() {
         <div className="Maps">
             <PageTitle title="Maps" />
             <div className="maps-list">
-                { mapList.map(map => <MapCard name={map.name} playlists={map.playlists} />) }
+                { mapList.map(map => <MapCard key={map.name} name={map.name} playlists={map.playlists} />) }
             </div>
         </div>
     )
