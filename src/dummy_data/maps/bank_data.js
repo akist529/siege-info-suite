@@ -451,14 +451,6 @@ export const BankData = [
             ],
         },
         {
-            room: "Secure Hallway",
-            shape: "rect",
-            coords: [
-                [803, 553],
-                [914, 589],
-            ],
-        },
-        {
             room: "Elevators",
             shape: "rect",
             coords: [
