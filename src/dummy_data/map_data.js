@@ -713,9 +713,6 @@ export const mapList = [
                     room: "South Hallway",
                 },
                 {
-                    room: "Hallway",
-                },
-                {
                     room: "South Stairs",
                 },
                 {
