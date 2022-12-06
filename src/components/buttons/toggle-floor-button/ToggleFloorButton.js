@@ -4,6 +4,7 @@ export default function ToggleFloorButton(props) {
     return (
         <button 
             className={`ToggleFloorButton ${(floorSelected === floor) ? 'floor-selected' : null}`}
+            onClick={() => setFloorSelected(floor)}
         >
             {floor}
         </button>

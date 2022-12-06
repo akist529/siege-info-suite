@@ -144,6 +144,11 @@ export const mapList = [
             "2F": [
                 {
                     room: "ATMs",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Lobby",
@@ -866,7 +871,7 @@ export const mapList = [
                     room: "Garage Way",
                 },
             ],
-        }
+        },
     },
     {
         name: "Emerald Plains",
@@ -1064,6 +1069,9 @@ export const mapList = [
                 },
                 {
                     room: "Bunks",
+                },
+                {
+                    room: "Hacker Den",
                 },
                 {
                     room: "Office",
@@ -1557,57 +1565,1678 @@ export const mapList = [
                 {
                     room: "Laundry Room",
                 },
+                {
+                    room: "White Stairs",
+                },
+                {
+                    room: "Reading Room",
+                },
+                {
+                    room: "Main Corridor",
+                },
+                {
+                    room: "Pillar Room",
+                },
+                {
+                    room: "Bar Stairs",
+                },
+                {
+                    room: "Terrace",
+                },
+                {
+                    room: "Bakery Roof",
+                },
             ],
+            "3F": [
+                {
+                    room: "Red Stairs",
+                },
+                {
+                    room: "Cigar Shop",
+                },
+                {
+                    room: "Cigar Balcony",
+                },
+                {
+                    room: "Bar",
+                },
+                {
+                    room: "Bar Backstore",
+                },
+                {
+                    room: "Bar Freezer",
+                },
+                {
+                    room: "Cocktail Lounge",
+                },
+                {
+                    room: "Cocktail Balcony",
+                },
+                {
+                    room: "Cocktail Lounge Entrance",
+                },
+                {
+                    room: "White Corridor",
+                },
+                {
+                    room: "Washrooms",
+                },
+                {
+                    room: "Cocktail Lounge",
+                },
+                {
+                    room: "Pillar Room",
+                },
+                {
+                    room: "White Stairs",
+                },
+            ]
         }
     },
     {
         name: "Kanal",
         playlist: ["Ranked", "Unranked", "Quick Match"],
-        folder: '/images/maps/Kanal/',
+        layout: {
+            "1F": [
+                {
+                    room: "Yellow Stairs",
+                },
+                {
+                    room: "Blue Stairs",
+                },
+                {
+                    room: "Radio Room Hallway",
+                },
+                {
+                    room: "Radio Room",
+                },
+                {
+                    room: "Coast Guard Meeting Room",
+                },
+                {
+                    room: "Lounge",
+                },
+                {
+                    room: "Archives",
+                },
+                {
+                    room: "Reception",
+                },
+                {
+                    room: "White Stairs",
+                },
+                {
+                    room: "Lower Bridge",
+                },
+                {
+                    room: "Model Room",
+                },
+                {
+                    room: "Security Room",
+                },
+                {
+                    room: "Map Room",
+                },
+                {
+                    room: "Projector Room",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Map Room Corridor",
+                },
+                {
+                    room: "Museum",
+                },
+                {
+                    room: "Red Stairs",
+                },
+                {
+                    room: "Construction Entrance",
+                },
+                {
+                    room: "Green Stairs",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Printer Stairs",
+                },
+                {
+                    room: "Printer Room",
+                },
+                {
+                    room: "Upper Bridge",
+                },
+                {
+                    room: "Control Room",
+                },
+                {
+                    room: "Server Room",
+                },
+                {
+                    room: "Server Room Corridor",
+                },
+                {
+                    room: "Green Stairs",
+                },
+                {
+                    room: "Control Room Hallway",
+                },
+                {
+                    room: "Radar Room",
+                },
+                {
+                    room: "Renovations",
+                },
+                {
+                    room: "Red Stairs",
+                },
+                {
+                    room: "Roof Entrance",
+                },
+                {
+                    room: "Balcony Renovations",
+                },
+                {
+                    room: "Balcony",
+                },
+                {
+                    room: "Coast Guard Roof",
+                },
+            ],
+            "B1": [
+                {
+                    room: "Yellow Stairs",
+                },
+                {
+                    room: "Diving Room",
+                },
+                {
+                    room: "Diving Alcove",
+                },
+                {
+                    room: "Tunnel (Ladder #1)",
+                },
+                {
+                    room: "Supply Room Corridor",
+                },
+                {
+                    room: "Kayaks",
+                },
+                {
+                    room: "Supply Room",
+                },
+                {
+                    room: "Pipes",
+                },
+                {
+                    room: "Locker Room",
+                },
+                {
+                    room: "Shower Corridor",
+                },
+                {
+                    room: "Bathroom",
+                },
+                {
+                    room: "Tunnel (Ladder #2)"
+                },
+                {
+                    room: "White Stairs",
+                },
+                {
+                    room: "Basement Stairs",
+                },
+            ],
+            "B2": [
+                {
+                    room: "Tunnel",
+                },
+            ],
+        },
     },
     {
         name: "Oregon",
         playlist: ["Ranked", "Unranked", "Quick Match", "New Comer"],
-        folder: '/images/maps/Oregon/',
+        layout: {
+            "1F": [
+                {
+                    room: "Small Tower",
+                },
+                {
+                    room: "Small Tower Stairs",
+                },
+                {
+                    room: "Dining Hall",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Kitchen Corridor",
+                },
+                {
+                    room: "Rear Stage",
+                },
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Tower Stairs",
+                },
+                {
+                    room: "Meeting Hall",
+                },
+                {
+                    room: "Split",
+                },
+                {
+                    room: "Lobby",
+                },
+                {
+                    room: "Garage",
+                },
+                {
+                    room: "Classroom",
+                },
+                {
+                    room: "Laundry Stairs",
+                },
+                {
+                    room: "Main Stairs",
+                },
+                {
+                    room: "Security Corridor",
+                },
+                {
+                    room: "Security",
+                },
+                {
+                    room: "Freezer Stairs",
+                },
+                {
+                    room: "White Stairs",
+                },
+                {
+                    room: "Shower Corridor",
+                },
+                {
+                    room: "Showers",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Small Tower Stairs",
+                },
+                {
+                    room: "Small Tower",
+                },
+                {
+                    room: "Small Tower Office",
+                },
+                {
+                    room: "Small Tower Roof",
+                },
+                {
+                    room: "Dining Hall Roof",
+                },
+                {
+                    room: "Dorm Main Hall",
+                },
+                {
+                    room: "White Stairs",
+                },
+                {
+                    room: "Kids' Dorms",
+                },
+                {
+                    room: "Game Room",
+                },
+                {
+                    room: "Attic",
+                },
+                {
+                    room: "Trophy Room",
+                },
+                {
+                    room: "Master Bedroom",
+                },
+                {
+                    room: "Walk In",
+                },
+                {
+                    room: "Balcony",
+                },
+                {
+                    room: "Armory Corridor",
+                },
+                {
+                    room: "Meeting Hall Roof",
+                },
+                {
+                    room: "Armory",
+                },
+                {
+                    room: "Main Stairs",
+                },
+                {
+                    room: "Big Tower",
+                },
+                {
+                    room: "Tower Stairs",
+                },
+            ],
+            "3F": [
+                {
+                    room: "Big Tower",
+                },
+            ],
+            "B": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Boiler Room",
+                },
+                {
+                    room: "Blue Bunker",
+                },
+                {
+                    room: "Bunker",
+                },
+                {
+                    room: "Electric Room",
+                },
+                {
+                    room: "Supply Room",
+                },
+                {
+                    room: "Supply Closet",
+                },
+                {
+                    room: "Basement Corridor",
+                },
+                {
+                    room: "Freezer",
+                },
+                {
+                    room: "Freezer Stairs",
+                },
+                {
+                    room: "Laundry Room",
+                },
+                {
+                    room: "Laundry Storage",
+                },
+                {
+                    room: "Laundry Stairs",
+                },
+            ],
+        },
     },
     {
         name: "Outback", 
         playlist: ["Ranked", "Unranked", "Quick Match", "New Comer"],
-        folder: '/images/maps/Outback/',
+        layout: {
+            "1F": [
+                {
+                    room: "Back Entrance",
+                },
+                {
+                    room: "Red Bedroom",
+                },
+                {
+                    room: "Bathroom",
+                },
+                {
+                    room: "Green Bedroom",
+                },
+                {
+                    room: "Closet",
+                },
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Reptile Hallway",
+                },
+                {
+                    room: "Kitchen Hallway",
+                },
+                {
+                    room: "Shark",
+                },
+                {
+                    room: "Restaurant Stairs",
+                },
+                {
+                    room: "Restaurant Lobby",
+                },
+                {
+                    room: "Restaurant",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Waiting Room",
+                },
+                {
+                    room: "Mechanic Shop",
+                },
+                {
+                    room: "Bike Repair",
+                },
+                {
+                    room: "Garage",
+                },
+                {
+                    room: "Motel Reception",
+                },
+                {
+                    room: "Garage Stairs",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Garage Stairs",
+                },
+                {
+                    room: "Garage Lounge",
+                },
+                {
+                    room: "Garage",
+                },
+                {
+                    room: "Garage Balcony",
+                },
+                {
+                    room: "Office",
+                },
+                {
+                    room: "Office Supplies",
+                },
+                {
+                    room: "Party Room",
+                },
+                {
+                    room: "Party Hall",
+                },
+                {
+                    room: "Mezzanine",
+                },
+                {
+                    room: "Restaurant Stairs",
+                },
+                {
+                    room: "Shark",
+                },
+                {
+                    room: "Mechanical Bull",
+                },
+                {
+                    room: "Motel Balcony",
+                },
+                {
+                    room: "Covered Terrace",
+                },
+                {
+                    room: "Piano Room",
+                },
+                {
+                    room: "Games Room",
+                },
+                {
+                    room: "Connector",
+                },
+                {
+                    room: "Showers",
+                },
+                {
+                    room: "Laundry",
+                },
+                {
+                    room: "Dorms",
+                },
+                {
+                    room: "Motel Hallway",
+                },
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Mini Putt Balcony",
+                },
+                {
+                    room: "Terrace Balcony",
+                },
+            ],
+        },
     },
     {
         name: "Presidential Plane",
         playlist: ["Quick Match"],
-        folder: '/images/maps/Presidential-Plane/',
+        layout: {
+            "1F": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Cargo Hold",
+                },
+                {
+                    room: "Reporter Entrance",
+                },
+                {
+                    room: "Service Corridor",
+                },
+                {
+                    room: "Storage",
+                },
+                {
+                    room: "Luggage Hold",
+                },
+                {
+                    room: "First Aid Station",
+                },
+                {
+                    room: "Cargo Front Entrance",
+                },
+                {
+                    room: "Technical Seating",
+                },
+                {
+                    room: "Main Entrance",
+                },
+                {
+                    room: "Front Service Entrance",
+                },
+                {
+                    room: "Front Stairs",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Main Entrance",
+                },
+                {
+                    room: "Front Hallway",
+                },
+                {
+                    room: "Executive Office",
+                },
+                {
+                    room: "Meeting Room",
+                },
+                {
+                    room: "Front Stairs",
+                },
+                {
+                    room: "Pantry",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Cockpit Stairs",
+                },
+                {
+                    room: "Left Wing",
+                },
+                {
+                    room: "Executive Hallway",
+                },
+                {
+                    room: "Laundry Room",
+                },
+                {
+                    room: "Changing Room",
+                },
+                {
+                    room: "Executive Bedroom",
+                },
+                {
+                    room: "Staff Section",
+                },
+                {
+                    room: "Security Room",
+                },
+                {
+                    room: "Press Section A",
+                },
+                {
+                    room: "Ladder Room",
+                },
+                {
+                    room: "Press Section B",
+                },
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Caterer",
+                },
+                {
+                    room: "Reporter Entrance",
+                },
+            ],
+            "3F": [
+                {
+                    room: "Server Room B",
+                },
+                {
+                    room: "Server Room A",
+                },
+                {
+                    room: "Cabin Staff",
+                },
+                {
+                    room: "Cockpit Stairs",
+                },
+                {
+                    room: "Radio Cabin",
+                },
+                {
+                    room: "Cockpit",
+                },
+                {
+                    room: "Caterer",
+                },
+            ],
+        },
     },
     {
         name: "Skyscraper",
         playlist: ["Ranked", "Unranked", "Quick Match", "Team Deathmatch"],
-        folder: '/images/maps/Skyscraper/',
+        layout: {
+            "1F": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Back Hallway",
+                },
+                {
+                    room: "Restaurant",
+                },
+                {
+                    room: "Toilet",
+                },
+                {
+                    room: "West Garden",
+                },
+                {
+                    room: "Main Entrance",
+                },
+                {
+                    room: "BBQ",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Kitchen Balcony",
+                },
+                {
+                    room: "Pantry",
+                },
+                {
+                    room: "Delivery",
+                },
+                {
+                    room: "Delivery Entrance",
+                },
+                {
+                    room: "Bathroom",
+                },
+                {
+                    room: "Bedroom Closet",
+                },
+                {
+                    room: "Ventilation Units",
+                },
+                {
+                    room: "Bedroom",
+                },
+                {
+                    room: "Bedroom Closet",
+                },
+                {
+                    room: "House Lobby",
+                },
+                {
+                    room: "Side Entrance",
+                },
+                {
+                    room: "House Balcony",
+                },
+                {
+                    room: "House Stairs",
+                },
+                {
+                    room: "Reception",
+                },
+                {
+                    room: "Coat Check",
+                },
+                {
+                    room: "Bar",
+                },
+                {
+                    room: "Sushi Bar",
+                },
+                {
+                    room: "Restaurant Stairs",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Hallway",
+                },
+                {
+                    room: "Shrine Balcony",
+                },
+                {
+                    room: "Tea Room",
+                },
+                {
+                    room: "Karaoke",
+                },
+                {
+                    room: "Geisha",
+                },
+                {
+                    room: "Makeup Room",
+                },
+                {
+                    room: "Geisha Balcony",
+                },
+                {
+                    room: "Restaurant Stairs",
+                },
+                {
+                    room: "Drums",
+                },
+                {
+                    room: "Mezzanine",
+                },
+                {
+                    room: "Coat Check",
+                },
+                {
+                    room: "Shrine",
+                },
+                {
+                    room: "Shrine Balcony",
+                },
+                {
+                    room: "Dragon",
+                },
+                {
+                    room: "Terrace",
+                },
+                {
+                    room: "Terrace Balcony",
+                },
+                {
+                    room: "Office Balcony",
+                },
+                {
+                    room: "Lounge",
+                },
+                {
+                    room: "Office",
+                },
+                {
+                    room: "Display",
+                },
+                {
+                    room: "Exhibition Room",
+                },
+                {
+                    room: "VIP Clearance",
+                },
+                {
+                    room: "House Stairs",
+                },
+            ],
+        },
     },
     {
         name: "Stadium Bravo",
         playlist: ["Ranked", "Unranked", "Quick Match", "Team Deathmatch", "New Comer"],
-        folder: '/images/maps/Stadium-Bravo/',
+        layout: {
+            "1F": [
+                {
+                    room: "Ventilation",
+                },
+                {
+                    room: "Exit Hallway",
+                },
+                {
+                    room: "Hallway Bridge",
+                },
+                {
+                    room: "Server",
+                },
+                {
+                    room: "Workshop",
+                },
+                {
+                    room: "Showers",
+                },
+                {
+                    room: "Main Lobby",
+                },
+                {
+                    room: "Yellow Stairs",
+                },
+                {
+                    room: "Tellers",
+                },
+                {
+                    room: "Tellers Entrance",
+                },
+                {
+                    room: "Showers Balcony",
+                },
+                {
+                    room: "Sunrise Bar",
+                },
+                {
+                    room: "Pool Entrance",
+                },
+                {
+                    room: "Pool Bridge",
+                },
+                {
+                    room: "Hallway",
+                },
+                {
+                    room: "Blue Stairs",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "South Side",
+                },
+                {
+                    room: "Service",
+                },
+                {
+                    room: "Service Entrance",
+                },
+                {
+                    room: "Toilets",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Armory Lockers",
+                },
+                {
+                    room: "Armory Desk",
+                },
+                {
+                    room: "Archives",
+                },
+                {
+                    room: "Office Balcony",
+                },
+                {
+                    room: "Fountain",
+                },
+                {
+                    room: "Offices",
+                },
+                {
+                    room: "Office/Hookah Connector",
+                },
+                {
+                    room: "Hookah Lounge",
+                },
+                {
+                    room: "Hookah Lounge Balcony",
+                },
+                {
+                    room: "Hallway",
+                },
+                {
+                    room: "Blue Stairs",
+                },
+                {
+                    room: "VIP Lounge",
+                },
+                {
+                    room: "VIP Balcony",
+                },
+                {
+                    room: "Hall of Fame",
+                },
+                {
+                    room: "Penthouse",
+                },
+                {
+                    room: "Bathroom",
+                },
+                {
+                    room: "Penthouse Balcony",
+                },
+                {
+                    room: "Yellow Stairs",
+                },
+                {
+                    room: "Armory Balcony",
+                },
+            ],
+            "B": [
+                {
+                    room: "West Corridor",
+                },
+                {
+                    room: "Basement",
+                },
+                {
+                    room: "East Corridor",
+                },
+                {
+                    room: "South Corridor",
+                },
+            ],
+        },
     },
     {
         name: "Theme Park",
         playlist: ["Ranked", "Unranked", "Quick Match", "Team Deathmatch"],
-        folder: '/images/maps/Theme-Park/',
+        layout: {
+            "1F": [
+                {
+                    room: "Storage",
+                },
+                {
+                    room: "Sweet Shop",
+                },
+                {
+                    room: "Arcade Toilet",
+                },
+                {
+                    room: "Back Alley",
+                },
+                {
+                    room: "Lab",
+                },
+                {
+                    room: "Arcade Entrance",
+                },
+                {
+                    room: "Arcade Stairs",
+                },
+                {
+                    room: "Palms",
+                },
+                {
+                    room: "Barrel Room",
+                },
+                {
+                    room: "Joint Corridor",
+                },
+                {
+                    room: "Yellow Corridor",
+                },
+                {
+                    room: "Yellow Stairs",
+                },
+                {
+                    room: "Locker Room",
+                },
+                {
+                    room: "Back Alley",
+                },
+                {
+                    room: "Red Corridor",
+                },
+                {
+                    room: "Gong Room",
+                },
+                {
+                    room: "Tellers",
+                },
+                {
+                    room: "Castle Entrance",
+                },
+                {
+                    room: "Maintenance",
+                },
+                {
+                    room: "Dragon",
+                },
+                {
+                    room: "Dragon Stairs",
+                },
+                {
+                    room: "Throne Room",
+                },
+                {
+                    room: "Armory",
+                },
+                {
+                    room: "Blue Room",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Cafe",
+                },
+                {
+                    room: "Cafe Terrace",
+                },
+                {
+                    room: "Upper Arcade",
+                },
+                {
+                    room: "Arcade Stairs",
+                },
+                {
+                    room: "Cafe Corridor",
+                },
+                {
+                    room: "Yellow Corridor",
+                },
+                {
+                    room: "Yellow Stairs",
+                },
+                {
+                    room: "Day Care",
+                },
+                {
+                    room: "Bunk",
+                },
+                {
+                    room: "Break Room",
+                },
+                {
+                    room: "Arcade Entrance",
+                },
+                {
+                    room: "Waiting Room",
+                },
+                {
+                    room: "Initiation Room",
+                },
+                {
+                    room: "Control Room",
+                },
+                {
+                    room: "Dragon Corridor",
+                },
+                {
+                    room: "Dragon Stairs",
+                },
+                {
+                    room: "Dragon",
+                },
+                {
+                    room: "Cash Corridor",
+                },
+                {
+                    room: "Cash Stash",
+                },
+                {
+                    room: "Castle Entrance",
+                },
+                {
+                    room: "Office Showers",
+                },
+                {
+                    room: "Office",
+                },
+                {
+                    room: "Office Vault",
+                },
+            ],
+        },
     },
     {
         name: "Tower",
         playlist: ["Quick Match"],
-        folder: '/images/maps/Tower/',
+        layout: {
+            "1F": [
+                {
+                    room: "West Atrium",
+                },
+                {
+                    room: "Center Atrium",
+                },
+                {
+                    room: "East Atrium",
+                },
+                {
+                    room: "Main Reception",
+                },
+                {
+                    room: "North Stairs",
+                },
+                {
+                    room: "West Balcony",
+                },
+                {
+                    room: "West Stairs",
+                },
+                {
+                    room: "Restaurant Hallway",
+                },
+                {
+                    room: "West Observatory",
+                },
+                {
+                    room: "Fountain",
+                },
+                {
+                    room: "East Observatory",
+                },
+                {
+                    room: "Bar Hallway",
+                },
+                {
+                    room: "East Stairs",
+                },
+                {
+                    room: "Center Hallway",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Bird Room",
+                },
+                {
+                    room: "Restaurant",
+                },
+                {
+                    room: "Restaurant Reception",
+                },
+                {
+                    room: "Elevator",
+                },
+                {
+                    room: "Tea Room",
+                },
+                {
+                    room: "Lounge",
+                },
+                {
+                    room: "Bar",
+                },
+                {
+                    room: "Bonsai Room",
+                },
+                {
+                    room: "Traditional Hall",
+                },
+                {
+                    room: "Game Room",
+                },
+            ],
+            "2F": [
+                {
+                    room: "West Atrium",
+                },
+                {
+                    room: "Center Atrium",
+                },
+                {
+                    room: "East Atrium",
+                },
+                {
+                    room: "Info Booth",
+                },
+                {
+                    room: "North Stairs",
+                },
+                {
+                    room: "West Balcony",
+                },
+                {
+                    room: "West Stairs",
+                },
+                {
+                    room: "Offices",
+                },
+                {
+                    room: "Supply Room",
+                },
+                {
+                    room: "Meeting Room",
+                },
+                {
+                    room: "CEO's Office",
+                },
+                {
+                    room: "Bathroom",
+                },
+                {
+                    room: "Server Room",
+                },
+                {
+                    room: "Company Reception",
+                },
+                {
+                    room: "Offices Hallway",
+                },
+                {
+                    room: "Lantern Room",
+                },
+                {
+                    room: "Gift Shop",
+                },
+                {
+                    room: "Gallery Annex",
+                },
+                {
+                    room: "East Stairs",
+                },
+                {
+                    room: "East Balcony",
+                },
+                {
+                    room: "Exhibit Hallway",
+                },
+                {
+                    room: "Exhibit Room",
+                },
+                {
+                    room: "Media Center",
+                },
+                {
+                    room: "Gallery Main",
+                },
+                {
+                    room: "Elevator",
+                },
+            ],
+        },
     },
     {
         name: "Villa",
         playlist: ["Ranked", "Unranked", "Quick Match", "Team Deathmatch"],
-        folder: '/images/maps/Villa/',
+        layout: {
+            "1F": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Back Hallway",
+                },
+                {
+                    room: "China Room",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Pantry",
+                },
+                {
+                    room: "Pantry Stairs",
+                },
+                {
+                    room: "Dining Room",
+                },
+                {
+                    room: "Laundry",
+                },
+                {
+                    room: "Balcony",
+                },
+                {
+                    room: "Memorial Room",
+                },
+                {
+                    room: "Bicycle Storage",
+                },
+                {
+                    room: "Skylight Hallway",
+                },
+                {
+                    room: "Main Hallway",
+                },
+                {
+                    room: "Red Stairs",
+                },
+                {
+                    room: "Terrace",
+                },
+                {
+                    room: "Piano Room",
+                },
+                {
+                    room: "Art Studio",
+                },
+                {
+                    room: "Greenhouse",
+                },
+                {
+                    room: "Main Entrance",
+                },
+                {
+                    room: "Front Entrance",
+                },
+                {
+                    room: "Main Stairs",
+                },
+                {
+                    room: "Library",
+                },
+                {
+                    room: "Living Room",
+                },
+                {
+                    room: "Toilet",
+                },
+                {
+                    room: "Roundabout",
+                },
+                {
+                    room: "Mudroom",
+                },
+                {
+                    room: "Stable Yard",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Astronomy Room",
+                },
+                {
+                    room: "Master Bathroom",
+                },
+                {
+                    room: "Bedroom Roof",
+                },
+                {
+                    room: "Master Bedroom",
+                },
+                {
+                    room: "Walk-In Closet",
+                },
+                {
+                    room: "Master Bedroom",
+                },
+                {
+                    room: "Statuary Room",
+                },
+                {
+                    room: "Trophy Room",
+                },
+                {
+                    room: "Skylight Hallway",
+                },
+                {
+                    room: "Landing",
+                },
+                {
+                    room: "Trophy Entrance",
+                },
+                {
+                    room: "Stable Yard",
+                },
+                {
+                    room: "Red Stairs",
+                },
+                {
+                    room: "Classical Hall",
+                },
+                {
+                    room: "Aviator Room",
+                },
+                {
+                    room: "Hunting Vault",
+                },
+                {
+                    room: "Games Room",
+                },
+                {
+                    room: "Main Stairs",
+                },
+                {
+                    room: "Study",
+                },
+                {
+                    room: "Terrace",
+                },
+                {
+                    room: "Veranda",
+                },
+            ],
+            "B": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Arch Hallway",
+                },
+                {
+                    room: "Wine Cellar",
+                },
+                {
+                    room: "Cellar Tunnel",
+                },
+                {
+                    room: "Pantry Stairs",
+                },
+                {
+                    room: "Garage",
+                },
+                {
+                    room: "Tasting Room",
+                },
+                {
+                    room: "Crypt Tunnel",
+                },
+                {
+                    room: "Red Stairs",
+                },
+                {
+                    room: "Art Storage",
+                },
+                {
+                    room: "Old Office",
+                },
+            ],
+        },
     },
     {
         name: "Yacht",
         playlist: ["Quick Match"],
-        folder: '/images/maps/Yacht/',
+        layout: {
+            "1F": [
+                {
+                    room: "Engine Back Entrance",
+                },
+                {
+                    room: "Rear Deck",
+                },
+                {
+                    room: "Engine",
+                },
+                {
+                    room: "Engine Stairs",
+                },
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Server Room",
+                },
+                {
+                    room: "Engine Storage",
+                },
+                {
+                    room: "Back Hallway",
+                },
+                {
+                    room: "Engine Hallway",
+                },
+                {
+                    room: "Emergency Exit",
+                },
+                {
+                    room: "West Hull Breach",
+                },
+                {
+                    room: "Front Stairs",
+                },
+            ],
+            "2F": [
+                {
+                    room: "Engine Stairs",
+                },
+                {
+                    room: "Engine",
+                },
+                {
+                    room: "Engine Control",
+                },
+                {
+                    room: "Rear Deck",
+                },
+                {
+                    room: "Engine Utility",
+                },
+                {
+                    room: "Emergency Exit",
+                },
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Kitchen Hallway",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Kitchen Pantry",
+                },
+                {
+                    room: "Kitchen Stairs",
+                },
+                {
+                    room: "Cafeteria Hallway",
+                },
+                {
+                    room: "Cafeteria",
+                },
+                {
+                    room: "Staff Dormitory",
+                },
+                {
+                    room: "Infirmary",
+                },
+                {
+                    room: "Front Stairs",
+                },
+                {
+                    room: "Aklark Sub Room",
+                },
+                {
+                    room: "Aklark Sub Entrance",
+                },
+                {
+                    room: "Anchor",
+                },
+            ],
+            "3F": [
+                {
+                    room: "Back Stairs",
+                },
+                {
+                    room: "Lounge",
+                },
+                {
+                    room: "Spa Deck",
+                },
+                {
+                    room: "West Deck",
+                },
+                {
+                    room: "East Deck",
+                },
+                {
+                    room: "Top Deck Stairs",
+                },
+                {
+                    room: "Globe Hallway",
+                },
+                {
+                    room: "Kitchen Stairs",
+                },
+                {
+                    room: "Casino Hallway",
+                },
+                {
+                    room: "Casino",
+                },
+                {
+                    room: "Poker Room",
+                },
+                {
+                    room: "Bedroom Hallway",
+                },
+                {
+                    room: "Master Bedroom",
+                },
+                {
+                    room: "Front Deck",
+                },
+                {
+                    room: "Front Stairs",
+                },
+            ],
+            "4F": [
+                {
+                    room: "Helipad Entrance",
+                },
+                {
+                    room: "Helipad",
+                },
+                {
+                    room: "West Balcony",
+                },
+                {
+                    room: "East Balcony",
+                },
+                {
+                    room: "Top Deck Stairs",
+                },
+                {
+                    room: "Cockpit Hallway",
+                },
+                {
+                    room: "Maps Room",
+                },
+                {
+                    room: "Cockpit",
+                },
+                {
+                    room: "Captain's Office",
+                },
+                {
+                    room: "Cockpit Balcony",
+                },
+                {
+                    room: "Bedroom Hallway",
+                },
+            ],
+        },
     },
 ]
