@@ -1625,7 +1625,7 @@ export const mapList = [
                     room: "Washrooms",
                 },
                 {
-                    room: "Cocktail Lounge",
+                    room: "Cigar Lounge",
                 },
                 {
                     room: "Pillar Room",
