@@ -1390,7 +1390,7 @@ export const mapList = [
                     room: "Office",
                 },
                 {
-                    room: "1F Front Balcony",
+                    room: "Front Balcony",
                 },
                 {
                     room: "Connector",
@@ -1408,7 +1408,7 @@ export const mapList = [
                     room: "Music Room",
                 },
                 {
-                    room: "1F Back Porch",
+                    room: "Back Porch",
                 },
                 {
                     room: "Back Stairs",
@@ -1420,6 +1420,12 @@ export const mapList = [
                 },
                 {
                     room: "Upper Hallway",
+                },
+                {
+                    room: "Lobby Stairs",
+                },
+                {
+                    room: "Lobby",
                 },
                 {
                     room: "Pink Room",
@@ -1450,9 +1456,6 @@ export const mapList = [
                 },
                 {
                     room: "Car Room",
-                },
-                {
-                    room: "Back Porch",
                 },
                 {
                     room: "Reading Room Balcony",
@@ -3236,6 +3239,21 @@ export const mapList = [
                 {
                     room: "Bedroom Hallway",
                 },
+            ],
+        },
+    },
+    {
+        name: "Nighthaven Labs",
+        playlist: ["New Comer", "Quick Match", "Team Deathmatch", "Ranked", "Unranked"],
+        layout: {
+            "1F": [
+
+            ],
+            "2F": [
+
+            ],
+            "3F": [
+
             ],
         },
     },
