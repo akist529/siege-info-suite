@@ -1877,7 +1877,10 @@ export const mapList = [
                     room: "Small Tower Stairs",
                 },
                 {
-                    room: "Small Tower",
+                    room: "Small Tower (2F)",
+                },
+                {
+                    room: "Small Tower (1F)",
                 },
                 {
                     room: "Small Tower Office",
@@ -1936,7 +1939,10 @@ export const mapList = [
             ],
             "3F": [
                 {
-                    room: "Big Tower",
+                    room: "Big Tower (3F)",
+                },
+                {
+                    room: "Big Tower (2F)",
                 },
             ],
             "B": [
@@ -2077,7 +2083,7 @@ export const mapList = [
                     room: "Restaurant Stairs",
                 },
                 {
-                    room: "Shark",
+                    room: "Shark (1F)",
                 },
                 {
                     room: "Mechanical Bull",
