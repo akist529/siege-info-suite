@@ -1746,6 +1746,9 @@ export const mapList = [
                     room: "Balcony",
                 },
                 {
+                    room: "White Stairs",
+                },
+                {
                     room: "Coast Guard Roof",
                 },
             ],
@@ -1760,7 +1763,7 @@ export const mapList = [
                     room: "Diving Alcove",
                 },
                 {
-                    room: "Tunnel (Ladder #1)",
+                    room: "Tunnel (Ladder 1)",
                 },
                 {
                     room: "Supply Room Corridor",
@@ -1784,7 +1787,7 @@ export const mapList = [
                     room: "Bathroom",
                 },
                 {
-                    room: "Tunnel (Ladder #2)"
+                    room: "Tunnel (Ladder 2)"
                 },
                 {
                     room: "White Stairs",
@@ -3246,14 +3249,158 @@ export const mapList = [
         name: "Nighthaven Labs",
         playlist: ["New Comer", "Quick Match", "Team Deathmatch", "Ranked", "Unranked"],
         layout: {
+            "B": [
+                {
+                    room: "Cargo Stairs",
+                },
+                {
+                    room: "Cargo Room",
+                },
+                {
+                    room: "Tank",
+                },
+                {
+                    room: "Animus",
+                },
+                {
+                    room: "Assembly",
+                },
+                {
+                    room: "Exosuit",
+                },
+                {
+                    room: "Vending Stairs",
+                },
+                {
+                    room: "Nanotech Hallway",
+                },
+                {
+                    room: "Nanotech",
+                },
+                {
+                    room: "Delivery Area",
+                },
+                {
+                    room: "Emergency Exit",
+                },
+            ],
             "1F": [
-
+                {
+                    room: "Control Room Hallway",
+                },
+                {
+                    room: "Cargo",
+                },
+                {
+                    room: "Cargo Stairs",
+                },
+                {
+                    room: "Lounge Hallway",
+                },
+                {
+                    room: "CC Stairs",
+                },
+                {
+                    room: "Cafeteria Hallway",
+                },
+                {
+                    room: "Lobby",
+                },
+                {
+                    room: "Lobby Stairs",
+                },
+                {
+                    room: "Cafeteria",
+                },
+                {
+                    room: "Kitchen",
+                },
+                {
+                    room: "Pantry",
+                },
+                {
+                    room: "Vending",
+                },
+                {
+                    room: "Vending Stairs",
+                },
+                {
+                    room: "Lounge",
+                },
+                {
+                    room: "Storage Entrance",
+                },
+                {
+                    room: "Storage",
+                },
+                {
+                    room: "Warehouse",
+                },
+                {
+                    room: "Warehouse Stairs",
+                },
+                {
+                    room: "Warehouse Entrance",
+                },
+                {
+                    room: "Control Room",
+                },
             ],
             "2F": [
-
-            ],
-            "3F": [
-
+                {
+                    room: "CC Stairs",
+                },
+                {
+                    room: "CC Balcony",
+                },
+                {
+                    room: "CC Hallway",
+                },
+                {
+                    room: "Command Center",
+                },
+                {
+                    room: "Servers",
+                },
+                {
+                    room: "Electrical",
+                },
+                {
+                    room: "Electrical Side",
+                },
+                {
+                    room: "Connector",
+                },
+                {
+                    room: "Meeting Room Hallway",
+                },
+                {
+                    room: "Meeting Room",
+                },
+                {
+                    room: "Meeting Terrace",
+                },
+                {
+                    room: "Lobby Stairs",
+                },
+                {
+                    room: "Lobby",
+                },
+                {
+                    room: "Connectwor Terrace",
+                },
+                {
+                    room: "IT",
+                },
+                {
+                    room: "Warehouse",
+                },
+                {
+                    room: "Warehouse Stairs",
+                },
+                {
+                    room: "Warehouse Balcony",
+                },
             ],
         },
     },

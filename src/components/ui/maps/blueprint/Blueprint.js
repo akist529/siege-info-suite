@@ -18,7 +18,7 @@ export default function Blueprint(props) {
             <img 
                 className="blueprint-image"
                 alt={`Blueprint - ${mapName} - ${floor}`}
-                src={`/images/maps/Villa/Villa-1F.webp`}
+                src={`/images/maps/Nighthaven-Labs/Nighthaven-Labs-1F.webp`}
             />
             { floorData.map(item => 
                 <img 
