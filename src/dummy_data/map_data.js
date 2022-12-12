@@ -2313,7 +2313,10 @@ export const mapList = [
                     room: "Bedroom",
                 },
                 {
-                    room: "Bedroom Closet",
+                    room: "Bedroom Closet 1",
+                },
+                {
+                    room: "Bedroom Closet 2",
                 },
                 {
                     room: "House Lobby",
@@ -2378,7 +2381,7 @@ export const mapList = [
                     room: "Mezzanine",
                 },
                 {
-                    room: "Coat Check",
+                    room: "Coat Check (1F)",
                 },
                 {
                     room: "Shrine",
@@ -2431,9 +2434,6 @@ export const mapList = [
                     room: "Exit Hallway",
                 },
                 {
-                    room: "Hallway Bridge",
-                },
-                {
                     room: "Server",
                 },
                 {
@@ -2464,9 +2464,6 @@ export const mapList = [
                     room: "Pool Entrance",
                 },
                 {
-                    room: "Pool Bridge",
-                },
-                {
                     room: "Hallway",
                 },
                 {
@@ -2474,9 +2471,6 @@ export const mapList = [
                 },
                 {
                     room: "Kitchen",
-                },
-                {
-                    room: "South Side",
                 },
                 {
                     room: "Service",
@@ -2572,13 +2566,7 @@ export const mapList = [
                     room: "Storage",
                 },
                 {
-                    room: "Sweet Shop",
-                },
-                {
                     room: "Arcade Toilet",
-                },
-                {
-                    room: "Back Alley",
                 },
                 {
                     room: "Lab",
@@ -2588,9 +2576,6 @@ export const mapList = [
                 },
                 {
                     room: "Arcade Stairs",
-                },
-                {
-                    room: "Palms",
                 },
                 {
                     room: "Barrel Room",
@@ -2608,9 +2593,6 @@ export const mapList = [
                     room: "Locker Room",
                 },
                 {
-                    room: "Back Alley",
-                },
-                {
                     room: "Red Corridor",
                 },
                 {
@@ -2620,13 +2602,7 @@ export const mapList = [
                     room: "Tellers",
                 },
                 {
-                    room: "Castle Entrance",
-                },
-                {
                     room: "Maintenance",
-                },
-                {
-                    room: "Dragon",
                 },
                 {
                     room: "Dragon Stairs",
@@ -2673,7 +2649,7 @@ export const mapList = [
                     room: "Break Room",
                 },
                 {
-                    room: "Arcade Entrance",
+                    room: "Arcade Entrance (1F)",
                 },
                 {
                     room: "Waiting Room",
@@ -2685,13 +2661,10 @@ export const mapList = [
                     room: "Control Room",
                 },
                 {
-                    room: "Dragon Corridor",
-                },
-                {
                     room: "Dragon Stairs",
                 },
                 {
-                    room: "Dragon",
+                    room: "Dragon Stairs (1F)",
                 },
                 {
                     room: "Cash Corridor",
@@ -2793,6 +2766,9 @@ export const mapList = [
                 },
                 {
                     room: "Game Room",
+                },
+                {
+                    room: "East Balcony",
                 },
             ],
             "2F": [
