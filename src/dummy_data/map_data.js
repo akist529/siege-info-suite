@@ -2898,9 +2898,6 @@ export const mapList = [
                     room: "Red Stairs",
                 },
                 {
-                    room: "Terrace",
-                },
-                {
                     room: "Piano Room",
                 },
                 {
@@ -2928,13 +2925,10 @@ export const mapList = [
                     room: "Toilet",
                 },
                 {
-                    room: "Roundabout",
-                },
-                {
                     room: "Mudroom",
                 },
                 {
-                    room: "Stable Yard",
+                    room: "Gallery",
                 },
             ],
             "2F": [
@@ -2957,16 +2951,13 @@ export const mapList = [
                     room: "Walk-In Closet",
                 },
                 {
-                    room: "Master Bedroom",
-                },
-                {
                     room: "Statuary Room",
                 },
                 {
                     room: "Trophy Room",
                 },
                 {
-                    room: "Skylight Hallway",
+                    room: "Skylight Hallway (1F)",
                 },
                 {
                     room: "Landing",
@@ -2975,7 +2966,7 @@ export const mapList = [
                     room: "Trophy Entrance",
                 },
                 {
-                    room: "Stable Yard",
+                    room: "Stable Yard Roof",
                 },
                 {
                     room: "Red Stairs",
@@ -2999,7 +2990,7 @@ export const mapList = [
                     room: "Study",
                 },
                 {
-                    room: "Terrace",
+                    room: "Terrace Roof",
                 },
                 {
                     room: "Veranda",
@@ -3069,16 +3060,13 @@ export const mapList = [
                     room: "Engine Storage",
                 },
                 {
-                    room: "Back Hallway",
-                },
-                {
                     room: "Engine Hallway",
                 },
                 {
                     room: "Emergency Exit",
                 },
                 {
-                    room: "West Hull Breach",
+                    room: "Hull Breach",
                 },
                 {
                     room: "Front Stairs",
@@ -3089,7 +3077,7 @@ export const mapList = [
                     room: "Engine Stairs",
                 },
                 {
-                    room: "Engine",
+                    room: "Engine (1F)",
                 },
                 {
                     room: "Engine Control",
@@ -3101,7 +3089,7 @@ export const mapList = [
                     room: "Engine Utility",
                 },
                 {
-                    room: "Emergency Exit",
+                    room: "Emergency Exit (1F)",
                 },
                 {
                     room: "Back Stairs",
