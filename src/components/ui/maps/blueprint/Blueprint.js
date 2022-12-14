@@ -28,7 +28,7 @@ export default function Blueprint(props) {
                     className="blueprint-room" 
                     onMouseOver={handleMouseOver} 
                     onMouseLeave={handleMouseLeave} 
-                    style={{ top: `${item.position.top}`, left: `${item.position.left}`, width: `${item.width}` }}
+                    style={{ top: `${item.position.top}`, left: `${item.position.left}` }}
                 />) }
         </div>
     )
