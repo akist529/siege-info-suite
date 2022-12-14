@@ -312,6 +312,12 @@ export const operatorList = [
         health: 2,
     },
     {
+        name: 'Solis',
+        team: 'Defend',
+        ability: 'Electro Sensor',
+        health: 2,
+    },
+    {
         name: 'Tachanka',
         team: 'Defend',
         ability: 'Grenade Launcher',

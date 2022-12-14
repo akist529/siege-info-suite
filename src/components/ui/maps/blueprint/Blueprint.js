@@ -1,7 +1,7 @@
 import { useState } from 'react'
 
 export default function Blueprint(props) {
-    const { mapName, floor, floorData, setCurrentRoom } = props
+    const { mapName, floor, floorData, setCurrentRoom, floorSelected } = props
 
     function handleMouseOver(e) {
         e.currentTarget.classList.add("blueprint-hover")
@@ -18,7 +18,7 @@ export default function Blueprint(props) {
             <img 
                 className="blueprint-image"
                 alt={`Blueprint - ${mapName} - ${floor}`}
-                src={`/images/maps/Nighthaven-Labs/Nighthaven-Labs-1F.webp`}
+                src={`/images/maps/${mapName}/${mapName}-${floor}.webp`}
             />
             { floorData.map(item => 
                 <img 

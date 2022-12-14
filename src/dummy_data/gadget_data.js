@@ -14,7 +14,7 @@ export const gadgetList = [
     {
         name: "Bulletproof Camera", 
         team: "Defend",
-        users: ["Recruit", "Mute", "Castle", "Doc", "Jager", "Frost", "Lesion", "Vigil", "Melusi", "Aruni"],
+        users: ["Recruit", "Mute", "Castle", "Doc", "Jager", "Frost", "Lesion", "Vigil", "Melusi", "Aruni", "Solis"],
         max: 1,
     },
     {
@@ -38,7 +38,7 @@ export const gadgetList = [
     {
         name: "Impact Grenade",
         team: "Defend",
-        users: ["Recruit", "Rook", "Kapkan", "Caveira", "Valkyrie", "Echo", "Lesion", "Vigil", "Maestro", "Alibi", "Clash", "Wamai", "Melusi", "Thunderbird"],
+        users: ["Recruit", "Rook", "Kapkan", "Caveira", "Valkyrie", "Echo", "Lesion", "Vigil", "Maestro", "Alibi", "Clash", "Wamai", "Melusi", "Thunderbird", "Solis"],
         max: 2,
     },
     {

@@ -1083,7 +1083,7 @@ export const weaponList = [
         class: "Primary",
         type: "Shotgun",
         modes: ["Pump-Action"],
-        users: ["Jackal", "Mira"],
+        users: ["Jackal", "Mira", "Solis"],
         ranges: [2, 12],
         damage: {
             standard: [400, 240],
@@ -1847,7 +1847,7 @@ export const weaponList = [
         class: "Primary",
         type: "Submachine Gun",
         modes: ["Automatic", "Semi-Automatic"],
-        users: ["Doc", "Rook"],
+        users: ["Doc", "Rook", "Solis"],
         ranges: [18, 28],
         damage: {
             standard: [22, 18],
@@ -2452,7 +2452,7 @@ export const weaponList = [
         class: "Secondary",
         type: "Machine Pistol",
         modes: ["Automatic"],
-        users: ["Recruit", "Smoke", "Mute", "Amaru"],
+        users: ["Recruit", "Smoke", "Mute", "Amaru", "Solis"],
         ranges: [18, 28],
         damage: {
             standard: [35, 23],

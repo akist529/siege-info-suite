@@ -196,7 +196,7 @@
   color: white;
 }
 
-.OperatorCard {
+.OperatorCardLarge {
   background-color: rgb(160, 160, 248);
   border: 3px solid black;
   font-size: 2rem;
@@ -211,7 +211,7 @@
   transform: scale(100%);
   transition: 0.5s;
 }
-.OperatorCard .operator-details {
+.OperatorCardLarge .operator-details {
   grid-row: 1/2;
   display: flex;
   justify-content: space-between;
@@ -222,21 +222,21 @@
   border-bottom: 3px solid black;
   color: white;
 }
-.OperatorCard .operator-details #name {
+.OperatorCardLarge .operator-details #name {
   user-select: none;
   -moz-user-select: none;
   -webkit-user-select: none;
 }
-.OperatorCard .operator-details #faction {
+.OperatorCardLarge .operator-details #faction {
   height: 20px;
 }
-.OperatorCard #portrait {
+.OperatorCardLarge #portrait {
   grid-row: 2/3;
   width: 200%;
   position: relative;
   right: 50%;
 }
-.OperatorCard #badge {
+.OperatorCardLarge #badge {
   position: absolute;
   bottom: 10px;
   left: 10px;

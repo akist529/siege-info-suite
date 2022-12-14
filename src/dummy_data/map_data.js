@@ -145,52 +145,122 @@ export const mapList = [
                 {
                     room: "ATMs",
                     position: {
+                        top: "17.5%",
+                        left: "28.5%",
+                    },
+                    width: "17.35vw",
+                },
+                {
+                    room: "Lobby",
+                    position: {
+                        top: "27%",
+                        left: "28.5%",
+                    },
+                    width: "17vw",
+                },
+                {
+                    room: "Loan Office",
+                    position: {
+                        top: "59.5%",
+                        left: "28.5%",
+                    },
+                    width: "9vw",
+                },
+                {
+                    room: "Hallway",
+                    position: {
                         top: "50%",
                         left: "50%",
                     },
                     width: "15vw",
                 },
                 {
-                    room: "Lobby",
-                },
-                {
-                    room: "Loan Office",
-                },
-                {
-                    room: "Hallway",
-                },
-                {
                     room: "Square",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Square Stairs",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Stock Trading Room",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Main Stairway",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Elevator Shaft",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Front Desk",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Executive Lounge",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Conference Room",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Janitor Closet",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "CEO Office",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
                 {
                     room: "Executive Hallway",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
+                    width: "15vw",
                 },
             ],
             "B": [
@@ -244,6 +314,47 @@ export const mapList = [
                 },
                 {
                     room: "Sewer",
+                },
+            ],
+            "EXT": [
+                {
+                    room: "Parking Front",
+                },
+                {
+                    room: "Main Entrance",
+                },
+                {
+                    room: "Plaza",
+                },
+                {
+                    room: "Side Alley",
+                },
+                {
+                    room: "Jewelry Front",
+                },
+                {
+                    room: "Garage Roof",
+                },
+                {
+                    room: "Garage Ramp",
+                },
+                {
+                    room: "Exterior Parking",
+                },
+                {
+                    room: "High Roof",
+                },
+                {
+                    room: "Low Roof",
+                },
+                {
+                    room: "Terrace",
+                },
+                {
+                    room: "Back Alley",
+                },
+                {
+                    room: "Alley Access",
                 },
             ],
         },
@@ -3177,6 +3288,9 @@ export const mapList = [
                 {
                     room: "Front Stairs",
                 },
+                {
+                    room: "Bathroom",
+                },
             ],
             "4F": [
                 {
@@ -3210,7 +3324,7 @@ export const mapList = [
                     room: "Cockpit Balcony",
                 },
                 {
-                    room: "Bedroom Hallway",
+                    room: "Bedroom Hallway (3F)",
                 },
             ],
         },

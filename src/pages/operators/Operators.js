@@ -1,5 +1,6 @@
 import { operatorList } from '../../dummy_data/operator_data'
-import OperatorCard from '../../components/ui/operators/operator-card/OperatorCard'
+import OperatorCardLarge from '../../components/ui/operators/operator-card/large/OperatorCardLarge'
+import OperatorCardSmall from '../../components/ui/operators/operator-card/small/OperatorCardSmall'
 import PageTitle from '../../components/ui/page-title/PageTitle'
 
 export default function Operators() {
@@ -7,7 +8,7 @@ export default function Operators() {
         <div className="Operators">
             <PageTitle title="Operators" />
             <div className="operators-list">
-                { operatorList.map(operator => <OperatorCard key={operator.name} name={operator.name} team={operator.team} />) }
+                { operatorList.map(operator => <OperatorCardLarge key={operator.name} name={operator.name} team={operator.team} />) }
             </div>
         </div>
     )
