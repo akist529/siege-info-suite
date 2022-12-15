@@ -7,354 +7,442 @@ export const mapList = [
                 {
                     room: "ATMs",
                     position: {
-                        top: "17.5%",
+                        top: "17.56%",
                         left: "28.5%",
                     },
-                    width: "17vw",
                 },
                 {
                     room: "Lobby",
                     position: {
-                        top: "27%",
+                        top: "27.11%",
                         left: "28.5%",
                     },
-                    width: "17vw",
                 },
                 {
                     room: "Loan Office",
                     position: {
-                        top: "59.5%",
+                        top: "59.67%",
                         left: "28.5%",
                     },
-                    width: "9vw",
                 },
                 {
                     room: "Office Hallway",
                     position: {
-                        top: "56.25%",
+                        top: "56.22%",
                         left: "39.25%",
                     },
-                    width: "12.15vw",
                 },
                 {
                     room: "Main Stairway",
                     position: {
-                        top: "67.75%",
-                        left: "46.5%",
+                        top: "67.44%",
+                        left: "46.31%",
                     },
-                    width: "4.3vw",
                 },
                 {
                     room: "Elevators",
                     position: {
-                        top: "66.35%",
-                        left: "39.3%",
+                        top: "66.33%",
+                        left: "39.25%",
                     },
-                    width: "6vw",
                 },
                 {
                     room: "Tellers",
                     position: {
-                        top: "41%",
-                        left: "42.15%",
+                        top: "40.89%",
+                        left: "42.06%",
                     },
-                    width: "6vw",
                 },
                 {
                     room: "Tellers' Office",
                     position: {
-                        top: "34.75%",
-                        left: "45.90%",
+                        top: "34.67%",
+                        left: "45.88%",
                     },
-                    width: "7.35vw",
                 },
                 {
                     room: "Archives",
                     position: {
-                        top: "34.75%",
-                        left: "54%",
+                        top: "34.67%",
+                        left: "53.94%",
                     },
-                    width: "7.25vw",
                 },
                 {
                     room: "Square",
                     position: {
-                        top: "34.75%",
-                        left: "62.65%",
+                        top: "34.67%",
+                        left: "62.56%",
                     },
-                    width: "8.20vw",
                 },
                 {
                     room: "Square Stairs",
                     position: {
-                        top: "34.75%",
-                        left: "64%",
+                        top: "34.67%",
+                        left: "63.94%",
                     },
-                    width: "5vw",
                 },
                 {
                     room: "Blue Stairs",
                     position: {
-                        top: "34.65%",
-                        left: "69.35%",
+                        top: "34.67%",
+                        left: "69.32%",
                     },
-                    width: "2.5vw",
                 },
                 {
                     room: "Electrical Room",
                     position: {
-                        top: "47.5%",
-                        left: "71.85%",
+                        top: "47.44%",
+                        left: "71.81%",
                     },
-                    width: "3.2vw",
                 },
                 {
                     room: "Staff Room",
                     position: {
-                        top: "53.5%",
+                        top: "53.67%",
                         left: "61.5%",
                     },
-                    width: "9.35vw",
                 },
                 {
                     room: "Open Area",
                     position: {
-                        top: "60.35%",
-                        left: "51.5%",
+                        top: "60.44%",
+                        left: "51.38%",
                     },
-                    width: "8.5vw",
                 },
                 {
                     room: "Printer Room",
                     position: {
-                        top: "72.75%",
+                        top: "72.56%",
                         left: "61.5%",
                     },
-                    width: "5vw",
                 },
                 {
                     room: "Admin Office",
                     position: {
-                        top: "53.5%",
-                        left: "54%",
+                        top: "53.67%",
+                        left: "53.94%",
                     },
-                    width: "6.5vw",
                 },
             ],
             "2F": [
                 {
                     room: "ATMs",
                     position: {
-                        top: "17.5%",
-                        left: "28.5%",
+                        top: "17.33%",
+                        left: "28.44%",
                     },
-                    width: "17.35vw",
                 },
                 {
                     room: "Lobby",
                     position: {
-                        top: "27%",
-                        left: "28.5%",
+                        top: "27.78%",
+                        left: "28.44%",
                     },
-                    width: "17vw",
                 },
                 {
                     room: "Loan Office",
                     position: {
-                        top: "59.5%",
-                        left: "28.5%",
+                        top: "59%",
+                        left: "28.44%",
                     },
-                    width: "9vw",
                 },
                 {
                     room: "Hallway",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "54.9%",
+                        left: "39.4%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Square",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "35.33%",
+                        left: "62.69%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Square Stairs",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "35.33%",
+                        left: "64.75%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Stock Trading Room",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "71.22%",
+                        left: "51.5%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Main Stairway",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "67.11%",
+                        left: "46.44%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Elevator Shaft",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "67.22%",
+                        left: "39.44%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Front Desk",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "40.22%",
+                        left: "41.81%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Executive Lounge",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "40.22%",
+                        left: "48.19%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Conference Room",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "53.22%",
+                        left: "45.56%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Janitor Closet",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "53.22%",
+                        left: "55.06%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "CEO Office",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "35.44%",
+                        left: "55.06%",
                     },
-                    width: "15vw",
                 },
                 {
                     room: "Executive Hallway",
                     position: {
-                        top: "50%",
-                        left: "50%",
+                        top: "35.44%",
+                        left: "49.44%",
                     },
-                    width: "15vw",
                 },
             ],
             "B": [
                 {
                     room: "Main Stairway",
+                    position: {
+                        top: "65.33%",
+                        left: "46.19%",
+                    },
                 },
                 {
                     room: "Vault Lobby",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Vault Entrance",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Vault",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Gold Vault",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Secure Hallway",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Secure Hallway",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Elevators",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Lockers",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Loading Docks",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Bank Garage",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Garage Ramp",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "CCTV Room",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Server Room",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Blue Stairs",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Tunnel",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Sewer",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
             ],
             "EXT": [
                 {
                     room: "Parking Front",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Main Entrance",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Plaza",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Side Alley",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Jewelry Front",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Garage Roof",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Garage Ramp",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Exterior Parking",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "High Roof",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Low Roof",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Terrace",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Back Alley",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
                 {
                     room: "Alley Access",
+                    position: {
+                        top: "50%",
+                        left: "50%",
+                    },
                 },
             ],
         },

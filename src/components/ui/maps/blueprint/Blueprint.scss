@@ -3,15 +3,13 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
     position: relative;
-    width: 100%;
-    max-width: 80vw;
-    height: auto;
+    width: 80vw;
 
     .blueprint-image {
         grid-row: 1 / -1;
         grid-column: 1 / -1;
-        width: 100%;
         z-index: 997;
+        width: 100%;
     }
 
     .blueprint-room {
@@ -20,7 +18,6 @@
         position: relative;
         opacity: 0%;
         z-index: 998;
-        width: calc(100% * 80vw);
     }
 
     .blueprint-hover {

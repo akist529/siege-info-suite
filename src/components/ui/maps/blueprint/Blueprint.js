@@ -20,16 +20,28 @@ export default function Blueprint(props) {
                 alt={`Blueprint - ${mapName} - ${floor}`}
                 src={`/images/maps/${mapName}/${mapName}-${floor}.webp`}
             />
-            { floorData.map(item => 
-                <img 
-                    key={item.room} 
-                    alt={item.room} 
-                    src={`/images/maps/${mapName}/rooms/${floor}/${item.room.split(" ").join("-").replace(/[']/g, "")}.webp`} 
-                    className="blueprint-room" 
-                    onMouseOver={handleMouseOver} 
-                    onMouseLeave={handleMouseLeave} 
-                    style={{ top: `${item.position.top}`, left: `${item.position.left}` }}
-                />) }
+            { floorData.map(item => {
+                const image = document.createElement("img")
+                image.src = `/images/maps/${mapName}/rooms/${floor}/${item.room.split(" ").join("-").replace(/[']/g, "")}.webp`
+                const imageWidth = image.naturalWidth
+                const divWidth = (window.innerWidth * 0.8)
+
+                return (
+                    <img 
+                        key={item.room} 
+                        alt={item.room} 
+                        src={image.src} 
+                        className="blueprint-room" 
+                        onMouseOver={handleMouseOver} 
+                        onMouseLeave={handleMouseLeave} 
+                        style={{ 
+                            top: `${item.position.top}`, 
+                            left: `${item.position.left}`, 
+                            width: `${imageWidth * (divWidth / 1600)}px`, 
+                        }}
+                    />)
+                })
+            }
         </div>
     )
 }
