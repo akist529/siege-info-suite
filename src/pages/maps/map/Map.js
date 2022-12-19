@@ -9,7 +9,16 @@ import ToggleFloorMenu from '../../../components/ui/maps/toggle-floor-menu/Toggl
 
 export default function Map() {
     const { name } = useParams()
-    const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1)
+    let capitalizedName = name.charAt(0).toUpperCase() + name.slice(1)
+
+    for (let i = 0; i < capitalizedName.length; i++) {
+        if (capitalizedName[i] === "-") {
+            capitalizedName = capitalizedName.slice(0, i) + " " + capitalizedName.charAt(i + 1).toUpperCase() + capitalizedName.slice(i + 2)
+        }
+    }
+
+    console.log(capitalizedName)
+
     const mapInfo = mapList.filter(map => map.name === capitalizedName)[0]
 
     const [floorSelected, setFloorSelected] = useState("1F")

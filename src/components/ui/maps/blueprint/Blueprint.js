@@ -3,6 +3,11 @@ import { useState } from 'react'
 export default function Blueprint(props) {
     const { mapName, floor, floorData, setCurrentRoom, floorSelected } = props
 
+    const mapImage = document.createElement("img")
+    mapImage.src = `/images/maps/${mapName.replace(" ", "-")}/${mapName.replace(" ", "-")}-${floor}.webp`
+    const mapImageWidth = mapImage.naturalWidth
+    const mapImageHeight = mapImage.naturalHeight
+
     function handleMouseOver(e) {
         e.currentTarget.classList.add("blueprint-hover")
         setCurrentRoom(e.currentTarget.alt)
@@ -18,11 +23,11 @@ export default function Blueprint(props) {
             <img 
                 className="blueprint-image"
                 alt={`Blueprint - ${mapName} - ${floor}`}
-                src={`/images/maps/${mapName}/${mapName}-${floor}.webp`}
+                src={`/images/maps/${mapName.replace(" ", "-")}/${mapName.replace(" ", "-")}-${floor}.webp`}
             />
             { floorData.map(item => {
                 const image = document.createElement("img")
-                image.src = `/images/maps/${mapName}/rooms/${floor}/${item.room.split(" ").join("-").replace(/[']/g, "")}.webp`
+                image.src = `/images/maps/${mapName.replace(" ", "-")}/rooms/${floor}/${item.room.split(" ").join("-").replace(/[']/g, "").replace(/[()]/g, "").replace("/", "-")}.webp`
                 const imageWidth = image.naturalWidth
                 const divWidth = (window.innerWidth * 0.8)
 
@@ -35,9 +40,9 @@ export default function Blueprint(props) {
                         onMouseOver={handleMouseOver} 
                         onMouseLeave={handleMouseLeave} 
                         style={{ 
-                            top: `${item.position.top}`, 
-                            left: `${item.position.left}`, 
-                            width: `${imageWidth * (divWidth / 1600)}px`, 
+                            top: `calc(100% * ${item.position.top}/${mapImageHeight})`, 
+                            left: `calc(100% * ${item.position.left}/${mapImageWidth})`, 
+                            width: `${imageWidth * (divWidth / mapImageWidth)}px`, 
                         }}
                     />)
                 })
