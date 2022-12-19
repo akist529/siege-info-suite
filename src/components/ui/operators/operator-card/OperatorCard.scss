@@ -1,0 +1,80 @@
+.OperatorCard {
+    background-color: rgb(160, 160, 248);
+    border: 3px solid black;
+    font-size: 2rem;
+    cursor: pointer;
+
+    width: 160px;
+    height: 160px;
+    position: relative;
+    overflow: hidden;
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 30px 1fr;
+
+    justify-items: center;
+
+    transform: scale(100%);
+    transition: 0.5s;
+
+    .operator-details {
+        grid-row: 1 / 2;
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 10px;
+        width: 100%;
+        padding: 5px 10px;
+
+        background-color: rgb(48, 48, 70);
+        border-bottom: 3px solid black;
+        color: white;
+
+        #name {
+            user-select: none;
+            -moz-user-select: none;
+            -webkit-user-select: none;
+        }
+
+        #faction {
+            height: 20px;
+        }
+    }
+
+    #portrait {
+        grid-row: 2 / 3;
+
+        width: 200%;
+        position: relative;
+        right: 50%;
+    }
+
+    #badge {
+        grid-row: 2 / 3;
+        position: absolute;
+        height: 100%;
+        padding: 5px;
+    }
+}
+
+.focused {
+    transform: scale(115);
+    transition: 0.5s;
+}
+
+@media screen and (min-width: 470px) {
+    .OperatorCard {
+        width: 200px;
+        height: 300px;
+        
+        #badge {
+            grid-row: auto;
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            height: 60px;
+        }
+    }
+}

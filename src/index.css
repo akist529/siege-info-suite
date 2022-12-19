@@ -1,51 +1,42 @@
 @import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
 .NavLink {
-  text-decoration: none;
-}
-.NavLink button {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border: none;
-  background: none;
-  padding: 10px;
-}
-.NavLink button h2 {
-  color: white;
-}
-.NavLink button:hover {
-  transition: 0.5s;
-  background: white;
-  cursor: pointer;
-}
-.NavLink button:hover h2 {
-  color: black;
-}
+  text-decoration: none; }
+  .NavLink button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 10px; }
+    .NavLink button h2 {
+      color: white; }
+    .NavLink button:hover {
+      transition: 0.5s;
+      background: white;
+      cursor: pointer; }
+      .NavLink button:hover h2 {
+        color: black; }
 
 .NavMenuButton {
   border: none;
   border-radius: 5px;
-  background-color: rgb(215, 215, 215);
+  background-color: #d7d7d7;
   width: 80px;
   height: 80px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .NavLoginButton {
   background: none;
   border: none;
-  filter: invert(1);
-}
+  filter: invert(1); }
 
 .ToggleFloorButton {
   font-size: 2rem;
   padding: 5px 20px;
-  border: none;
-}
+  border: none; }
 
 .floor-selected {
-  background-color: rgb(100, 100, 100);
-}
+  background-color: #646464; }
 
 .SearchBar {
   background-image: url("../public/images/ui/search.png");
@@ -58,8 +49,7 @@
   width: 30px;
   transition: min-width 0.5s, width 0.5s, border 0s, border-radius 0s;
   border: none;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .NavBar {
   display: flex;
@@ -73,183 +63,163 @@
   padding: 10px 20px;
   background-color: black;
   color: white;
-  font-family: "Teko";
-  text-transform: uppercase;
-}
-.NavBar .AppTitle {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  position: relative;
-  height: 80%;
-}
-.NavBar .AppTitle h1 {
-  position: relative;
-  font-size: 64px;
-  height: 100%;
-  width: 20%;
-  line-height: 75%;
-}
-.NavBar .AppTitle #r6s-logo {
-  position: relative;
-  height: 100%;
-  filter: invert(1);
-}
-.NavBar .AppControls {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  position: relative;
-  height: 80%;
-}
-.NavBar .AppControls img {
-  height: 30px;
-}
-.NavBar .SearchBarFocused {
-  min-width: 300px;
-  width: 40vw;
-  border-radius: 15px;
-}
+  font-family: 'Teko';
+  text-transform: uppercase; }
+  .NavBar .AppTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    height: 80%; }
+    .NavBar .AppTitle h1 {
+      position: relative;
+      font-size: 64px;
+      height: 100%;
+      width: 20%;
+      line-height: 75%; }
+    .NavBar .AppTitle #r6s-logo {
+      position: relative;
+      height: 100%;
+      filter: invert(1); }
+  .NavBar .AppControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: relative;
+    height: 80%; }
+    .NavBar .AppControls img {
+      height: 30px; }
+  .NavBar .SearchBarFocused {
+    min-width: 300px;
+    width: 40vw;
+    border-radius: 15px; }
 
 @media only screen and (min-width: 912px) {
   .NavBar {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 0 20px;
-  }
-  .NavBar .AppTitle {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-  }
-  .NavBar .AppTitle h1 {
-    font-size: 40px;
-    line-height: 64px;
-    width: auto;
-  }
-  .NavBar .SearchBar {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
-  .NavBar .SearchBarFocused {
-    min-width: 100px;
-    width: 25vw;
-  }
-  .NavBar .NavLoginButton {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
-}
+    padding: 10px 20px 0 20px; }
+    .NavBar .AppTitle {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 50%; }
+      .NavBar .AppTitle h1 {
+        font-size: 40px;
+        line-height: 64px;
+        width: auto; }
+    .NavBar .SearchBar {
+      position: fixed;
+      top: 10px;
+      left: 10px; }
+    .NavBar .SearchBarFocused {
+      min-width: 100px;
+      width: 25vw; }
+    .NavBar .NavLoginButton {
+      position: fixed;
+      top: 10px;
+      right: 10px; } }
 .NavMenuDesktop {
   display: flex;
   justify-content: space-between;
-  width: 90vw;
-}
-.NavMenuDesktop ul {
-  display: grid;
-  justify-items: center;
-  list-style-type: none;
-  white-space: nowrap;
-}
-.NavMenuDesktop .NavGameInfo {
-  grid-template-columns: repeat(6, 1fr);
-}
-.NavMenuDesktop .NavAppInfo {
-  grid-template-columns: repeat(2, 1fr);
-}
+  width: 90vw; }
+  .NavMenuDesktop ul {
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    white-space: nowrap; }
+  .NavMenuDesktop .NavGameInfo {
+    grid-template-columns: repeat(6, 1fr); }
+  .NavMenuDesktop .NavAppInfo {
+    grid-template-columns: repeat(2, 1fr); }
 
 @media only screen and (max-width: 1225px) {
   .NavMenuDesktop .NavAppInfo {
-    grid-template-columns: 1fr;
-  }
-}
+    grid-template-columns: 1fr; } }
 .NavMenuMobile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
   position: relative;
-  width: 100%;
-}
-.NavMenuMobile .NavButton {
-  display: flex;
-  flex-direction: column;
-}
+  width: 100%; }
+  .NavMenuMobile .NavButton {
+    display: flex;
+    flex-direction: column; }
 
 .Dropdown {
-  background: rgb(93, 93, 185);
+  background: #5d5db9;
   position: absolute;
-  top: 100%;
-}
-.Dropdown li {
-  list-style-type: none;
-  font-size: 2rem;
-  padding: 5px 20px;
-}
-.Dropdown li a {
-  text-decoration: none;
-  color: white;
-}
+  top: 100%; }
+  .Dropdown li {
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 5px 20px; }
+    .Dropdown li a {
+      text-decoration: none;
+      color: white; }
 
-.OperatorCardLarge {
-  background-color: rgb(160, 160, 248);
+.OperatorCard {
+  background-color: #a0a0f8;
   border: 3px solid black;
   font-size: 2rem;
   cursor: pointer;
-  width: 200px;
-  height: 300px;
+  width: 160px;
+  height: 160px;
   position: relative;
   overflow: hidden;
   display: grid;
   grid-template-columns: 100%;
   grid-template-rows: 30px 1fr;
+  justify-items: center;
   transform: scale(100%);
-  transition: 0.5s;
-}
-.OperatorCardLarge .operator-details {
-  grid-row: 1/2;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 5px 10px;
-  background-color: rgb(48, 48, 70);
-  border-bottom: 3px solid black;
-  color: white;
-}
-.OperatorCardLarge .operator-details #name {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
-.OperatorCardLarge .operator-details #faction {
-  height: 20px;
-}
-.OperatorCardLarge #portrait {
-  grid-row: 2/3;
-  width: 200%;
-  position: relative;
-  right: 50%;
-}
-.OperatorCardLarge #badge {
-  position: absolute;
-  bottom: 10px;
-  left: 10px;
-  height: 60px;
-}
+  transition: 0.5s; }
+  .OperatorCard .operator-details {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #303046;
+    border-bottom: 3px solid black;
+    color: white; }
+    .OperatorCard .operator-details #name {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none; }
+    .OperatorCard .operator-details #faction {
+      height: 20px; }
+  .OperatorCard #portrait {
+    grid-row: 2 / 3;
+    width: 200%;
+    position: relative;
+    right: 50%; }
+  .OperatorCard #badge {
+    grid-row: 2 / 3;
+    position: absolute;
+    height: 100%;
+    padding: 5px; }
 
 .focused {
   transform: scale(115);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
+@media screen and (min-width: 470px) {
+  .OperatorCard {
+    width: 200px;
+    height: 300px; }
+    .OperatorCard #badge {
+      grid-row: auto;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      height: 60px; } }
 .MapCard {
-  background-color: rgb(160, 160, 248);
+  background-color: #a0a0f8;
   border: 3px solid black;
   font-size: 2rem;
   cursor: pointer;
@@ -261,32 +231,28 @@
   grid-template-columns: 100%;
   grid-template-rows: 1fr 40px;
   transform: scale(100%);
-  transition: 0.5s;
-}
-.MapCard #map-preview {
-  grid-row: 1/2;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.MapCard #map-name {
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(48, 48, 70);
-  border-top: 3px solid black;
-  color: white;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
+  transition: 0.5s; }
+  .MapCard #map-preview {
+    grid-row: 1 / 2;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .MapCard #map-name {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #303046;
+    border-top: 3px solid black;
+    color: white;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
 
 .focused {
   transform: scale(115%);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 .ItemCard {
   display: flex;
@@ -296,46 +262,38 @@
   padding: 10px;
   border: 2px solid rgba(0, 0, 0, 0.2);
   border-radius: 10px;
-  width: 250px;
-}
-.ItemCard img {
-  width: 100%;
-}
+  width: 250px; }
+  .ItemCard img {
+    width: 100%; }
 
 .PageTitle {
   font-size: 4rem;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .PageSubtitle {
   font-size: 2rem;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 .Blueprint {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   position: relative;
-  width: 80vw;
-}
-.Blueprint .blueprint-image {
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  z-index: 997;
-  width: 100%;
-}
-.Blueprint .blueprint-room {
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  position: relative;
-  opacity: 0%;
-  z-index: 998;
-}
-.Blueprint .blueprint-hover {
-  opacity: 100%;
-  cursor: pointer;
-}
+  width: 80vw; }
+  .Blueprint .blueprint-image {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    z-index: 997;
+    width: 100%; }
+  .Blueprint .blueprint-room {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    position: relative;
+    opacity: 0%;
+    z-index: 998; }
+  .Blueprint .blueprint-hover {
+    opacity: 100%;
+    cursor: pointer; }
 
 .BlueprintLocation {
   display: flex;
@@ -349,14 +307,12 @@
   top: 20vh;
   left: auto;
   right: auto;
-  z-index: 999;
-}
+  z-index: 999; }
 
 .ToggleFloorMenu {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .Operators {
   padding-top: calc(15vh + 80px);
@@ -365,90 +321,80 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Operators .operators-list {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(auto-fill, 200px);
-  gap: 30px;
-  padding-top: 80px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Operators .operators-list {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 160px);
+    gap: 20px;
+    padding-top: 80px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
+@media screen and (min-width: 470px) {
+  .Operators .operators-list {
+    gap: 30px;
+    grid-template-columns: repeat(auto-fill, 200px); } }
 .Operator {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Operator .operator-title {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  background-color: rgba(0, 0, 0, 0.2);
-  padding: 0px 50px;
-  border-radius: 10px;
-}
-.Operator .operator-title img {
-  height: 70px;
-}
-.Operator .operator-profile {
-  display: flex;
-  justify-content: space-around;
-  align-items: flex-start;
-  padding-top: 5vh;
-  width: 100%;
-}
-.Operator .operator-profile .operator-portrait {
-  display: flex;
-  flex-direction: column;
-}
-.Operator .operator-profile .operator-portrait #operator-portrait-full {
-  height: 600px;
-}
-.Operator .operator-profile .operator-portrait #operator-shadow {
-  width: 120%;
-  height: 50px;
-  background-color: black;
-  border-radius: 50%;
-  filter: blur(20px);
-  position: relative;
-  bottom: 30px;
-}
-.Operator .operator-profile .operator-info {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-}
-.Operator .operator-profile .operator-info .operator-stats {
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  background-color: rgba(0, 0, 0, 0.2);
-  list-style-type: none;
-}
-.Operator .operator-profile .operator-info .operator-stats li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: calc(100% + 5vw);
-  font-size: 2rem;
-}
-.Operator .operator-profile .operator-info .operator-loadout .operator-primary {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-}
-.Operator .operator-art {
-  height: 40vw;
-  width: 100%;
-  object-fit: cover;
-}
+  align-items: center; }
+  .Operator .operator-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 0px 50px;
+    border-radius: 10px; }
+    .Operator .operator-title img {
+      height: 70px; }
+  .Operator .operator-profile {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5vh;
+    width: 100%; }
+    .Operator .operator-profile .operator-portrait {
+      display: flex;
+      flex-direction: column; }
+      .Operator .operator-profile .operator-portrait #operator-portrait-full {
+        height: 600px; }
+      .Operator .operator-profile .operator-portrait #operator-shadow {
+        width: 120%;
+        height: 50px;
+        background-color: black;
+        border-radius: 50%;
+        filter: blur(20px);
+        position: relative;
+        bottom: 30px; }
+    .Operator .operator-profile .operator-info {
+      display: flex;
+      flex-direction: column;
+      gap: 40px; }
+      .Operator .operator-profile .operator-info .operator-stats {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        background-color: rgba(0, 0, 0, 0.2);
+        list-style-type: none; }
+        .Operator .operator-profile .operator-info .operator-stats li {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          width: calc(100% + 5vw);
+          font-size: 2rem; }
+      .Operator .operator-profile .operator-info .operator-loadout .operator-primary {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); }
+  .Operator .operator-art {
+    height: 40vw;
+    width: 100%;
+    object-fit: cover; }
 
 .Maps {
   padding-top: calc(15vh + 80px);
@@ -457,65 +403,57 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Maps .maps-list {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, 350px);
-  grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 30px;
-  padding-top: 80px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Maps .maps-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 350px);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 30px;
+    padding-top: 80px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
 .Map {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .Weapons {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .Quizzes {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .StratBuilder {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .MyStats {
   padding-top: calc(15vh + 80px);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Teko";
-}
+  font-family: 'Teko'; }
 
 /*# sourceMappingURL=index.css.map */
