@@ -4,8 +4,8 @@
     font-size: 2rem;
     cursor: pointer;
 
-    width: 160px;
-    height: 160px;
+    width: 120px;
+    height: 120px;
     position: relative;
     overflow: hidden;
 
@@ -22,7 +22,7 @@
         grid-row: 1 / 2;
 
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         gap: 10px;
         width: 100%;
@@ -64,10 +64,30 @@
     transition: 0.5s;
 }
 
+@media screen and (min-width: 380px) {
+    .OperatorCard {
+        width: 120px;
+        height: 120px;
+
+        .operator-details {
+            justify-content: center;
+
+            #faction {
+                background-color: black;
+                padding: 5px;
+                position: absolute;
+                bottom: 2px;
+                left: 2px;
+            }
+        }
+    }
+}
+
 @media screen and (min-width: 470px) {
     .OperatorCard {
         width: 200px;
         height: 300px;
+        justify-items: normal;
         
         #badge {
             grid-row: auto;
