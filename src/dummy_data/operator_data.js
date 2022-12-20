@@ -4,84 +4,363 @@ export const operatorList = [
         team: 'Attack',
         ability: 'S.E.L.M.A. Aqua Breacher',
         health: 2,
+        role: ["Hard Breacher"],
+        counters: [
+            {
+                name: 'Aruni',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Wamai',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Kaid',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Maestro',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Mute',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Jager',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Bandit',
+                description: '',
+                image: '',
+            },
+        ],
     }, 
     {
         name: 'Alibi',
         team: 'Defend',
         ability: 'Prisma',
         health: 1,
+        role: ["Roamer"],
+        counters: [
+            {
+                name: 'Thatcher',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Twitch',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'IQ',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Zero',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Kali',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Flores',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Glaz',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Jackal',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'N0kk',
+                description: '',
+                image: '',
+            },
+        ],
     },
     {
         name: 'Amaru',
         team: 'Attack',
         ability: 'Garra Hook',
         health: 2,
+        role: ["Entry Fragger"],
+        counters: [
+            {
+                name: 'Castle',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Kapkan',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Frost',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Melusi',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Clash',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Aruni',
+                description: '',
+                image: '',
+            },
+        ],
     },
     {
         name: 'Aruni',
         team: 'Defend',
         ability: 'Surya Laser Gate',
         health: 2,
+        role: ["Anchor", "Roamer", "Breach Denier"],
+        counters: [
+            {
+                name: 'Finka',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Iana',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Thatcher',
+                description: '',
+                image: '',
+            },
+        ],
     }, 
     {
         name: 'Ash',
         team: 'Attack',
         ability: 'Breaching Round',
         health: 1,
+        role: ["Entry Fragger", "Soft Breacher"],
+        counters: [
+            {
+                name: 'Jager',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Wamai',
+                description: '',
+                image: '',
+            },
+        ],
     },
     {
         name: 'Azami',
         team: 'Defend',
         ability: 'Kiba Barrier',
         health: 2,
+        role: ["Anchor", "Roamer"],
+        counters: [
+            {
+                name: 'Ash',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Kali',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Flores',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Zofia',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Sledge',
+                description: '',
+                image: '',
+            },
+        ],
     },
     {
         name: 'Bandit',
         team: 'Defend',
         ability: 'Shock Wire',
         health: 1,
+        role: ["Anchor", "Roamer", "Breach Denier"],
+        counters: [
+            {
+                name: 'IQ',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Thatcher',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Twitch',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Kali',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Zero',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Flores',
+                description: '',
+                image: '',
+            },
+        ],
     }, 
     {
         name: 'Blackbeard',
         team: 'Attack',
         ability: 'Rifle-Shield',
         health: 2,
+        role: ["Entry Fragger"],
     },
     {
         name: 'Blitz',
         team: 'Attack',
         ability: 'Flash Shield',
         health: 2,
+        role: ["Entry Fragger"],
+        counters: [
+            {
+                name: 'Mute',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Warden',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Smoke',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Ela',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Lesion',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Oryx',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Clash',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Melusi',
+                description: '',
+                image: '',
+            },
+        ],
     },
     {
         name: 'Buck',
         team: 'Attack',
         ability: 'Skeleton Key',
         health: 2,
+        role: "Entry Fragger",
     },
     {
         name: 'Capitao',
         team: 'Attack',
         ability: 'Tactical Crossbow',
         health: 1,
+        role: ["Entry Fragger", "Bomb Defusal"],
+        counters: [
+            {
+                name: 'Wamai',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Warden',
+                description: '',
+                image: '',
+            },
+            {
+                name: 'Tachanka',
+                description: '',
+                image: '',
+            },
+        ]
     },
     {
         name: 'Castle',
         team: 'Defend',
         ability: 'Armor Panel',
         health: 2,
+        role: ["Anchor"],
+        counter: ["Sledge", "Ash", "Zofia", "Fuze", "Ying", "Maverick", "Kali", "Ace", "Flores"],
     },
     {
         name: 'Caveira',
         team: 'Defend',
         ability: 'Silent Step',
         health: 1,
+        role: ["Roamer"],
+        counter: ["Jackal", "Dokkaebi"],
     },
     {
         name: 'Clash',
         team: 'Defend',
         ability: 'CCE Shield',
         health: 3,
+        role: ["Anchor"],
     },
     {
         name: 'Doc',

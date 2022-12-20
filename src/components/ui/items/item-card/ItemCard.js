@@ -3,7 +3,7 @@ export default function ItemCard(props) {
 
     return (
         <div className="ItemCard">
-            <span>{name}</span>
+            <span>{ (type === 'gun') ? name : name.replace("-", " ") }</span>
             <img alt={`${name} Icon`} src={`/images/${type}s/${name}.webp`} />
         </div>
     )
