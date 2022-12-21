@@ -3,6 +3,7 @@ import { useParams } from 'react-router-dom'
 import PageTitle from '../../../components/ui/page-title/PageTitle'
 import PageSubtitle from '../../../components/ui/page-subtitle/PageSubtitle'
 import ItemCard from '../../../components/ui/items/item-card/ItemCard'
+import OperatorHint from '../../../components/ui/operators/operator-hint/OperatorHint'
 import { operatorList } from '../../../dummy_data/operator_data'
 import { weaponList } from '../../../dummy_data/weapon_data'
 import { gadgetList } from '../../../dummy_data/gadget_data'
@@ -82,6 +83,17 @@ export default function Operator() {
                 <ItemCard name={operatorData.ability.replace(/[.]/g, "").split(" ").join("-")} type="abilitie" />
             </div>
             <img className="operator-art" alt={`${capitalizedName} Artwork`} src={`/images/ops/art/${capitalizedName}.webp`} />
+            <PageSubtitle subtitle="Special Ability" />
+            <PageSubtitle subtitle="Synergies" />
+            { operatorData.counters && <PageSubtitle subtitle="Counters" /> }
+            { operatorData.counters && <div className="operator-counters">
+                { operatorData.counters.map(operator => {
+                    return (
+                        <OperatorHint name={operator.name} description={operator.description} />
+                    )
+                }) }
+            </div> }
+            <PageSubtitle subtitle="Tips & Tricks" />
         </div>
     )
 }
