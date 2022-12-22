@@ -1,0 +1,39 @@
+.OperatorLink {
+    background-color: rgb(175, 175, 175);
+    border-radius: 10px;
+    height: auto;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+
+    .hint-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 2rem;
+        height: 100px;
+        width: 80vw;
+        padding: 15px;
+
+        #operator-name {
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            gap: 10px;
+
+            #operator-icon {
+                height: 60px;
+            }
+        }
+
+
+        #hint-expand {
+            height: 40px;
+        }
+    }
+
+    .hint-content {
+        font-size: 1.5rem;
+        padding: 30px;
+    }
+}

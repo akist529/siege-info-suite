@@ -1008,11 +1008,6 @@ export const mapList = [
         },
     },
     {
-        name: "Close Quarter",
-        playlist: ["Team Deathmatch"],
-        folder: '/images/maps/Close-Quarter/',
-    },
-    {
         name: "Clubhouse",
         playlist: ["Ranked", "Unranked", "Quick Match", "New Comer"],
         layout: {

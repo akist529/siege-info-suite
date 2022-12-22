@@ -1,4 +1,10 @@
 .PageSubtitle {
-    font-size: 2rem;
+    font-size: 9vw;
     text-transform: uppercase;
+}
+
+@media screen and (min-width: 540px) {
+    .PageSubtitle {
+        font-size: 48px;
+    }
 }

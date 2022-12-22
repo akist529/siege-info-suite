@@ -3,43 +3,73 @@ export const operatorList = [
         name: 'Ace',
         team: 'Attack',
         ability: 'S.E.L.M.A. Aqua Breacher',
+        description: "SELMAs act as a form of hard breach, creating a rectangular shaped hole in any surface it is thrown onto, including reinforcements. When thrown onto a wall, it will create two of these holes, one on top of the other, unless shot out prematurely. On reinforced floor hatches, they will detonate only once, and a second SELMA will be required to open the hatch. When used properly, these charges can create kill holes or new points of entry for attackers.",
         health: 2,
         role: ["Hard Breacher"],
+        synergies: [
+            {
+                name: 'Thatcher',
+                description: "Thatcher's EMP grenades can destroy any electronic defender utility that prevents the SELMA charges from detonating.",
+            },
+            {
+                name: 'Twitch',
+                description: "Twitch's shock drone can destroy any electronic defender utility that prevents the SELMA charges from detonating.",
+            },
+            {
+                name: 'Kali',
+                description: "Kali's LV Lance can destroy any electronic defender utility that prevents the SELMA charges from detonating.",
+            },
+            {
+                name: 'Zero',
+                description: "Zero's ARGUS cameras can destroy any electronic defender utility that prevents the SELMA charges from detonating.",
+            },
+            {
+                name: 'Flores',
+                description: "Flores' explosive drones can destroy any electronic defender utility that prevents the SELMA charges from detonating.",
+            },
+        ],
         counters: [
             {
                 name: 'Aruni',
                 description: "Aruni can destroy Ace's breach charges used on hatches, if she has placed a laser gate on the opposite side.",
-                image: '',
             },
             {
                 name: 'Wamai',
                 description: "Wamai's Mag-NETs will intercept any of Ace's breach charges thrown in their vicinity.",
-                image: '',
             },
             {
                 name: 'Kaid',
                 description: "Walls and hatches electrified by Kaid will instantly destroy Ace's breach charges.",
-                image: '',
             },
             {
                 name: 'Maestro',
                 description: "Maestro's Evil Eye can be used to destroy Ace's breach charges.",
-                image: '',
             },
             {
                 name: 'Mute',
                 description: 'Breach charges used in the radius of a jammer will fail to activate.',
-                image: '',
             },
             {
                 name: 'Jager',
                 description: "Jager's ADSs will intercept any of Ace's breach charges thrown in their vicinity.",
-                image: '',
             },
             {
                 name: 'Bandit',
                 description: 'Breach charges thrown onto a surface electrified by a Bandit battery will be instantly destroyed.',
-                image: '',
+            },
+        ],
+        tips: [
+            {
+                description: "Ace's SELMA charges can destroy Mira's windows if thrown onto them.",
+            },
+            {
+                description: "To create a standard size hole to vault through, wait for the SELMA charge to detonate twice. To create a smaller opening to use as a kill hole, shoot out the SELMA charge after it has detonated once.",
+            },
+            {
+                description: "To destroy a reinforced hatch, use two SELMA charges.",
+            },
+            {
+                description: "If a SELMA charge is thrown onto a non-breachable surface, it can be picked back up.",
             },
         ],
     }, 
@@ -47,53 +77,74 @@ export const operatorList = [
         name: 'Alibi',
         team: 'Defend',
         ability: 'Prisma',
+        description: "Alibi's prismas act as holographic displays of herself, holding the potential to fool unsuspecting attackers. When shot, targets will be marked with a red ping. More than just a way to hunt careless attackers, prismas are also useful for keeping attackers on edge or obstructing lines of sight.",
         health: 1,
         role: ["Roamer"],
         counters: [
             {
                 name: 'Thatcher',
-                description: '',
-                image: '',
+                description: "Thatcher's EMP grenades will temporarily disable a prisma for ten seconds.",
             },
             {
                 name: 'Twitch',
-                description: '',
-                image: '',
+                description: "A shot from one of Twitch's shock drones to the base of a prisma will destroy it.",
             },
             {
                 name: 'IQ',
-                description: '',
-                image: '',
+                description: "IQ's electronics detector will spot a prisma, allowing for it to be destroyed through destructible surfaces.",
             },
             {
                 name: 'Zero',
-                description: '',
-                image: '',
+                description: "A shot from one of Zero's ARGUS cameras to the base of a prisma will destroy it.",
             },
             {
                 name: 'Kali',
-                description: '',
-                image: '',
+                description: "A shot from Kali's LV Lance will destroy a prisma.",
             },
             {
                 name: 'Flores',
-                description: '',
-                image: '',
+                description: "Flores' explosive drones can be used to destroy a prisma from a safe distance.",
             },
             {
                 name: 'Glaz',
-                description: '',
-                image: '',
+                description: "Glaz's thermal scope will not highlight prismas, allowing him to easily ignore them.",
             },
             {
                 name: 'Jackal',
-                description: '',
-                image: '',
+                description: "Vigilant Jackal players will be able to discern what operator a footstep belongs to, even if Alibi's ability hides their identity.",
             },
             {
                 name: 'N0kk',
-                description: '',
-                image: '',
+                description: "When her cloak is activated, N0kk cannot be tracked by Alibi regardless if she shoots or steps into a prisma.",
+            },
+        ],
+        tips: [
+            {
+                description: "Ordinary bullets can only destroy Alibi's prismas by striking their base; therefore, placing them behind a deployable shield or behind a window can make them difficult or impossible for attackers to destroy.",
+            },
+            {
+                description: "Try placing a prisma at a typical spawnpeek location for an easy enemy ping and kill opportunity.",
+            },
+            {
+                description: "Prismas can be strategically placed to block strong attacker lines of sight, such as windows or long hallways.",
+            },
+            {
+                description: "Prismas will always use Alibi's default appearance, regardless of what skins the player may be using.",
+            },
+            {
+                description: "Prismas can be easily identified by the fact that they are completely still (the real Alibi will move a bit even when stationary) and their eyes are not visible through their goggles; this is not the case with the real Alibi.",
+            },
+            {
+                description: "Prismas will not be scanned when targeted by a drone.",
+            },
+            {
+                description: "Prismas will temporarily disappear when the real Alibi (or any other defender) stands directly over them, allowing her to potentially trick attackers.",
+            },
+            {
+                description: "When an attacker attacks a prisma, their location will be pinged once per second for five seconds total.",
+            },
+            {
+                description: "Defenders that are exposed by Lion's drone or by going outside will have their identities hidden when an Alibi is on the team.",
             },
         ],
     },
@@ -101,38 +152,47 @@ export const operatorList = [
         name: 'Amaru',
         team: 'Attack',
         ability: 'Garra Hook',
+        description: "The Garra Hook grants Amaru added mobility. It can be aimed at exterior windows, ledges, skylights and unreinforced hatches, and when used, will latch onto the target and quickly pull Amaru towards it, allowing for faster map control and unpredictable plays.",
         health: 2,
         role: ["Entry Fragger"],
         counters: [
             {
                 name: 'Castle',
-                description: '',
-                image: '',
+                description: "Amaru can't grapple through windows that are covered with an armor panel.",
             },
             {
                 name: 'Kapkan',
-                description: '',
-                image: '',
+                description: "Amaru will detonate Kapkan's EDDs upon grappling through a window, resulting in death or injury.",
             },
             {
                 name: 'Frost',
-                description: '',
-                image: '',
+                description: "Amaru will not be able to bring her weapon up fast enough to shoot out Frost mats placed underneath windows and will become trapped upon entering.",
             },
             {
                 name: 'Melusi',
-                description: '',
-                image: '',
+                description: "Amaru is powerful at quickly obtaining map control or rushing defenders; by placing a banshee device at her entry point, this advantage can be nullified by slowing her down and placing her in a vulnerable state.",
             },
             {
                 name: 'Clash',
-                description: '',
-                image: '',
+                description: "If positioned in front of a window, Clash's shield will prevent Amaru from entering.",
             },
             {
                 name: 'Aruni',
-                description: '',
-                image: '',
+                description: "If Amaru attempts to grapple through a window blocked by a Surya laser gate, she will take the standard 30HP damage.",
+            },
+        ],
+        tips: [
+            {
+                description: "Amaru is the only operator besides Oryx and the only attacker that can vertically climb hatches, allowing for sneaky plays that defenders normally won't expect. Use this to avoid typical defender chokepoints such as staircases.",
+            },
+            {
+                description: "While it's not usually advised to immediately rush an objective site as Amaru (unless death is desired), it can be advantageous to rush a location near the objective room and establish strong map control before defenders can prepare themselves.",
+            },
+            {
+                description: "Amaru can be powerful in particular post-plant situations, if a hatch is above the objective site. Simply climb up and create a kill hole above the defuser after it's been planted.",
+            },
+            {
+                description: "Any defenders on the other side of a window that is grappled through by Amaru will be instantly killed.",
             },
         ],
     },
@@ -140,6 +200,7 @@ export const operatorList = [
         name: 'Aruni',
         team: 'Defend',
         ability: 'Surya Laser Gate',
+        description: "The Surya Laser Gate acts as a form of entry denial for attackers. In addition to simply obscuring lines of sight and masking defender noise with a humming sound, these gates will cause damage to any attackers that walk through them. While they are easily deactivated by any attacker throwable, this waste of attacker utility can be very valuable for defenders. As an added bonus, Aruni's cybernetic arm grants her superior strength, allowing her to create much bigger holes in walls than other operators can.",
         health: 2,
         role: ["Anchor", "Roamer", "Breach Denier"],
         counters: [
@@ -164,6 +225,7 @@ export const operatorList = [
         name: 'Ash',
         team: 'Attack',
         ability: 'Breaching Round',
+        description: "Ash's breaching rounds are launched from a grenade launcher that must be reloaded with every shot. They are useless on reinforcements, but can destroy any soft surfaces or defender utility, and from any range as they are not affected by dropoff.",
         health: 1,
         role: ["Entry Fragger", "Soft Breacher"],
         counters: [
@@ -183,6 +245,7 @@ export const operatorList = [
         name: 'Azami',
         team: 'Defend',
         ability: 'Kiba Barrier',
+        description: "Upon being thrown onto a surface, Kiba Barriers form a bulletproof obstruction that can be used to block lines of sight and entry points for attackers. When used properly, they can create very advantageous lines of sight for Azami and other defenders, such as pixel peeks.",
         health: 2,
         role: ["Anchor", "Roamer"],
         counters: [
@@ -217,6 +280,7 @@ export const operatorList = [
         name: 'Bandit',
         team: 'Defend',
         ability: 'Shock Wire',
+        description: "When deployed, Bandit's batteries will electrify any metal they touch, namely reinforcements and barbed wire. This will cause minor damage to any attackers that come into contact, and destroy any attacker utility as well, including breach charges. Ultimately, Bandit's main potential is preventing attackers from obtaining map control.",
         health: 1,
         role: ["Anchor", "Roamer", "Breach Denier"],
         counters: [
@@ -256,6 +320,7 @@ export const operatorList = [
         name: 'Blackbeard',
         team: 'Attack',
         ability: 'Rifle-Shield',
+        description: "Blackbeard's Rifle-Shield can be mounted onto the end of his primary weapon and allows for added protection to his head during gunfights. Consequently, he will suffer from movement and recoil penalties when the shield is active. If he so chooses, this shield can be freely removed to remove any such penalties.",
         health: 2,
         role: ["Entry Fragger"],
     },
@@ -263,6 +328,7 @@ export const operatorList = [
         name: 'Blitz',
         team: 'Attack',
         ability: 'Flash Shield',
+        description: "Blitz's ballistic shield comes equipped with flash charges that will blind anyone immediately in front of him when used. For an added dose of lethality, he holds the unique ability to sprint while holding his shield forward, allowing him to quickly push and eliminate defenders.",
         health: 2,
         role: ["Entry Fragger"],
         counters: [
@@ -312,6 +378,7 @@ export const operatorList = [
         name: 'Buck',
         team: 'Attack',
         ability: 'Skeleton Key',
+        description: "Buck's primary weapon comes equipped with an underbarrel shotgun, allowing for some added close-quarters combat versatility but primarily destructive capabilities. With a larger spread, shots can quickly open large holes in soft floors, ceilings and walls, allowing for quick mobility and fast lines of sight from above or below a particular room.",
         health: 2,
         role: "Entry Fragger",
     },
@@ -319,6 +386,7 @@ export const operatorList = [
         name: 'Capitao',
         team: 'Attack',
         ability: 'Tactical Crossbow',
+        description: "Capitao's tactical crossbow has two fire modes: fire and smoke. The former can be used to deny points of movement for attackers, such as doorways, or to flush out and kill attackers hiding behind objects. The latter can be used the same as any smoke grenade, to block lines of sight for defenders. This versatility makes Capitao a great choice for post-plant situations.",
         health: 1,
         role: ["Entry Fragger", "Bomb Defusal"],
         counters: [
@@ -343,6 +411,7 @@ export const operatorList = [
         name: 'Castle',
         team: 'Defend',
         ability: 'Armor Panel',
+        description: "Castle's bulletproof armor panels can be deployed on any window or door and will prevent entry or line of sight for any attackers. Since they are vulnerable to explosives, attackers will need to waste such utility to destroy them. They can also be destroyed with 9 melee hits, but this leaves attackers vulnerable to nitro cells or shots to the feet, if attempting on a doorway.",
         health: 2,
         role: ["Anchor"],
         counters: [
@@ -397,6 +466,7 @@ export const operatorList = [
         name: 'Caveira',
         team: 'Defend',
         ability: 'Silent Step',
+        description: "Caveira's silent step ability will almost completely mask her movement sounds while walking and greatly reduce them while running, allowing for fast and stealthy movement around the map. Upon downing an enemy, she can interrogate them to instantly kill them and mark the locations of any remaining attackers on the map to all defenders. Her unique secondary weapon, the Luison, is a silenced pistol that grants guaranteed one-shot downs with a headshot.",
         health: 1,
         role: ["Roamer"],
         counters: [
@@ -416,6 +486,7 @@ export const operatorList = [
         name: 'Clash',
         team: 'Defend',
         ability: 'CCE Shield',
+        description: "Clash's CCE shield allows for the same frontal protection that any attacker ballistic shield has, and when in use will protect her entire body from the front, much like Montagne. However, this shield also has a unique ability when activated - a taser, which will damage and impose a movement penalty on any attacker it is used on. This leaves victims vulnerable to attack from fellow defenders, and makes it more difficult for afflicted enemies to counterattack.",
         health: 3,
         role: ["Anchor"],
         counters: [
@@ -470,6 +541,7 @@ export const operatorList = [
         name: 'Doc',
         team: 'Defend',
         ability: 'Stim Pistol',
+        description: "Doc's stim pistol acts as a projectile weapon, shooting a medicinal dart. When a player is hit by a dart, their health will instantly be restored to 100. If a downed player is hit, they will be revived to a standing state. It must be reloaded after every shot and has limited use, making good aim a necessity. Be careful - enemies can be healed, too!",
         health: 3,
     },
     {

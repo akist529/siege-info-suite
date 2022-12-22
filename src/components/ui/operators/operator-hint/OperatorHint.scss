@@ -1,32 +1,3 @@
 .OperatorHint {
-    background-color: rgb(175, 175, 175);
-    border-radius: 10px;
-    height: 100px;
-
-    display: flex;
-
-    .hint-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        font-size: 2rem;
-        width: 90vw;
-        padding: 15px;
-
-        #operator-name {
-            display: flex;
-            justify-content: end;
-            align-items: center;
-            gap: 10px;
-
-            #operator-icon {
-                height: 60px;
-            }
-        }
-
-
-        #hint-expand {
-            height: 40px;
-        }
-    }
+    font-size: 1.5rem;
 }
