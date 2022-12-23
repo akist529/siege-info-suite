@@ -1,9 +1,7 @@
 export default function PageSubtitle(props) {
-    const { subtitle } = props
+    const { id, subtitle } = props
 
     return (
-        <div className="PageSubtitle">
-            <h3>{subtitle}</h3>
-        </div>
+        <h3 id={id} className="PageSubtitle">{subtitle}</h3>
     )
 }

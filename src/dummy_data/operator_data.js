@@ -155,6 +155,40 @@ export const operatorList = [
         description: "The Garra Hook grants Amaru added mobility. It can be aimed at exterior windows, ledges, skylights and unreinforced hatches, and when used, will latch onto the target and quickly pull Amaru towards it, allowing for faster map control and unpredictable plays.",
         health: 2,
         role: ["Entry Fragger"],
+        synergies: [
+            {
+                name: 'Lion',
+                description: "Synchronizing a Lion scan with Amaru's grapple ability can put defenders in an uncomfortable spot, revealing their location or preventing them from responding to her entry. ",
+            },
+            {
+                name: 'Finka',
+                description: "An adrenaline boost by Finka can help aid Amaru as she enters a room with the grappling hook."
+            },
+            {
+                name: 'Dokkaebi',
+                description: "Making a call as Amaru enters a room will help mask the sound of the grappling hook as well as alert her to any defenders nearby."
+            },
+            {
+                name: 'Kali',
+                description: "Kali's LV Lance can destroy castle barricades that may be blocking a window Amaru needs to enter.",
+            },
+            {
+                name: 'Ash',
+                description: "Ash's breaching rounds can destroy castle barricades that may be blocking a window Amaru needs to enter.",
+            },
+            {
+                name: 'Zofia',
+                description: "Ash's explosive grenades can destroy castle barricades that may be blocking a window Amaru needs to enter."
+            },
+            {
+                name: 'Ying',
+                description: "Flashing a room with a candela immediately before Amaru enters can mask the sound of her grappling hook as well as stun any defenders inside, leaving them vulnerable."
+            },
+            {
+                name: 'Fuze',
+                description: "Launching a cluster charge into a room immediately before Amaru enters can mask the sound of her grappling hook as well as distract any defenders inside, leaving them vulnerable. Just be careful not to kill Amaru herself!"
+            },
+        ],
         counters: [
             {
                 name: 'Castle',
@@ -203,21 +237,40 @@ export const operatorList = [
         description: "The Surya Laser Gate acts as a form of entry denial for attackers. In addition to simply obscuring lines of sight and masking defender noise with a humming sound, these gates will cause damage to any attackers that walk through them. While they are easily deactivated by any attacker throwable, this waste of attacker utility can be very valuable for defenders. As an added bonus, Aruni's cybernetic arm grants her superior strength, allowing her to create much bigger holes in walls than other operators can.",
         health: 2,
         role: ["Anchor", "Roamer", "Breach Denier"],
+        synergies: [
+            {
+                name: 'Wamai',
+                description: "Placing a Wamai disc near a laser gate can trick attackers and waste their utility, as grenades thrown into the laser gate will be deflected away.",
+            },
+            {
+                name: "Maestro",
+                descrption: "Maestro can use his Evil Eyes to re-activate disabled laser gates from safety, provided the gate has finished re-charging.",
+            },
+            {
+                name: "Mira",
+                description: "Mira can observe a doorway or window protected by a laser gate from behind one of her windows and easily re-activate it by quick-peeking."
+            },
+        ],
         counters: [
             {
                 name: 'Finka',
-                description: '',
-                image: '',
+                description: "Finka's adrenal surge grants attackers additional damage resistance, allowing them to bypass a laser gate with little damage.",
             },
             {
                 name: 'Iana',
-                description: '',
-                image: '',
+                description: "Walking through a laser gate with Iana's clone will instantly disable the gate, allowing for her to bypass the laser gate unharmed.",
             },
             {
                 name: 'Thatcher',
-                description: '',
-                image: '',
+                description: "Thatcher's EMP grenades will disable a laser gate for 15 seconds when detonated nearby, or for 30 seconds if they make contact with the gate.",
+            },
+        ],
+        tips: [
+            {
+                description: "Aruni's strengthened melee ability allows allows her to one-shot soft hatches, barricades and Castle's armor panels, providing for easy and fast rotations and runouts.",
+            },
+            {
+                description: "The Surya laser gates are completely invulnerable.",
             },
         ],
     }, 
@@ -231,13 +284,28 @@ export const operatorList = [
         counters: [
             {
                 name: 'Jager',
-                description: '',
-                image: '',
+                description: "Jager's ADSs can intercept Ash's breaching rounds mid-air.",
             },
             {
                 name: 'Wamai',
-                description: '',
-                image: '',
+                description: "Wamai's discs can intercept Ash's breaching rounds mid-air.",
+            },
+        ],
+        tips: [
+            {
+                description: "Breaching rounds are small enough to fit through any size opening, even a bullet hole.",
+            },
+            {
+                description: "The damage resulting from a breaching round detonating is very minimal - this means that it doesn't have much kill potential, but it also means that Ash can quickly enter an opening almost immediately after detonation.",
+            },
+            {
+                description: "Breaching rounds can destroy Mira's windows, provided they are on an unreinforced wall."
+            },
+            {
+                description: "Breaching rounds can destroy deployable shields and barbed wire."
+            },
+            {
+                description: "Many reinforced walls have sections of wall above them that are uncovered, allowing Ash to destroy them and expose strong angles or openings for grenades.",
             },
         ],
     },
@@ -248,31 +316,49 @@ export const operatorList = [
         description: "Upon being thrown onto a surface, Kiba Barriers form a bulletproof obstruction that can be used to block lines of sight and entry points for attackers. When used properly, they can create very advantageous lines of sight for Azami and other defenders, such as pixel peeks.",
         health: 2,
         role: ["Anchor", "Roamer"],
+        synergies: [
+            {
+                name: "Wamai",
+                description: "Wamai's discs will divert and destroy any explosive gadgets that are thrown or shot at a Kiba Barrier.",
+            },
+            {
+                name: "Mira",
+                description: "Kiba Barriers can be used to seal any Mira windows that are opened.",
+            },
+            {
+                name: "Castle",
+                description: "Kiba Barriers can be used to seal any windows or doors that were covered by destroyed Castle barricades.",
+            },
+            {
+                name: "Jager",
+                description: "Jager's ADSs will destroy any explosive gadgets that are thrown or shot at a Kiba Barrier.",
+            },
+        ],
         counters: [
             {
                 name: 'Ash',
-                description: '',
-                image: '',
+                description: "Kiba Barriers can be destroyed by Ash's breaching rounds.",
             },
             {
                 name: 'Kali',
-                description: '',
-                image: '',
+                description: "Kiba Barriers can be destroyed by Kali's LV Lance.",
             },
             {
                 name: 'Flores',
-                description: '',
-                image: '',
+                description: "Kiba Barriers can be destroyed by Flores' explosive drones.",
             },
             {
                 name: 'Zofia',
-                description: '',
-                image: '',
+                description: "Kiba Barriers can be destroyed by Zofia's impact grenades.",
             },
             {
                 name: 'Sledge',
-                description: '',
-                image: '',
+                description: "Kiba Barriers can be destroyed by Sledge's breaching hammer.",
+            },
+        ],
+        tips: [
+            {
+                description: "Kiba Barriers can be destroyed by any operator with three melee hits.",
             },
         ],
     },
@@ -283,36 +369,49 @@ export const operatorList = [
         description: "When deployed, Bandit's batteries will electrify any metal they touch, namely reinforcements and barbed wire. This will cause minor damage to any attackers that come into contact, and destroy any attacker utility as well, including breach charges. Ultimately, Bandit's main potential is preventing attackers from obtaining map control.",
         health: 1,
         role: ["Anchor", "Roamer", "Breach Denier"],
+        synergies: [
+            {
+                name: "Mute",
+                description: "By pairing with Mute, defenders can deny many hard breach points for attackers, and the jammers can prevent Twitch's drones from destroying Bandit's batteries.",
+            },
+            {
+                name: "Frost",
+                description: "If an attacker is placed in a DBNO state on electrified barbed wire, they will be instantly killed."
+            },
+            {
+                name: "Mira",
+                description: "Mira's windows can be placed on electrified walls, preventing hard breachers such as Hibana and Ace from destroying them.",
+            },
+        ],
         counters: [
             {
                 name: 'IQ',
-                description: '',
-                image: '',
+                description: "IQ will see Bandit's batteries on her electronics scanner and can easily destroy them through walls. This can grant an easy kill if the defender is Bandit-tricking.",
             },
             {
                 name: 'Thatcher',
-                description: '',
-                image: '',
+                description: "Thatcher's EMP grenades will disable Bandit's batteries for ten seconds.",
             },
             {
                 name: 'Twitch',
-                description: '',
-                image: '',
+                description: "Twitch can destroy Bandit's batteries with her shock drone.",
             },
             {
                 name: 'Kali',
-                description: '',
-                image: '',
+                description: "Kali's LV Lance can destroy Bandit's batteries through reinforced walls.",
             },
             {
                 name: 'Zero',
-                description: '',
-                image: '',
+                description: "Zero can destroy Bandit's batteries with his ARGUS cameras.",
             },
             {
                 name: 'Flores',
-                description: '',
-                image: '',
+                description: "Flores can destroy Bandit's batteries with his explosive drones.",
+            },
+        ],
+        tips: [
+            {
+                description: 'Bandit is capable of strategically placing his batteries at the correct time to destroy hard breach gadgets as they are placed, without allowing EMP grenades to nullify them. This is known as "Bandit Tricking".',
             },
         ],
     }, 
@@ -323,6 +422,44 @@ export const operatorList = [
         description: "Blackbeard's Rifle-Shield can be mounted onto the end of his primary weapon and allows for added protection to his head during gunfights. Consequently, he will suffer from movement and recoil penalties when the shield is active. If he so chooses, this shield can be freely removed to remove any such penalties.",
         health: 2,
         role: ["Entry Fragger"],
+        synergies: [
+            {
+                name: "Osa",
+                description: "Placing one of Osa's shields on a window that Blackbeard is using will give him added protection and visibility of a room, and the ability to quick-peek an enemy.",
+            },
+            {
+                name: "Montagne",
+                description: "Playing behind Montagne can give Blackbeard protection to his body.",
+            },
+            {
+                name: "Blitz",
+                description: "Playing behind Blitz can give Blackbeard protection to his body.",
+            },
+            {
+                name: "Fuze",
+                description: "Playing behind Fuze can give Blackbeard protection to his body, provided that Fuze is using his ballistic shield.",
+            },
+            {
+                name: "Maverick",
+                description: "Maverick can create small holes in reinforced walls with his blowtorch, creating very protective kill holes for Blackbeard.",
+            },
+            {
+                name: "Ace",
+                description: "If Ace throws a SELMA charge on a reinforced wall and destroys it after it has detonated just once, it will create a very protective kill hole which Blackbeard can use.",
+            },
+            {
+                name: "Hibana",
+                description: "If Hibana uses the least number of pellets on her X-KAIROS launcher on a reinforced wall, it will create a 2x1 rectangle that Blackbeard can use as a very protective kill hole.",
+            },
+        ],
+        tips: [
+            {
+                description: "With the shield up, Blackbeard is still very vulnerable to damage to his shoulders and upper body, making it important that he expose only his head.",
+            },
+            {
+                description: "Blackbeard comes equipped with two shields that can be freely swapped between if one of them takes any damage.",
+            },
+        ],
     },
     {
         name: 'Blitz',

@@ -12,6 +12,7 @@ import { gadgetList } from '../../../dummy_data/gadget_data'
 export default function Operator() {
     const { name } = useParams()
     const [showFullPortrait, setShowFullPortrait] = useState()
+    const [useElite, setUseElite] = useState(false)
 
     function resizeHandler() {
         setShowFullPortrait(window.innerWidth >= 740 ? true : false)
@@ -31,56 +32,101 @@ export default function Operator() {
     return (
         <div className="Operator">
             <div className="operator-landing">
-                { showFullPortrait && <img id='operator-portrait' alt='Operator Portrait' src={ `/images/ops/portraits/full/${capitalizedName}.webp` } /> }
-                <div className="operator-basics">
-                    <div className="operator-header">
-                        { !showFullPortrait && <img id="operator-portrait" alt='Operator Portrait' src={ `/images/ops/portraits/${capitalizedName}.webp` } /> }
-                        <div className="operator-title">
-                            <PageSubtitle subtitle={operatorData.name} />
-                            <img alt={`${operatorData.name} Icon`} src={`/images/ops/icons/${operatorData.name}.webp`} />
+                <div className="portrait-backdrop">
+                    <img className='operator-portrait' alt='Operator Portrait' src={ `/images/ops/portraits/${useElite ? 'elite/' : ''}${showFullPortrait ? 'full/' : ''}${capitalizedName}.webp` } />
+                </div>
+                <div className="operator-title">
+                    <PageSubtitle subtitle={operatorData.name} />
+                    <img alt={`${operatorData.name} Icon`} src={`/images/ops/icons/${operatorData.name}.webp`} />
+                </div>
+                <button className="toggle-skin" onClick={ () => setUseElite(!useElite) }>{useElite ? 'Elite' : 'Normal'}</button>
+                <PageSubtitle id="stats-header" subtitle="Stats" />
+                <ul className="operator-stats">
+                    { operatorData.team && <li>
+                        <span>Team:</span>
+                        <span>{ operatorData.team }</span>
+                    </li>}
+                    { operatorData.role && <li>
+                        <span>Role:</span>
+                        <span>{ operatorData.role }</span>
+                    </li> }
+                    { operatorData.ability && <li>
+                        <span>Ability:</span>
+                        <span>{ operatorData.ability }</span>
+                    </li>}
+                    { operatorData.health && <li>
+                        <span>Armor:</span>
+                        <div className="operator-health">
+                            { (() => {
+                                let health = []
+                                for (let i = 0; i < operatorData.health; i++) {
+                                    health.push(<div className="operator-health-full"></div>)
+                                }
+                                return health
+                            })() }
+                            { (() => {
+                                var speed = []
+                                for (let i = 0; i < (3 - operatorData.health); i++) {
+                                    speed.push(<div className="operator-health-empty"></div>)
+                                }
+                                return speed
+                            })() }
                         </div>
-                    </div>
-                    <PageSubtitle subtitle="Stats" />
-                    <ul className="operator-stats">
-                        { operatorData.team && <li>
-                            <span>Team:</span>
-                            <span>{ operatorData.team }</span>
-                        </li>}
-                        { operatorData.ability && <li>
-                            <span>Ability:</span>
-                            <span>{ operatorData.ability }</span>
-                        </li>}
-                        { operatorData.health && <li>
-                            <span>Armor:</span>
-                            <div className="operator-health">
-                                { (() => {
-                                    let health = []
-                                    for (let i = 0; i < operatorData.health; i++) {
-                                        health.push(<div className="operator-health-full"></div>)
-                                    }
-                                    return health
-                                })() }
-                                { (() => {
-                                    var speed = []
-                                    for (let i = 0; i < (3 - operatorData.health); i++) {
-                                        speed.push(<div className="operator-health-empty"></div>)
-                                    }
-                                    return speed
-                                })() }
-                            </div>
-                        </li>}
-                    </ul>
-                    <PageSubtitle subtitle="Loadout" />
-                    <div className="operator-loadout">
-                        <span className="loadout-category">Primary Weapons</span>
+                        <span>{ (() => {
+                            if (operatorData.health === 1) {
+                                return 'Light'
+                            } else if (operatorData.health === 2) {
+                                return 'Medium'
+                            } else {
+                                return 'Heavy'
+                            }
+                        })() }</span>
+                    </li>}
+                    { operatorData.health && <li>
+                        <span>Speed:</span>
+                        <div className="operator-speed">
+                            { (() => {
+                                let speed = []
+                                for (let i = 0; i < (3 - operatorData.health); i++) {
+                                    speed.push(<div className="operator-health-full"></div>)
+                                }
+                                return speed
+                            })() }
+                            { (() => {
+                                var health = []
+                                for (let i = 0; i < operatorData.health; i++) {
+                                    health.push(<div className="operator-health-empty"></div>)
+                                }
+                                return health
+                            })() }
+                        </div>
+                        <span>{ (() => {
+                            if (operatorData.health === 1) {
+                                return 'Fast'
+                            } else if (operatorData.health === 2) {
+                                return 'Normal'
+                            } else {
+                                return 'Slow'
+                            }
+                        })() }</span>
+                    </li> }
+                </ul>
+                <PageSubtitle id="loadout-header" subtitle="Loadout" />
+                <div className="operator-loadout">
+                    <div className="loadout-category">
+                        <span>Primary Weapons</span>
                         <div className="item-list">
                             { weaponData.filter(weapon => weapon.class === "Primary").map(weapon => <ItemCard key={weapon.name.split(" ").join("-")} name={weapon.name.split(" ").join("-")} type="gun" />) }
                         </div>
-                        <span className="loadout-category">Secondary Weapons</span>
+                    </div>
+                    <div className="loadout-category">
+                        <span>Secondary Weapons</span>
                         <div className="item-list">
                             { weaponData.filter(weapon => weapon.class === "Secondary").map(weapon => <ItemCard key={weapon.name.split(" ").join("-")} name={weapon.name.split(" ").join("-")} type="gun" />) }
                         </div>
-                        <span className="loadout-category">Gadgets</span>
+                    </div>
+                    <div className="loadout-category">
+                        <span>Gadgets</span>
                         <div className="item-list">
                             { gadgetData.map(gadget => <ItemCard key={gadget.name.split(" ").join("-")} name={gadget.name.split(" ").join("-")} type="gadget" />) }
                         </div>

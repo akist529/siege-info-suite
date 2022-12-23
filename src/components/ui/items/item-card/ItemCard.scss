@@ -10,16 +10,11 @@
     border-radius: 10px;
     font-size: 2rem;
     line-height: 30px;
+    width: 120px;
 
     img { 
         width: auto;
         max-width: 80px;
         max-height: 50px;
-    }
-}
-
-@media screen and (min-width: 380px) {
-    .ItemCard {
-        width: 250px;
     }
 }
