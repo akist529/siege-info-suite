@@ -1,10 +1,10 @@
 .MapCard {
     background-color: rgb(160, 160, 248);
     border: 3px solid black;
-    font-size: 2rem;
+    font-size: 1.25rem;
     cursor: pointer;
 
-    width: 350px;
+    width: 125px;
     height: 100%;
     position: relative;
     overflow: hidden;
@@ -45,4 +45,10 @@
 .focused {
     transform: scale(115%);
     transition: 0.5s;
+}
+
+@media screen and (min-width: 860px) {
+    .MapCard {
+        width: 250px;
+    }
 }

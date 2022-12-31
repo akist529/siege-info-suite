@@ -31,10 +31,10 @@ export default function OperatorCard(props) {
             <div className="OperatorCard" onMouseOver={focusCard} onMouseLeave={unFocusCard}>
                 <div className="operator-details">
                     <span id="name">{name}</span>
-                    { showTeam && <img id="faction" alt={`${team}`} src={ `images/ui/${team}.webp` } /> }
+                    { showTeam && <img id="faction" alt={`${team}`} src={ `/images/ui/${team}.webp` } /> }
                 </div>
-                { showPortrait && <img id="portrait" alt={`${name}`} src={`images/ops/portraits/${name}.webp`} /> }
-                <img id="badge" alt={`${name}`} src={`images/ops/icons/${name}.webp`} />
+                { showPortrait && <img id="portrait" alt={`${name}`} src={`/images/ops/portraits/${name}.webp`} /> }
+                <img id="badge" alt={`${name}`} src={`/images/ops/icons/${name}.webp`} />
             </div>
         </Link>
     )

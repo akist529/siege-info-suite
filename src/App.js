@@ -6,6 +6,7 @@ import Operator from './pages/operators/operator/Operator'
 import Maps from './pages/maps/Maps'
 import Map from './pages/maps/map/Map'
 import Weapons from './pages/weapons/Weapons'
+import Weapon from './pages/weapons/weapon/Weapon'
 import Quizzes from './pages/quizzes/Quizzes'
 import StratBuilder from './pages/strat-builder/StratBuilder'
 import MyStats from './pages/my-stats/MyStats'
@@ -25,6 +26,7 @@ export default function App() {
         <Route path="*" element={<NoPage />} />
         <Route path="operators/:name" element={<Operator />} />
         <Route path="maps/:name" element={<Map />} />
+        <Route path="weapons/:name" element={<Weapon />} />
       </Routes>
       <Outlet />
     </div>

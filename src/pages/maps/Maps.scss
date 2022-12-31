@@ -9,13 +9,38 @@
 
     .maps-list {
         display: grid;
-        grid-template-columns: repeat(auto-fill, 350px);
+        grid-template-columns: repeat(2, 125px);
         grid-template-rows: repeat(auto-fit, 1fr);
-        gap: 30px;
+        gap: 20px;
         padding-top: 80px;
         justify-content: center;
         justify-items: center;
         align-items: center;
         width: 100%;
+    }
+}
+
+@media screen and (min-width: 460px) {
+    .Maps {
+        .maps-list {
+            grid-template-columns: repeat(3, 125px);
+        }
+    }
+}
+
+@media screen and (min-width: 860px) {
+    .Maps {
+        .maps-list {
+            grid-template-columns: repeat(3, 250px);
+            gap: 30px;
+        }
+    }
+}
+
+@media screen and (min-width: 1170px) {
+    .Maps {
+        .maps-list {
+            grid-template-columns: repeat(4, 250px);
+        }
     }
 }

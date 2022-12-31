@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react'
+import axios from 'axios'
 import { useParams } from 'react-router-dom'
 import PageTitle from '../../../components/ui/page-title/PageTitle'
 import PageSubtitle from '../../../components/ui/page-subtitle/PageSubtitle'
@@ -13,9 +14,29 @@ export default function Operator() {
     const { name } = useParams()
     const [showFullPortrait, setShowFullPortrait] = useState()
     const [useElite, setUseElite] = useState(false)
+    const [hasEliteSmall, setHasEliteSmall] = useState(false)
+    const [hasEliteLarge, setHasEliteLarge] = useState(false)
 
     function resizeHandler() {
         setShowFullPortrait(window.innerWidth >= 740 ? true : false)
+    }
+
+    function checkImage(url) {
+        return new Promise(function(resolve, reject) {
+            var image = new Image()
+    
+            image.onload = function() {
+                if (this.width > 0) {
+                    resolve(url)
+                }
+            }
+    
+            image.onerror = function() {
+                reject(url)
+            }
+
+            image.src = url
+        })
     }
 
     const capitalizedName = name.charAt(0).toUpperCase() + name.slice(1)
@@ -25,9 +46,25 @@ export default function Operator() {
 
     useEffect(() => {
         setShowFullPortrait(window.innerWidth >= 740 ? true : false)
+        checkImage(`/images/ops/portraits/elite/${capitalizedName}.webp`).then(() => setHasEliteSmall(true)).catch(() => setHasEliteSmall(false))
+        checkImage(`/images/ops/portraits/elite/full/${capitalizedName}.webp`).then(() => setHasEliteLarge(true))
     }, [])
 
     window.addEventListener("resize", resizeHandler)
+
+    function getData(url) {
+        const testData = fetch(url, {
+            method: "GET",
+            credentials: "same-origin",
+            body: JSON.stringify(body),
+            headers: { "Content-Type": "application/json" },
+        })
+            .then(res => res.json())
+            .then(data => console.log(data))
+            .catch(err => console.log(err))
+    }
+
+    getData('http://localhost:3000/operators/bandit')
 
     return (
         <div className="Operator">
@@ -39,7 +76,7 @@ export default function Operator() {
                     <PageSubtitle subtitle={operatorData.name} />
                     <img alt={`${operatorData.name} Icon`} src={`/images/ops/icons/${operatorData.name}.webp`} />
                 </div>
-                <button className="toggle-skin" onClick={ () => setUseElite(!useElite) }>{useElite ? 'Elite' : 'Normal'}</button>
+                { ((hasEliteSmall && window.innerWidth < 740) || (hasEliteLarge && window.innerWidth >= 740)) && <button className="toggle-skin" onClick={ () => setUseElite(!useElite) }>{useElite ? 'Elite' : 'Normal'}</button> }
                 <PageSubtitle id="stats-header" subtitle="Stats" />
                 <ul className="operator-stats">
                     { operatorData.team && <li>
@@ -116,13 +153,13 @@ export default function Operator() {
                     <div className="loadout-category">
                         <span>Primary Weapons</span>
                         <div className="item-list">
-                            { weaponData.filter(weapon => weapon.class === "Primary").map(weapon => <ItemCard key={weapon.name.split(" ").join("-")} name={weapon.name.split(" ").join("-")} type="gun" />) }
+                            { weaponData.filter(weapon => weapon.class === "Primary").map(weapon => <ItemCard key={weapon.name.split(" ").join("-")} name={weapon.name.split(" ").join("-")} type="weapon" />) }
                         </div>
                     </div>
                     <div className="loadout-category">
                         <span>Secondary Weapons</span>
                         <div className="item-list">
-                            { weaponData.filter(weapon => weapon.class === "Secondary").map(weapon => <ItemCard key={weapon.name.split(" ").join("-")} name={weapon.name.split(" ").join("-")} type="gun" />) }
+                            { weaponData.filter(weapon => weapon.class === "Secondary").map(weapon => <ItemCard key={weapon.name.split(" ").join("-")} name={weapon.name.split(" ").join("-")} type="weapon" />) }
                         </div>
                     </div>
                     <div className="loadout-category">

@@ -1,0 +1,15 @@
+GET http://localhost:3000/operators
+###
+GET http://localhost:3000/weapons
+###
+GET http://localhost:3000/gadgets
+###
+GET http://localhost:3000/maps
+###
+GET http://localhost:3000/operators/ace
+###
+GET http://localhost:3000/weapons/ak-12
+###
+GET http://localhost:3000/gadgets/claymore
+###
+GET http://localhost:3000/maps/bank

@@ -1,0 +1,20 @@
+.Weapon {
+    padding-top: calc(15vh + 80px);
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    .weapon-users {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        grid-template-columns: repeat(auto-fill, 120px);
+        gap: 20px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 100%;
+    }
+}
