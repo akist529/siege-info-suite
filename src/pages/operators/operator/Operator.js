@@ -1,12 +1,17 @@
+// Import components from React
 import { useState, useEffect } from 'react'
 import { useParams } from 'react-router-dom'
+
+// Import dummy data
+import { operatorList } from 'dummy_data/operator_data'
+import { weaponList } from 'dummy_data/weapon_data'
+import { gadgetList } from 'dummy_data/gadget_data'
+
+// Import components from project
 import PageSubtitle from 'components/ui/page-subtitle/PageSubtitle'
 import ItemCard from 'components/ui/items/item-card/ItemCard'
 import OperatorLink from 'components/ui/operators/operator-link/OperatorLink'
 import OperatorHint from 'components/ui/operators/operator-hint/OperatorHint'
-import { operatorList } from 'dummy_data/operator_data'
-import { weaponList } from 'dummy_data/weapon_data'
-import { gadgetList } from 'dummy_data/gadget_data'
 
 export default function Operator() {
     const { name } = useParams()

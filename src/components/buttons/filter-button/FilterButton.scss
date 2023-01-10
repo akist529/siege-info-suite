@@ -1,0 +1,18 @@
+.FilterButton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+    padding: 0 10px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(156, 140, 227);
+
+    img {
+        width: 30px;
+    }
+
+    span {
+        font-size: 2rem;
+    }
+}

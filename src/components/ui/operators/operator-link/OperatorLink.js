@@ -1,3 +1,4 @@
+// Import components from React
 import { useState } from 'react'
 
 export default function OperatorLink(props) {

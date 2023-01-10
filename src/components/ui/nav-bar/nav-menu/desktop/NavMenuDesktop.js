@@ -1,4 +1,6 @@
+// Import components from project
 import { default as NavButton } from 'components/buttons/nav-menu-button/desktop/DesktopNavMenuButton'
+import BuyButton from 'components/buttons/buy-button/BuyButton'
 
 export default function NavMenuDesktop(props) {
     const { windowWidth } = props
@@ -15,7 +17,7 @@ export default function NavMenuDesktop(props) {
             </ul>
             { (windowWidth > 1100) && <ul className="NavAppInfo">
                 <li><NavButton linkName="Settings" linkPage="" /></li>
-                { (windowWidth > 1225) && <li><NavButton linkName="Buy Game" linkPage="" /></li> }
+                { (windowWidth > 1225) && <li><BuyButton /></li> }
             </ul> }
         </div>
     )

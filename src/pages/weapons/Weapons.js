@@ -1,3 +1,4 @@
+// Import components from project
 import PageTitle from 'components/ui/page-title/PageTitle'
 import PageSubtitle from 'components/ui/page-subtitle/PageSubtitle'
 import CategoryCard from 'components/ui/weapons/category-card/CategoryCard'

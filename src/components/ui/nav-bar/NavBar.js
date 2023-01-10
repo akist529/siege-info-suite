@@ -1,5 +1,7 @@
+// Import components from React
 import { useEffect, useState } from 'react'
 
+// Import components from project
 import NavMenuMobile from 'components/ui/nav-bar/nav-menu/mobile/NavMenuMobile'
 import NavMenuDesktop from 'components/ui/nav-bar/nav-menu/desktop/NavMenuDesktop'
 import NavLoginButton from 'components/buttons/nav-login-button/NavLoginButton'

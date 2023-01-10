@@ -1,5 +1,10 @@
+// Import components from React
 import { useState } from 'react'
+
+// Import dummy data
 import { weaponList } from 'dummy_data/weapon_data'
+
+// Import components from project
 import ItemCard from 'components/ui/items/item-card/ItemCard'
 
 export default function CategoryCard(props) {

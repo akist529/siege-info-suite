@@ -1,5 +1,6 @@
-import { Link } from 'react-router-dom'
+// Import components from React
 import { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function MapCard(props) {
     const { name } = props

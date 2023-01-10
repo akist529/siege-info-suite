@@ -1,3 +1,4 @@
+// Import components from project
 import PageTitle from 'components/ui/page-title/PageTitle'
 
 export default function StratBuilder() {

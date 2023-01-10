@@ -1,6 +1,10 @@
+// Import components from React
 import { Routes, Route, Outlet } from 'react-router-dom'
-import 'App.css'
+
+// Import components from project
 import NavBar from 'components/ui/nav-bar/NavBar'
+
+// Import pages from project
 import Operators from 'pages/operators/Operators'
 import Operator from 'pages/operators/operator/Operator'
 import Maps from 'pages/maps/Maps'
@@ -11,6 +15,9 @@ import Quizzes from 'pages/quizzes/Quizzes'
 import StratBuilder from 'pages/strat-builder/StratBuilder'
 import MyStats from 'pages/my-stats/MyStats'
 import NoPage from 'pages/no-page/NoPage'
+
+// Import styling
+import 'App.css'
 
 export default function App() {
   return (

@@ -1,0 +1,17 @@
+.BuyButton {
+    border: none;
+    background: white;
+    color: black;
+    padding: 0 10px;
+    cursor: pointer;
+    height: 100%;
+
+    span {
+        font-size: 1.5rem;
+        text-transform: uppercase;
+    }
+}
+
+.BuyButton:hover {
+    transform: scale(115%);
+}

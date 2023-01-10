@@ -1,51 +1,70 @@
 @import url("https://fonts.googleapis.com/css?family=Teko&display=swap");
 .NavLink {
-  text-decoration: none;
-}
-.NavLink button {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  border: none;
-  background: none;
-  padding: 10px;
-}
-.NavLink button h2 {
-  color: white;
-}
-.NavLink button:hover {
-  transition: 0.5s;
-  background: white;
-  cursor: pointer;
-}
-.NavLink button:hover h2 {
-  color: black;
-}
+  text-decoration: none; }
+  .NavLink button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    border: none;
+    background: none;
+    padding: 10px; }
+    .NavLink button h2 {
+      color: white; }
+    .NavLink button:hover {
+      transition: 0.5s;
+      background: white;
+      cursor: pointer; }
+      .NavLink button:hover h2 {
+        color: black; }
 
 .NavMenuButton {
   border: none;
   border-radius: 5px;
-  background-color: rgb(215, 215, 215);
+  background-color: #d7d7d7;
   width: 80px;
   height: 80px;
-  display: inline-block;
-}
+  display: inline-block; }
 
 .NavLoginButton {
   background: none;
   border: none;
-  filter: invert(1);
-}
+  filter: invert(1); }
 
 .ToggleFloorButton {
   font-size: 2rem;
   padding: 5px 20px;
-  border: none;
-}
+  border: none; }
 
 .floor-selected {
-  background-color: rgb(100, 100, 100);
-}
+  background-color: #646464; }
+
+.FilterButton {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  padding: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background: #9c8ce3; }
+  .FilterButton img {
+    width: 30px; }
+  .FilterButton span {
+    font-size: 2rem; }
+
+.BuyButton {
+  border: none;
+  background: white;
+  color: black;
+  padding: 0 10px;
+  cursor: pointer;
+  height: 100%; }
+  .BuyButton span {
+    font-size: 1.5rem;
+    text-transform: uppercase; }
+
+.BuyButton:hover {
+  transform: scale(115%); }
 
 .SearchBar {
   background-image: url("../public/images/ui/search.webp");
@@ -58,8 +77,7 @@
   width: 30px;
   transition: min-width 0.5s, width 0.5s, border 0s, border-radius 0s;
   border: none;
-  border-radius: 15px;
-}
+  border-radius: 15px; }
 
 .NavBar {
   display: flex;
@@ -73,136 +91,110 @@
   padding: 10px 20px;
   background-color: black;
   color: white;
-  font-family: "Teko";
-  text-transform: uppercase;
-}
-.NavBar .AppTitle {
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  gap: 10px;
-  position: relative;
-  height: 80%;
-}
-.NavBar .AppTitle h1 {
-  position: relative;
-  font-size: 64px;
-  height: 100%;
-  width: 20%;
-  line-height: 75%;
-}
-.NavBar .AppTitle #r6s-logo {
-  position: relative;
-  height: 100%;
-  filter: invert(1);
-}
-.NavBar .AppControls {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: flex-end;
-  position: relative;
-  height: 80%;
-}
-.NavBar .AppControls img {
-  height: 30px;
-}
-.NavBar .SearchBarFocused {
-  min-width: 300px;
-  width: 40vw;
-  border-radius: 15px;
-}
+  font-family: 'Teko';
+  text-transform: uppercase; }
+  .NavBar .AppTitle {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 10px;
+    position: relative;
+    height: 80%; }
+    .NavBar .AppTitle h1 {
+      position: relative;
+      font-size: 64px;
+      height: 100%;
+      width: 20%;
+      line-height: 75%; }
+    .NavBar .AppTitle #r6s-logo {
+      position: relative;
+      height: 100%;
+      filter: invert(1); }
+  .NavBar .AppControls {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    position: relative;
+    height: 80%; }
+    .NavBar .AppControls img {
+      height: 30px; }
+  .NavBar .SearchBarFocused {
+    min-width: 300px;
+    width: 40vw;
+    border-radius: 15px; }
 
 @media only screen and (min-width: 912px) {
   .NavBar {
     display: flex;
     flex-direction: column;
-    padding: 10px 20px 0 20px;
-  }
-  .NavBar .AppTitle {
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 50%;
-  }
-  .NavBar .AppTitle h1 {
-    font-size: 40px;
-    line-height: 64px;
-    width: auto;
-  }
-  .NavBar .SearchBar {
-    position: fixed;
-    top: 10px;
-    left: 10px;
-  }
-  .NavBar .SearchBarFocused {
-    min-width: 100px;
-    width: 25vw;
-  }
-  .NavBar .NavLoginButton {
-    position: fixed;
-    top: 10px;
-    right: 10px;
-  }
-}
+    padding: 10px 20px 0 20px; }
+    .NavBar .AppTitle {
+      flex-direction: row;
+      justify-content: center;
+      align-items: center;
+      height: 50%; }
+      .NavBar .AppTitle h1 {
+        font-size: 40px;
+        line-height: 64px;
+        width: auto; }
+    .NavBar .SearchBar {
+      position: fixed;
+      top: 10px;
+      left: 10px; }
+    .NavBar .SearchBarFocused {
+      min-width: 100px;
+      width: 25vw; }
+    .NavBar .NavLoginButton {
+      position: fixed;
+      top: 10px;
+      right: 10px; } }
 .NavMenuDesktop {
   display: flex;
   justify-content: space-between;
-  width: 90vw;
-}
-.NavMenuDesktop ul {
-  display: grid;
-  justify-items: center;
-  list-style-type: none;
-  white-space: nowrap;
-}
-.NavMenuDesktop .NavGameInfo {
-  grid-template-columns: repeat(6, 1fr);
-}
-.NavMenuDesktop .NavAppInfo {
-  grid-template-columns: repeat(2, 1fr);
-}
+  width: 90vw; }
+  .NavMenuDesktop ul {
+    display: grid;
+    justify-items: center;
+    list-style-type: none;
+    white-space: nowrap; }
+  .NavMenuDesktop .NavGameInfo {
+    grid-template-columns: repeat(6, 1fr); }
+  .NavMenuDesktop .NavAppInfo {
+    grid-template-columns: repeat(2, 1fr); }
 
 @media only screen and (max-width: 1225px) {
   .NavMenuDesktop .NavAppInfo {
-    grid-template-columns: 1fr;
-  }
-}
+    grid-template-columns: 1fr; } }
 .NavMenuMobile {
   display: flex;
   justify-content: flex-start;
   align-items: center;
   gap: 10px;
   position: relative;
-  width: 100%;
-}
-.NavMenuMobile .NavButton {
-  display: flex;
-  flex-direction: column;
-}
+  width: 100%; }
+  .NavMenuMobile .NavButton {
+    display: flex;
+    flex-direction: column; }
 
 .Dropdown {
-  background: rgb(93, 93, 185);
+  background: #5d5db9;
   position: absolute;
-  top: 100%;
-}
-.Dropdown li {
-  list-style-type: none;
-  font-size: 2rem;
-  padding: 5px 20px;
-}
-.Dropdown li a {
-  text-decoration: none;
-  color: white;
-}
+  top: 100%; }
+  .Dropdown li {
+    list-style-type: none;
+    font-size: 2rem;
+    padding: 5px 20px; }
+    .Dropdown li a {
+      text-decoration: none;
+      color: white; }
 
 * {
   --operatorCardWidth: 120px;
-  --operatorCardHeight: 120px;
-}
+  --operatorCardHeight: 120px; }
 
 .OperatorCard {
-  background-color: rgb(160, 160, 248);
+  background-color: #a0a0f8;
   border: 3px solid black;
   font-size: 2rem;
   cursor: pointer;
@@ -215,117 +207,97 @@
   grid-template-rows: 30px 1fr;
   justify-items: center;
   transform: scale(100%);
-  transition: 0.5s;
-}
-.OperatorCard .operator-details {
-  grid-row: 1/2;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
-  width: 100%;
-  padding: 5px 10px;
-  background-color: rgb(48, 48, 70);
-  border-bottom: 3px solid black;
-  color: white;
-}
-.OperatorCard .operator-details #name {
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
-.OperatorCard .operator-details #faction {
-  height: 20px;
-}
-.OperatorCard #portrait {
-  grid-row: 2/3;
-  width: 200%;
-  position: relative;
-  right: 50%;
-}
-.OperatorCard #badge {
-  grid-row: 2/3;
-  position: absolute;
-  height: 100%;
-  padding: 5px;
-}
+  transition: 0.5s; }
+  .OperatorCard .operator-details {
+    grid-row: 1 / 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #303046;
+    border-bottom: 3px solid black;
+    color: white; }
+    .OperatorCard .operator-details #name {
+      user-select: none;
+      -moz-user-select: none;
+      -webkit-user-select: none; }
+    .OperatorCard .operator-details #faction {
+      height: 20px; }
+  .OperatorCard #portrait {
+    grid-row: 2 / 3;
+    width: 200%;
+    position: relative;
+    right: 50%; }
+  .OperatorCard #badge {
+    grid-row: 2 / 3;
+    position: absolute;
+    height: 100%;
+    padding: 5px; }
 
 .focused {
   transform: scale(115);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 @media screen and (min-width: 380px) {
   .OperatorCard .operator-details {
-    justify-content: center;
-  }
-  .OperatorCard .operator-details #faction {
-    background-color: black;
-    padding: 5px;
-    position: absolute;
-    bottom: 2px;
-    left: 2px;
-  }
-}
+    justify-content: center; }
+    .OperatorCard .operator-details #faction {
+      background-color: black;
+      padding: 5px;
+      position: absolute;
+      bottom: 2px;
+      left: 2px; } }
 @media screen and (min-width: 470px) {
   * {
     --operatorCardWidth: 200px;
-    --operatorCardHeight: 300px;
-  }
+    --operatorCardHeight: 300px; }
+
   .OperatorCard {
-    justify-items: normal;
-  }
-  .OperatorCard #badge {
-    grid-row: auto;
-    position: absolute;
-    bottom: 10px;
-    left: 10px;
-    height: 60px;
-  }
-}
+    justify-items: normal; }
+    .OperatorCard #badge {
+      grid-row: auto;
+      position: absolute;
+      bottom: 10px;
+      left: 10px;
+      height: 60px; } }
 .OperatorLink {
-  background-color: rgb(175, 175, 175);
+  background-color: #afafaf;
   border-radius: 10px;
   height: auto;
   cursor: pointer;
   display: flex;
-  flex-direction: column;
-}
-.OperatorLink .hint-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 2rem;
-  height: 100px;
-  padding: 15px;
-}
-.OperatorLink .hint-header #operator-name {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  gap: 10px;
-}
-.OperatorLink .hint-header #operator-name #operator-icon {
-  height: 60px;
-}
-.OperatorLink .hint-header #hint-expand {
-  height: 40px;
-}
-.OperatorLink .hint-content {
-  font-size: 1.5rem;
-  padding: 30px;
-}
+  flex-direction: column; }
+  .OperatorLink .hint-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+    height: 100px;
+    padding: 15px; }
+    .OperatorLink .hint-header #operator-name {
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      gap: 10px; }
+      .OperatorLink .hint-header #operator-name #operator-icon {
+        height: 60px; }
+    .OperatorLink .hint-header #hint-expand {
+      height: 40px; }
+  .OperatorLink .hint-content {
+    font-size: 1.5rem;
+    padding: 30px; }
 
 .OperatorHint {
   font-size: 1.5rem;
-  background-color: rgb(175, 175, 175);
+  background-color: #afafaf;
   padding: 10px;
   border-radius: 10px;
-  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8);
-}
+  box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.8); }
 
 .MapCard {
-  background-color: rgb(160, 160, 248);
+  background-color: #a0a0f8;
   border: 3px solid black;
   font-size: 1.25rem;
   cursor: pointer;
@@ -337,38 +309,32 @@
   grid-template-columns: 100%;
   grid-template-rows: 1fr 40px;
   transform: scale(100%);
-  transition: 0.5s;
-}
-.MapCard #map-preview {
-  grid-row: 1/2;
-  position: relative;
-  width: 100%;
-  height: 100%;
-}
-.MapCard #map-name {
-  grid-row: 2/3;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  background-color: rgb(48, 48, 70);
-  border-top: 3px solid black;
-  color: white;
-  user-select: none;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-}
+  transition: 0.5s; }
+  .MapCard #map-preview {
+    grid-row: 1 / 2;
+    position: relative;
+    width: 100%;
+    height: 100%; }
+  .MapCard #map-name {
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #303046;
+    border-top: 3px solid black;
+    color: white;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none; }
 
 .focused {
   transform: scale(115%);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 @media screen and (min-width: 860px) {
   .MapCard {
-    width: 250px;
-  }
-}
+    width: 250px; } }
 .ItemCard {
   display: flex;
   flex-direction: column-reverse;
@@ -385,68 +351,59 @@
   width: 120px;
   height: 120px;
   overflow: hidden;
-  cursor: pointer;
-}
-.ItemCard img {
-  width: auto;
-  max-width: 80px;
-  max-height: 50px;
-}
+  cursor: pointer; }
+  .ItemCard img {
+    width: auto;
+    max-width: 80px;
+    max-height: 50px; }
 
 .focused {
   transform: scale(110%);
-  transition: 0.5s;
-}
+  transition: 0.5s; }
 
 a:link {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 a:visited {
   color: black;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 .PageTitle {
-  font-size: 4rem;
-  text-transform: uppercase;
-}
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .PageTitle h3 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    line-height: 50px; }
 
 .PageSubtitle {
   font-size: 9vw;
-  text-transform: uppercase;
-}
+  text-transform: uppercase; }
 
 @media screen and (min-width: 540px) {
   .PageSubtitle {
-    font-size: 48px;
-  }
-}
+    font-size: 48px; } }
 .Blueprint {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto;
   position: relative;
-  width: 80vw;
-}
-.Blueprint .blueprint-image {
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  z-index: 997;
-  width: 100%;
-}
-.Blueprint .blueprint-room {
-  grid-row: 1/-1;
-  grid-column: 1/-1;
-  position: relative;
-  opacity: 0%;
-  z-index: 998;
-}
-.Blueprint .blueprint-hover {
-  opacity: 100%;
-  cursor: pointer;
-}
+  width: 80vw; }
+  .Blueprint .blueprint-image {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    z-index: 997;
+    width: 100%; }
+  .Blueprint .blueprint-room {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    position: relative;
+    opacity: 0%;
+    z-index: 998; }
+  .Blueprint .blueprint-hover {
+    opacity: 100%;
+    cursor: pointer; }
 
 .BlueprintLocation {
   display: flex;
@@ -461,14 +418,12 @@ a:visited {
   left: auto;
   right: auto;
   z-index: 999;
-  font-size: 2rem;
-}
+  font-size: 2rem; }
 
 .ToggleFloorMenu {
   display: flex;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .CategoryCard {
   display: flex;
@@ -476,29 +431,26 @@ a:visited {
   justify-content: center;
   align-items: center;
   width: 100%;
-  border: 2px solid rgb(175, 175, 175);
+  border: 2px solid #afafaf;
   border-radius: 5px;
   padding: 5px 10px;
-  background-color: rgb(175, 175, 175);
-}
-.CategoryCard .category-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  cursor: pointer;
-  font-size: 1.5rem;
-}
-.CategoryCard .weapon-list {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(auto-fill, 120px);
-  gap: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  background-color: #afafaf; }
+  .CategoryCard .category-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    cursor: pointer;
+    font-size: 1.5rem; }
+  .CategoryCard .weapon-list {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 120px);
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
 .Operators {
   padding-top: var(--navbar-height);
@@ -507,245 +459,205 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Operators .operators-list {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(auto-fill, 120px);
-  gap: 20px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Operators .operators-list {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, 120px);
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 20px; }
 
 @media screen and (min-width: 380px) {
   .Operators .operators-list {
-    grid-template-columns: repeat(auto-fill, 160px);
-  }
-}
+    grid-template-columns: repeat(auto-fill, 160px); } }
 @media screen and (min-width: 470px) {
   .Operators .operators-list {
     gap: 30px;
-    grid-template-columns: repeat(auto-fill, 200px);
-  }
-}
-@media screen and (min-width: 930px) {
-  .Operators .operators-list {
-    padding-top: 80px;
-  }
-}
+    grid-template-columns: repeat(auto-fill, 200px); } }
 .Operator {
   padding-top: var(--navbar-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 10px;
-}
-.Operator .operator-landing {
-  display: grid;
-  grid-template-columns: 300px auto;
-  grid-template-rows: repeat(6, auto);
-  width: auto;
-  justify-items: center;
-}
-.Operator .operator-landing .portrait-backdrop {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  width: 80vw;
-  max-width: 350px;
-  background-color: rgb(175, 175, 175);
-  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
-  border-radius: 20px;
-  padding: 10px 2vw 0 2vw;
-  margin-bottom: 40px;
-}
-.Operator .operator-landing .portrait-backdrop .operator-portrait {
-  position: relative;
-  z-index: 1;
-  width: auto;
-  max-width: 100%;
-  height: auto;
-}
-.Operator .operator-landing .operator-title {
-  grid-column: 1/-1;
-  grid-row: 1/2;
-  z-index: 2;
-  justify-self: center;
-  align-self: end;
-  margin-bottom: 50px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(175, 175, 175);
-  padding: 5px 2vw;
-  border-radius: 10px;
-  box-shadow: 5px 5px 10px rgb(0, 0, 0);
-}
-.Operator .operator-landing .operator-title img {
-  height: 15vw;
-  max-height: 100px;
-  margin-top: -10px;
-}
-.Operator .operator-landing .toggle-skin {
-  grid-column: 1/-1;
-  grid-row: 2/3;
-  padding: 5px 10px;
-  font-size: 1.25rem;
-}
-.Operator .operator-landing #stats-header {
-  grid-column: 1/-1;
-  grid-row: 3/4;
-}
-.Operator .operator-landing .operator-stats {
-  grid-column: 1/-1;
-  grid-row: 4/5;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  width: 90vw;
-  max-width: 500px;
-  padding: 10px 20px;
-  margin-bottom: 40px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
-  list-style-type: none;
-}
-.Operator .operator-landing .operator-stats li {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  font-size: 1.5rem;
-}
-.Operator .operator-landing .operator-stats li .operator-health,
-.Operator .operator-landing .operator-stats li .operator-speed {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
-.Operator .operator-landing .operator-stats li .operator-health .operator-health-full,
-.Operator .operator-landing .operator-stats li .operator-speed .operator-health-full {
-  background-color: rgb(0, 0, 0);
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-}
-.Operator .operator-landing .operator-stats li .operator-health .operator-health-empty,
-.Operator .operator-landing .operator-stats li .operator-speed .operator-health-empty {
-  background-color: rgb(255, 0, 0);
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-}
-.Operator .operator-landing #loadout-header {
-  grid-column: 1/-1;
-  grid-row: 5/6;
-}
-.Operator .operator-landing .operator-loadout {
-  grid-column: 1/-1;
-  grid-row: 6/7;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  justify-content: center;
-  align-items: start;
-  gap: 10px;
-}
-.Operator .operator-landing .operator-loadout .loadout-category {
-  font-size: 1.5rem;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.Operator .operator-landing .operator-loadout .item-list {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(auto-fit, 120px);
-  gap: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 90vw;
-}
-.Operator .operator-art {
-  height: 80vw;
-  max-height: 400px;
-  width: 100%;
-  max-width: 800px;
-  object-fit: cover;
-  padding-top: 40px;
-}
-.Operator .operator-description {
-  font-size: 1.5rem;
-  width: 80vw;
-  max-width: 800px;
-}
-.Operator .operator-synergies,
-.Operator .operator-counters,
-.Operator .operator-hints {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  width: 80vw;
-  max-width: 800px;
-}
+  gap: 10px; }
+  .Operator .operator-landing {
+    display: grid;
+    grid-template-columns: 300px auto;
+    grid-template-rows: repeat(6, auto);
+    width: auto;
+    justify-items: center; }
+    .Operator .operator-landing .portrait-backdrop {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      width: 80vw;
+      max-width: 350px;
+      background-color: #afafaf;
+      box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.5);
+      border-radius: 20px;
+      padding: 10px 2vw 0 2vw;
+      margin-bottom: 40px; }
+      .Operator .operator-landing .portrait-backdrop .operator-portrait {
+        position: relative;
+        z-index: 1;
+        width: auto;
+        max-width: 100%;
+        height: auto; }
+    .Operator .operator-landing .operator-title {
+      grid-column: 1 / -1;
+      grid-row: 1 / 2;
+      z-index: 2;
+      justify-self: center;
+      align-self: end;
+      margin-bottom: 50px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      background-color: #afafaf;
+      padding: 5px 2vw;
+      border-radius: 10px;
+      box-shadow: 5px 5px 10px black; }
+      .Operator .operator-landing .operator-title img {
+        height: 15vw;
+        max-height: 100px;
+        margin-top: -10px; }
+    .Operator .operator-landing .toggle-skin {
+      grid-column: 1 / -1;
+      grid-row: 2 / 3;
+      padding: 5px 10px;
+      font-size: 1.25rem; }
+    .Operator .operator-landing #stats-header {
+      grid-column: 1 / -1;
+      grid-row: 3 / 4; }
+    .Operator .operator-landing .operator-stats {
+      grid-column: 1 / -1;
+      grid-row: 4 / 5;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(auto-fill, 1fr);
+      width: 90vw;
+      max-width: 500px;
+      padding: 10px 20px;
+      margin-bottom: 40px;
+      background-color: rgba(0, 0, 0, 0.2);
+      border-radius: 10px;
+      list-style-type: none; }
+      .Operator .operator-landing .operator-stats li {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        font-size: 1.5rem; }
+        .Operator .operator-landing .operator-stats li .operator-health,
+        .Operator .operator-landing .operator-stats li .operator-speed {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          gap: 20px; }
+          .Operator .operator-landing .operator-stats li .operator-health .operator-health-full,
+          .Operator .operator-landing .operator-stats li .operator-speed .operator-health-full {
+            background-color: black;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%; }
+          .Operator .operator-landing .operator-stats li .operator-health .operator-health-empty,
+          .Operator .operator-landing .operator-stats li .operator-speed .operator-health-empty {
+            background-color: red;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%; }
+    .Operator .operator-landing #loadout-header {
+      grid-column: 1 / -1;
+      grid-row: 5 / 6; }
+    .Operator .operator-landing .operator-loadout {
+      grid-column: 1 / -1;
+      grid-row: 6 / 7;
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(3, 1fr);
+      justify-content: center;
+      align-items: start;
+      gap: 10px; }
+      .Operator .operator-landing .operator-loadout .loadout-category {
+        font-size: 1.5rem;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center; }
+      .Operator .operator-landing .operator-loadout .item-list {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, 1fr);
+        grid-template-columns: repeat(auto-fit, 120px);
+        gap: 10px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+        width: 90vw; }
+  .Operator .operator-art {
+    height: 80vw;
+    max-height: 400px;
+    width: 100%;
+    max-width: 800px;
+    object-fit: cover;
+    padding-top: 40px; }
+  .Operator .operator-description {
+    font-size: 1.5rem;
+    width: 80vw;
+    max-width: 800px; }
+  .Operator .operator-synergies,
+  .Operator .operator-counters,
+  .Operator .operator-hints {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 80vw;
+    max-width: 800px; }
 
 @media screen and (min-width: 740px) {
   .Operator .operator-landing .portrait-backdrop {
-    grid-column: 1/2;
-    grid-row: 1/4;
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
     background: none;
-    box-shadow: none;
-  }
-  .Operator .operator-landing .portrait-backdrop .operator-portrait {
-    height: 500px;
-    width: auto;
-  }
+    box-shadow: none; }
+    .Operator .operator-landing .portrait-backdrop .operator-portrait {
+      height: 500px;
+      width: auto; }
   .Operator .operator-landing .operator-title {
-    grid-column: 2/3;
-    grid-row: 1/2;
+    grid-column: 2 / 3;
+    grid-row: 1 / 2;
     width: auto;
-    height: auto;
-  }
+    height: auto; }
   .Operator .operator-landing #stats-header {
-    grid-column: 2/3;
-    grid-row: 2/3;
-  }
+    grid-column: 2 / 3;
+    grid-row: 2 / 3; }
   .Operator .operator-landing .operator-stats {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    width: 350px;
-  }
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    width: 350px; }
   .Operator .operator-landing #loadout-header {
-    grid-column: 1/-1;
-    grid-row: 4/5;
-  }
+    grid-column: 1 / -1;
+    grid-row: 4 / 5; }
   .Operator .operator-landing .operator-loadout {
-    grid-column: 1/-1;
-    grid-row: 5/6;
+    grid-column: 1 / -1;
+    grid-row: 5 / 6;
     grid-template-rows: 1fr;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
-  }
-  .Operator .operator-landing .operator-loadout .loadout-category {
-    width: auto;
-  }
-  .Operator .operator-landing .operator-loadout .loadout-category .item-list {
-    width: auto;
-    grid-template-columns: repeat(3, auto);
-    grid-template-rows: auto;
-  }
-}
+    gap: 30px; }
+    .Operator .operator-landing .operator-loadout .loadout-category {
+      width: auto; }
+      .Operator .operator-landing .operator-loadout .loadout-category .item-list {
+        width: auto;
+        grid-template-columns: repeat(3, auto);
+        grid-template-rows: auto; } }
 .Maps {
   padding-top: var(--navbar-height);
   padding-left: 30px;
@@ -753,43 +665,34 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Maps .maps-list {
-  display: grid;
-  grid-template-columns: repeat(2, 125px);
-  grid-template-rows: repeat(auto-fit, 1fr);
-  gap: 20px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Maps .maps-list {
+    display: grid;
+    grid-template-columns: repeat(2, 125px);
+    grid-template-rows: repeat(auto-fit, 1fr);
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
 @media screen and (min-width: 460px) {
   .Maps .maps-list {
-    grid-template-columns: repeat(3, 125px);
-  }
-}
+    grid-template-columns: repeat(3, 125px); } }
 @media screen and (min-width: 860px) {
   .Maps .maps-list {
     grid-template-columns: repeat(3, 250px);
-    gap: 30px;
-  }
-}
+    gap: 30px; } }
 @media screen and (min-width: 1170px) {
   .Maps .maps-list {
-    grid-template-columns: repeat(4, 250px);
-  }
-}
+    grid-template-columns: repeat(4, 250px); } }
 .Map {
   padding-top: var(--navbar-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-}
+  gap: 20px; }
 
 .Weapons {
   padding-top: var(--navbar-height);
@@ -798,17 +701,15 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Weapons .cat-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Weapons .cat-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
 .Weapon {
   padding-top: var(--navbar-height);
@@ -817,42 +718,37 @@ a:visited {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
-.Weapon .weapon-users {
-  display: grid;
-  grid-template-rows: repeat(auto-fill, 1fr);
-  grid-template-columns: repeat(auto-fill, var(--operatorCardWidth));
-  gap: 20px;
-  justify-content: center;
-  justify-items: center;
-  align-items: center;
-  width: 100%;
-}
+  align-items: center; }
+  .Weapon .weapon-users {
+    display: grid;
+    grid-template-rows: repeat(auto-fill, 1fr);
+    grid-template-columns: repeat(auto-fill, var(--operatorCardWidth));
+    gap: 20px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    width: 100%; }
 
 .Quizzes {
   padding-top: var(--navbar-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .StratBuilder {
   padding-top: var(--navbar-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .MyStats {
   padding-top: var(--navbar-height);
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
-}
+  align-items: center; }
 
 .NoPage {
   display: flex;
@@ -863,33 +759,26 @@ a:visited {
   height: 100vh;
   padding-top: var(--navbar-height);
   width: 90vw;
-  margin: 0 auto;
-}
-.NoPage h3 {
-  font-size: 3rem;
-  text-transform: uppercase;
-  line-height: 40px;
-  text-align: center;
-}
-.NoPage hr {
-  width: 60%;
-}
-.NoPage span {
-  font-size: 1.5rem;
-}
+  margin: 0 auto; }
+  .NoPage h3 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    line-height: 40px;
+    text-align: center; }
+  .NoPage hr {
+    width: 60%; }
+  .NoPage span {
+    font-size: 1.5rem; }
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Teko";
-  --navbar-height: 125px;
-}
+  font-family: 'Teko';
+  --navbar-height: 125px; }
 
 @media screen and (min-width: 910px) {
   * {
-    --navbar-height: 150px;
-  }
-}
+    --navbar-height: 150px; } }
 
 /*# sourceMappingURL=index.css.map */

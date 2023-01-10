@@ -1,9 +1,14 @@
+// Import components from React
 import { useParams } from 'react-router-dom'
+
+// Import dummy data
+import { weaponList } from 'dummy_data/weapon_data'
+import { operatorList } from 'dummy_data/operator_data'
+
+// Import components from project
 import PageTitle from 'components/ui/page-title/PageTitle'
 import PageSubtitle from 'components/ui/page-subtitle/PageSubtitle'
 import OperatorCard from 'components/ui/operators/operator-card/OperatorCard'
-import { weaponList } from 'dummy_data/weapon_data'
-import { operatorList } from 'dummy_data/operator_data'
 
 export default function Weapon() {
     const { name } = useParams()

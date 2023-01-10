@@ -1,4 +1,7 @@
+// Import components from React
 import { useState } from 'react'
+
+// Import components from project
 import MobileNavMenuButton from 'components/buttons/nav-menu-button/mobile/MobileNavMenuButton'
 import Dropdown from 'components/ui/nav-bar/dropdown/Dropdown'
 
