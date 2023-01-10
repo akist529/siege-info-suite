@@ -3,4 +3,11 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Teko';
+    --navbar-height: 125px;
+}
+
+@media screen and (min-width: 910px) {
+    * {
+        --navbar-height: 150px;
+    }
 }

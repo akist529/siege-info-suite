@@ -1,4 +1,4 @@
-import { default as NavButton } from '../../../../buttons/nav-menu-button/desktop/DesktopNavMenuButton'
+import { default as NavButton } from 'components/buttons/nav-menu-button/desktop/DesktopNavMenuButton'
 
 export default function NavMenuDesktop(props) {
     const { windowWidth } = props

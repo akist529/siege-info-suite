@@ -1,11 +1,15 @@
+// Import components from React
 import { useState } from 'react'
 import { useParams } from 'react-router-dom'
-import PageTitle from '../../../components/ui/page-title/PageTitle'
-import PageSubtitle from '../../../components/ui/page-subtitle/PageSubtitle'
-import { mapList } from '../../../dummy_data/map_data'
-import Blueprint from '../../../components/ui/maps/blueprint/Blueprint'
-import BlueprintLocation from '../../../components/ui/maps/blueprint/location/BlueprintLocation'
-import ToggleFloorMenu from '../../../components/ui/maps/toggle-floor-menu/ToggleFloorMenu'
+
+// Import dummy data
+import { mapList } from 'dummy_data/map_data'
+
+// Import components from project
+import PageTitle from 'components/ui/page-title/PageTitle'
+import Blueprint from 'components/ui/maps/blueprint/Blueprint'
+import BlueprintLocation from 'components/ui/maps/blueprint/location/BlueprintLocation'
+import ToggleFloorMenu from 'components/ui/maps/toggle-floor-menu/ToggleFloorMenu'
 
 export default function Map() {
     const { name } = useParams()
@@ -17,28 +21,26 @@ export default function Map() {
         }
     }
 
-    console.log(capitalizedName)
-
     const mapInfo = mapList.filter(map => map.name === capitalizedName)[0]
 
     const [floorSelected, setFloorSelected] = useState("1F")
-    const [currentRoom, setCurrentRoom] = useState()
+    const [currentRoom, setCurrentRoom] = useState("")
 
     return (
         <div className="Map">
-            <PageTitle title={capitalizedName} />
+            <PageTitle title={ capitalizedName } />
             <ToggleFloorMenu
-                floorData={mapInfo.layout} 
-                floorSelected={floorSelected}
-                setFloorSelected={setFloorSelected}
+                floorData={ mapInfo.layout } 
+                floorSelected={ floorSelected }
+                setFloorSelected={ setFloorSelected }
             />
             <Blueprint
-                mapName={capitalizedName} 
-                floor={floorSelected} 
-                floorData={mapInfo.layout[floorSelected]}
-                setCurrentRoom={setCurrentRoom}
+                mapName={ capitalizedName } 
+                floor={ floorSelected } 
+                floorData={ mapInfo.layout[floorSelected] }
+                setCurrentRoom={ setCurrentRoom }
             />
-            <BlueprintLocation currentRoom={currentRoom} />
+            <BlueprintLocation currentRoom={ currentRoom } />
         </div>
     )
 }

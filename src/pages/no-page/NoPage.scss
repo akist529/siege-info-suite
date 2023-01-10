@@ -1,0 +1,26 @@
+.NoPage {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height: 100vh;
+    padding-top: var(--navbar-height);
+    width: 90vw;
+    margin: 0 auto;
+
+    h3 {
+        font-size: 3rem;
+        text-transform: uppercase;
+        line-height: 40px;
+        text-align: center;
+    }
+
+    hr {
+        width: 60%;
+    }
+
+    span {
+        font-size: 1.5rem;
+    }
+}

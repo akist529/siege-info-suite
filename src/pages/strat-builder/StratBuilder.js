@@ -1,4 +1,4 @@
-import PageTitle from '../../components/ui/page-title/PageTitle'
+import PageTitle from 'components/ui/page-title/PageTitle'
 
 export default function StratBuilder() {
     return (

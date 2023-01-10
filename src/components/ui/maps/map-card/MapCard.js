@@ -1,20 +1,19 @@
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function MapCard(props) {
     const { name } = props
-
-    function focusCard(e) {
-        e.currentTarget.classList.add("focused")
-    }
-
-    function unFocusCard(e) {
-        e.currentTarget.classList.remove("focused")
-    }
+    const [mapFocused, setMapFocused] = useState(false)
+    
+    const linkName = name.toLowerCase().replaceAll(/\s/g, "-")
+    const fileName = name.split(" ").join("-")
 
     return (
-        <Link to={`/maps/${name.toLowerCase().replace(/\s/g, "-")}`}>
-            <div className="MapCard" onMouseOver={focusCard} onMouseLeave={unFocusCard}>
-                <img id="map-preview" alt={name} src={`images/maps/${name.split(" ").join("-")}/${name.split(" ").join("-")}.webp`} />
+        <Link to={`/maps/${linkName}`}>
+            <div className={`MapCard ${mapFocused && 'focused'}`} 
+            onMouseOver={() => setMapFocused(true)} 
+            onMouseLeave={() => setMapFocused(false)}>
+                <img id="map-preview" alt={name} src={`images/maps/${fileName}/${fileName}.webp`} />
                 <span id="map-name">{name}</span>
             </div>
         </Link>

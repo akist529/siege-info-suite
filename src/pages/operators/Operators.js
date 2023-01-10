@@ -1,6 +1,6 @@
-import { operatorList } from '../../dummy_data/operator_data'
-import OperatorCard from '../../components/ui/operators/operator-card/OperatorCard'
-import PageTitle from '../../components/ui/page-title/PageTitle'
+import { operatorList } from 'dummy_data/operator_data'
+import OperatorCard from 'components/ui/operators/operator-card/OperatorCard'
+import PageTitle from 'components/ui/page-title/PageTitle'
 
 export default function Operators() {
     return (

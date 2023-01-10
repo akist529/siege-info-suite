@@ -1,5 +1,5 @@
 .Weapons {
-    padding-top: calc(15vh + 80px);
+    padding-top: var(--navbar-height);
     padding-left: 20px;
     padding-right: 20px;
     display: flex;
@@ -7,10 +7,9 @@
     justify-content: center;
     align-items: center;
 
-    .weapon-list {
-        display: grid;
-        grid-template-rows: repeat(auto-fill, 1fr);
-        grid-template-columns: repeat(auto-fill, 120px);
+    .cat-list {
+        display: flex;
+        flex-direction: column;
         gap: 10px;
         justify-content: center;
         justify-items: center;

@@ -1,7 +1,7 @@
 export default function NavLoginButton() {
     return (
         <button className="NavLoginButton">
-            <img alt="My Account" src="/images/ui/account_circle.png" />
+            <img alt="My Account" src="/images/ui/account_circle.webp" />
         </button>
     )
 }

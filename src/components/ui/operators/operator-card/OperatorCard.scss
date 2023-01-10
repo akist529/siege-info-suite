@@ -1,11 +1,16 @@
+* {
+    --operatorCardWidth: 120px;
+    --operatorCardHeight: 120px;
+}
+
 .OperatorCard {
     background-color: rgb(160, 160, 248);
     border: 3px solid black;
     font-size: 2rem;
     cursor: pointer;
 
-    width: 120px;
-    height: 120px;
+    width: var(--operatorCardWidth);
+    height: var(--operatorCardHeight);
     position: relative;
     overflow: hidden;
 
@@ -66,9 +71,6 @@
 
 @media screen and (min-width: 380px) {
     .OperatorCard {
-        width: 120px;
-        height: 120px;
-
         .operator-details {
             justify-content: center;
 
@@ -84,9 +86,12 @@
 }
 
 @media screen and (min-width: 470px) {
+    * {
+        --operatorCardWidth: 200px;
+        --operatorCardHeight: 300px;
+    }
+
     .OperatorCard {
-        width: 200px;
-        height: 300px;
         justify-items: normal;
         
         #badge {

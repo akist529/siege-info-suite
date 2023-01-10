@@ -1,4 +1,4 @@
-import ToggleFloorButton from '../../../buttons/toggle-floor-button/ToggleFloorButton'
+import ToggleFloorButton from 'components/buttons/toggle-floor-button/ToggleFloorButton'
 
 export default function ToggleFloorMenu(props) {
     const { floorData, floorSelected, setFloorSelected } = props

@@ -1,7 +1,8 @@
 .Map {
-    padding-top: calc(15vh + 80px);
+    padding-top: var(--navbar-height);
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 20px;
 }

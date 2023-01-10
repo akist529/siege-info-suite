@@ -17,6 +17,7 @@
 @import './components/ui/maps/blueprint/Blueprint';
 @import './components/ui/maps/blueprint/location/BlueprintLocation';
 @import './components/ui/maps/toggle-floor-menu/ToggleFloorMenu';
+@import './components/ui/weapons/category-card/CategoryCard';
 
 @import './pages/operators/Operators';
 @import './pages/operators/operator/Operator';
@@ -27,5 +28,6 @@
 @import './pages/quizzes/Quizzes';
 @import './pages/strat-builder/StratBuilder';
 @import './pages/my-stats/MyStats';
+@import './pages/no-page/NoPage';
 
 @import './App';

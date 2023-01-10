@@ -1,7 +1,5 @@
-import { useState } from 'react'
-
 export default function Blueprint(props) {
-    const { mapName, floor, floorData, setCurrentRoom, floorSelected } = props
+    const { mapName, floor, floorData, setCurrentRoom } = props
 
     const mapImage = document.createElement("img")
     mapImage.src = `/images/maps/${mapName.replace(" ", "-")}/${mapName.replace(" ", "-")}-${floor}.webp`
@@ -22,7 +20,7 @@ export default function Blueprint(props) {
         <div className="Blueprint">
             <img 
                 className="blueprint-image"
-                alt={`Blueprint - ${mapName} - ${floor}`}
+                alt={`Blueprint - ${mapName} ${floor}`}
                 src={`/images/maps/${mapName.replace(" ", "-")}/${mapName.replace(" ", "-")}-${floor}.webp`}
             />
             { floorData.map(item => {
@@ -33,16 +31,16 @@ export default function Blueprint(props) {
 
                 return (
                     <img 
-                        key={item.room} 
-                        alt={item.room} 
-                        src={image.src} 
+                        key={ item.room } 
+                        alt={ item.room } 
+                        src={ image.src } 
                         className="blueprint-room" 
-                        onMouseOver={handleMouseOver} 
-                        onMouseLeave={handleMouseLeave} 
+                        onMouseOver={ handleMouseOver } 
+                        onMouseLeave={ handleMouseLeave } 
                         style={{ 
-                            top: `calc(100% * ${item.position.top}/${mapImageHeight})`, 
-                            left: `calc(100% * ${item.position.left}/${mapImageWidth})`, 
-                            width: `${imageWidth * (divWidth / mapImageWidth)}px`, 
+                            top: `calc(100% * ${ item.position.top }/${ mapImageHeight })`, 
+                            left: `calc(100% * ${ item.position.left }/${ mapImageWidth })`, 
+                            width: `${ imageWidth * (divWidth / mapImageWidth) }px`, 
                         }}
                     />)
                 })

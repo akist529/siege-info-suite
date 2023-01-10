@@ -1,14 +1,12 @@
 import { useState, useEffect } from 'react'
-import axios from 'axios'
 import { useParams } from 'react-router-dom'
-import PageTitle from '../../../components/ui/page-title/PageTitle'
-import PageSubtitle from '../../../components/ui/page-subtitle/PageSubtitle'
-import ItemCard from '../../../components/ui/items/item-card/ItemCard'
-import OperatorLink from '../../../components/ui/operators/operator-link/OperatorLink'
-import OperatorHint from '../../../components/ui/operators/operator-hint/OperatorHint'
-import { operatorList } from '../../../dummy_data/operator_data'
-import { weaponList } from '../../../dummy_data/weapon_data'
-import { gadgetList } from '../../../dummy_data/gadget_data'
+import PageSubtitle from 'components/ui/page-subtitle/PageSubtitle'
+import ItemCard from 'components/ui/items/item-card/ItemCard'
+import OperatorLink from 'components/ui/operators/operator-link/OperatorLink'
+import OperatorHint from 'components/ui/operators/operator-hint/OperatorHint'
+import { operatorList } from 'dummy_data/operator_data'
+import { weaponList } from 'dummy_data/weapon_data'
+import { gadgetList } from 'dummy_data/gadget_data'
 
 export default function Operator() {
     const { name } = useParams()
@@ -48,23 +46,9 @@ export default function Operator() {
         setShowFullPortrait(window.innerWidth >= 740 ? true : false)
         checkImage(`/images/ops/portraits/elite/${capitalizedName}.webp`).then(() => setHasEliteSmall(true)).catch(() => setHasEliteSmall(false))
         checkImage(`/images/ops/portraits/elite/full/${capitalizedName}.webp`).then(() => setHasEliteLarge(true))
-    }, [])
+    }, [capitalizedName])
 
     window.addEventListener("resize", resizeHandler)
-
-    function getData(url) {
-        const testData = fetch(url, {
-            method: "GET",
-            credentials: "same-origin",
-            body: JSON.stringify(body),
-            headers: { "Content-Type": "application/json" },
-        })
-            .then(res => res.json())
-            .then(data => console.log(data))
-            .catch(err => console.log(err))
-    }
-
-    getData('http://localhost:3000/operators/bandit')
 
     return (
         <div className="Operator">

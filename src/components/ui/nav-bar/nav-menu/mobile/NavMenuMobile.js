@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import MobileNavMenuButton from '../../../../buttons/nav-menu-button/mobile/MobileNavMenuButton'
-import Dropdown from '../../dropdown/Dropdown'
+import MobileNavMenuButton from 'components/buttons/nav-menu-button/mobile/MobileNavMenuButton'
+import Dropdown from 'components/ui/nav-bar/dropdown/Dropdown'
 
 export default function NavMenuMobile(props) {
     const { windowWidth } = props

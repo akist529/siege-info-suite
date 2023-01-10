@@ -1,9 +1,9 @@
 import { useEffect, useState } from 'react'
 
-import NavMenuMobile from './nav-menu/mobile/NavMenuMobile'
-import NavMenuDesktop from './nav-menu/desktop/NavMenuDesktop'
-import NavLoginButton from '../../buttons/nav-login-button/NavLoginButton'
-import SearchBar from '../../inputs/searchbar/SearchBar'
+import NavMenuMobile from 'components/ui/nav-bar/nav-menu/mobile/NavMenuMobile'
+import NavMenuDesktop from 'components/ui/nav-bar/nav-menu/desktop/NavMenuDesktop'
+import NavLoginButton from 'components/buttons/nav-login-button/NavLoginButton'
+import SearchBar from 'components/inputs/searchbar/SearchBar'
 
 export default function NavBar() {
   const [R6LogoSize, setR6LogoSize] = useState('small')
@@ -24,7 +24,7 @@ export default function NavBar() {
   return (
     <nav className="NavBar">
       <div className="AppTitle">
-        <img id="r6s-logo" alt="Rainbow Six: Siege" src={`/images/ui/siege-logo-${R6LogoSize}.png`}/>
+        <img id="r6s-logo" alt="Rainbow Six: Siege" src={`/images/ui/siege-logo-${R6LogoSize}.webp`}/>
         { showAppTitle && <h1>Info Suite</h1> }
       </div>
       { (windowWidth < 912) ? (showNavMenus && <NavMenuMobile windowWidth={windowWidth} />) : <NavMenuDesktop windowWidth={windowWidth} /> }

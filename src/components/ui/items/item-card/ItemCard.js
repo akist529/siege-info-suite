@@ -1,21 +1,22 @@
+// Import components from React
 import { Link } from 'react-router-dom'
+import { useState } from 'react'
 
 export default function ItemCard(props) {
     const { name, type } = props
+    const [cardFocused, setCardFocused] = useState(false)
 
-    function focusCard(e) {
-        e.currentTarget.classList.add("focused")
-    }
-
-    function unFocusCard(e) {
-        e.currentTarget.classList.remove("focused")
-    }
+    const linkName = name.toLowerCase().replaceAll(" ", "-")
+    const fileName = name.replaceAll(".", "").replaceAll(" ", "-")
+    const displayName = name.replaceAll("-", " ")
 
     return (
-        <Link to={`/${type}s/${name.toLowerCase().replaceAll(" ", "-")}`}>
-            <div className="ItemCard" onMouseOver={focusCard} onMouseLeave={unFocusCard}>
-                <span>{ name.replaceAll("-", " ") }</span>
-                <img alt={`${name} Icon`} src={`/images/${type}s/${name.replaceAll(".", "").replaceAll(" ", "-")}.webp`} />
+        <Link to={ `/${type}s/${linkName}` }>
+            <div className={ `ItemCard ${cardFocused && 'focused'}` } 
+                onMouseOver={ () => setCardFocused(true) } 
+                onMouseLeave={ () => setCardFocused(false) }>
+                <span>{ displayName }</span>
+                <img alt={ `${name} Icon` } src={ `/images/${type}s/${fileName}.webp` } />
             </div>
         </Link>
     )
